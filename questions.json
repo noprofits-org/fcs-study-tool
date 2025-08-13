@@ -1,602 +1,604 @@
-[
-  {
-    "id": 1,
-    "category": "Eligibility Criteria",
-    "subcategory": "CSS Eligibility",
-    "question": "What is the minimum age requirement for Supportive Housing services?",
-    "options": [
-      "14 years or older",
-      "16 years or older",
-      "18 years or older",
-      "21 years or older"
-    ],
-    "correctAnswer": 1,
-    "explanation": "According to page 9, eligible populations for Supportive Housing services include individuals who are 16 or older.",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 2,
-    "category": "Eligibility Criteria",
-    "subcategory": "CSS Eligibility",
-    "question": "Which of the following is NOT a health needs-based criteria for CSS eligibility?",
-    "options": [
-      "Mental health need",
-      "Need for outpatient substance use disorder treatment",
-      "Need for assistance with three or more ADLs",
-      "Need for employment support"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Employment support is not listed as a health needs-based criteria for CSS. The criteria listed on page 9 include mental health need, substance use disorder treatment, and ADL assistance.",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 3,
-    "category": "Billing Codes",
-    "subcategory": "CSS Billing",
-    "question": "What is the billing code for Supportive Housing services per diem?",
-    "options": [
-      "H0043",
-      "H2023",
-      "H2025",
-      "H0044"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Page 9 states that when billing for Supportive Housing services, use code H0043 for per diem services.",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 4,
-    "category": "Billing Codes",
-    "subcategory": "CSS Billing",
-    "question": "What is the daily rate for Community Support Services (H0043)?",
-    "options": [
-      "$105",
-      "$112",
-      "$125",
-      "$137"
-    ],
-    "correctAnswer": 1,
-    "explanation": "According to the FCS Rate Increase Table on page 44, the permanent rate for H0043 effective July 1, 2020 is $112 per diem.",
-    "pageReference": "Page 44"
-  },
-  {
-    "id": 5,
-    "category": "Service Limits",
-    "subcategory": "CSS Service Limits",
-    "question": "What is the benefit limitation for CSS services over a 180-day period?",
-    "options": [
-      "15 days",
-      "30 days",
-      "60 days",
-      "90 days"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 11 states that CSS encounters have a benefit limitation of 30 days over a 180-day authorization period.",
-    "pageReference": "Page 11"
-  },
-  {
-    "id": 6,
-    "category": "Eligibility Criteria",
-    "subcategory": "IPS Eligibility",
-    "question": "What is the minimum age requirement for Individual Placement and Support (IPS) services?",
-    "options": [
-      "14 years",
-      "16 years",
-      "18 years",
-      "21 years"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 14 states that the individual must be at least 16 years of age to meet IPS eligibility criteria.",
-    "pageReference": "Page 14"
-  },
-  {
-    "id": 7,
-    "category": "Billing Codes",
-    "subcategory": "IPS Billing",
-    "question": "What is the billing code for Pre-employment services?",
-    "options": [
-      "H0043",
-      "H2023",
-      "H2025",
-      "H2026"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 15 identifies H2023 as the code for Pre-employment services - activities that assist an individual with obtaining employment.",
-    "pageReference": "Page 15"
-  },
-  {
-    "id": 8,
-    "category": "Billing Codes",
-    "subcategory": "IPS Billing",
-    "question": "What is the rate per 15-minute unit for supported employment services (H2023 and H2025)?",
-    "options": [
-      "$25",
-      "$27",
-      "$33",
-      "$35"
-    ],
-    "correctAnswer": 1,
-    "explanation": "The FCS Rate Increase Table on page 44 shows the permanent rate effective July 1, 2020 for both H2023 and H2025 is $27 per 15-minute unit.",
-    "pageReference": "Page 44"
-  },
-  {
-    "id": 9,
-    "category": "Service Limits",
-    "subcategory": "IPS Service Limits",
-    "question": "What is the maximum number of units allowed for supported employment services over a 180-day period?",
-    "options": [
-      "60 units",
-      "90 units",
-      "120 units",
-      "150 units"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 16 states that pre-employment and employment-sustaining services are limited to 120 units over a 180-day period.",
-    "pageReference": "Page 16"
-  },
-  {
-    "id": 10,
-    "category": "Documentation Requirements",
-    "subcategory": "Progress Notes",
-    "question": "What documentation format is commonly used for progress notes?",
-    "options": [
-      "SOAP format",
-      "DARP format",
-      "PIE format",
-      "DAP format"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 63 states that the DARP (Description, Assessment, Response, Plan) format is commonly used and contains all elements required for effective documentation.",
-    "pageReference": "Page 63"
-  },
-  {
-    "id": 11,
-    "category": "Provider Qualifications",
-    "subcategory": "Supportive Housing",
-    "question": "How many years of experience in coordination of Supportive Housing services are required for provider qualification?",
-    "options": [
-      "One year",
-      "Two years",
-      "Three years",
-      "Five years"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 28 states that providers need two years' experience in the coordination of Supportive Housing or in the coordination of independent living services in a social service setting under qualified supervision.",
-    "pageReference": "Page 28"
-  },
-  {
-    "id": 12,
-    "category": "Documentation Requirements",
-    "subcategory": "Telephone Contact",
-    "question": "What is the minimum duration for a billable telephone call?",
-    "options": [
-      "10 minutes",
-      "15 minutes",
-      "20 minutes",
-      "30 minutes"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Pages 12 and 14 both state that telephone calls of at least 15 minutes are billable.",
-    "pageReference": "Page 12"
-  },
-  {
-    "id": 13,
-    "category": "Billing Procedures",
-    "subcategory": "Timely Filing",
-    "question": "What is the timely filing deadline for claims submission?",
-    "options": [
-      "90 calendar days",
-      "180 calendar days",
-      "365 calendar days",
-      "730 calendar days"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 20 states that timely filing is within 365 calendar days of the date of service.",
-    "pageReference": "Page 20"
-  },
-  {
-    "id": 14,
-    "category": "Prior Authorization",
-    "subcategory": "CSS Services",
-    "question": "Can CSS services be provided or billed before authorization?",
-    "options": [
-      "Yes, for emergency situations",
-      "Yes, with provider approval",
-      "No, never",
-      "Yes, with retroactive approval"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 12 clearly states that CSS may not be provided or billed prior to an authorization for service.",
-    "pageReference": "Page 12"
-  },
-  {
-    "id": 15,
-    "category": "Service Definitions",
-    "subcategory": "CSS Exclusions",
-    "question": "Which of the following is NOT excluded from CSS benefits?",
-    "options": [
-      "Payment of rent",
-      "Capital costs for housing modification",
-      "Care coordination services",
-      "Utilities expenses"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 11-12 lists CSS exclusions which include rent, capital costs, utilities, but care coordination is part of the service.",
-    "pageReference": "Page 11-12"
-  },
-  {
-    "id": 16,
-    "category": "Quality Monitoring",
-    "subcategory": "Reporting Requirements",
-    "question": "By what day of the month must providers submit their monthly outcome and capacity reports?",
-    "options": [
-      "5th",
-      "10th",
-      "15th",
-      "30th"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 32 states that Provider Outcome and Capacity Reports are due before the 10th of every month.",
-    "pageReference": "Page 32"
-  },
-  {
-    "id": 17,
-    "category": "Eligibility Criteria",
-    "subcategory": "Risk Factors",
-    "question": "What qualifies as 'frequent' institutional contacts for CSS eligibility?",
-    "options": [
-      "One or more contacts in 12 months",
-      "Two or more contacts in 12 months",
-      "Three or more contacts in 12 months",
-      "Four or more contacts in 12 months"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 9 defines frequent as two or more contacts in the past 12 months.",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 18,
-    "category": "Provider Qualifications",
-    "subcategory": "Supported Employment",
-    "question": "Which certification is acceptable for staff performing Supported Employment Services?",
-    "options": [
-      "CESP (Certified Employment Support Professional)",
-      "LCSW (Licensed Clinical Social Worker)",
-      "RN (Registered Nurse)",
-      "CADC (Certified Alcohol and Drug Counselor)"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Page 29 lists CESP certification by the Employment Support Professional Certification Council as one of the acceptable qualifications.",
-    "pageReference": "Page 29"
-  },
-  {
-    "id": 19,
-    "category": "Documentation Requirements",
-    "subcategory": "Treatment Records",
-    "question": "How often are enrollees entitled to a free copy of their treatment record?",
-    "options": [
-      "Once every six months",
-      "Once each year",
-      "Once every two years",
-      "Upon each request"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 62 states that enrollees are entitled to one copy of their treatment record each year at no cost.",
-    "pageReference": "Page 62"
-  },
-  {
-    "id": 20,
-    "category": "Billing Procedures",
-    "subcategory": "Clean Claims",
-    "question": "Within how many calendar days must clean claims be adjudicated?",
-    "options": [
-      "15 days",
-      "30 days",
-      "45 days",
-      "60 days"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 52 states that Wellpoint will adjudicate clean claims to a paid or denied status within 30 calendar days of receipt.",
-    "pageReference": "Page 52"
-  },
-  {
-    "id": 21,
-    "category": "Service Definitions",
-    "subcategory": "IPS Principles",
-    "question": "According to IPS principles, how quickly should job search begin?",
-    "options": [
-      "Within 60 days",
-      "Within 45 days",
-      "Within 30 days",
-      "Within 90 days"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 13 states that beginning the job search process early (within 30 days) demonstrates to enrollees their desire to work is taken seriously.",
-    "pageReference": "Page 13"
-  },
-  {
-    "id": 22,
-    "category": "Prior Authorization",
-    "subcategory": "Exception Requests",
-    "question": "What form must accompany an Exception to Rule (ETR) request?",
-    "options": [
-      "Provider Agreement Form",
-      "Single Case Agreement Form",
-      "Prior Authorization Form",
-      "Service Request Form"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 23 states that providers must submit a signed Single Case Agreement Form with ETR requests.",
-    "pageReference": "Page 23"
-  },
-  {
-    "id": 23,
-    "category": "Billing Codes",
-    "subcategory": "Employment Services",
-    "question": "What does H2025 code represent?",
-    "options": [
-      "Pre-employment services",
-      "Employment-sustaining services",
-      "Community support services",
-      "Assessment services"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 16 identifies H2025 as Employment-sustaining services - activities that support the individual in retaining and maintaining employment.",
-    "pageReference": "Page 16"
-  },
-  {
-    "id": 24,
-    "category": "Service Limits",
-    "subcategory": "Reauthorization",
-    "question": "How long is each authorization period for FCS services?",
-    "options": [
-      "90 days",
-      "120 days",
-      "180 days",
-      "365 days"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Multiple references throughout the manual indicate authorization periods are 180 days.",
-    "pageReference": "Page 11, 16"
-  },
-  {
-    "id": 25,
-    "category": "Provider Responsibilities",
-    "subcategory": "Critical Incidents",
-    "question": "When must critical incidents be reported to Wellpoint?",
-    "options": [
-      "Within 24 hours",
-      "On the same business day",
-      "Within 48 hours",
-      "Within 72 hours"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 6 states that critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness.",
-    "pageReference": "Page 6"
-  },
-  {
-    "id": 26,
-    "category": "Documentation Requirements",
-    "subcategory": "Assessment Validity",
-    "question": "How old can an assessment be when submitted to Wellpoint?",
-    "options": [
-      "No more than 5 business days",
-      "No more than 10 business days",
-      "No more than 15 business days",
-      "No more than 30 business days"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 22 states that the assessment may not be more than 10 business days old when submitted.",
-    "pageReference": "Page 22"
-  },
-  {
-    "id": 27,
-    "category": "Quality Monitoring",
-    "subcategory": "Wait Times",
-    "question": "What is the maximum routine in-office wait time for scheduled appointments?",
-    "options": [
-      "30 minutes",
-      "45 minutes",
-      "60 minutes",
-      "90 minutes"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 28 states that in-office wait time for scheduled appointments should not routinely exceed 45 minutes.",
-    "pageReference": "Page 28"
-  },
-  {
-    "id": 28,
-    "category": "Eligibility Criteria",
-    "subcategory": "Medicaid Coverage",
-    "question": "Which is NOT an eligible Apple Health coverage group for FCS?",
-    "options": [
-      "CN Aged",
-      "ACA Expansion Adults",
-      "Emergency Medicaid",
-      "CN Pregnant Women"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 21 lists eligible coverage groups, which do not include Emergency Medicaid.",
-    "pageReference": "Page 21"
-  },
-  {
-    "id": 29,
-    "category": "Billing Procedures",
-    "subcategory": "Electronic Claims",
-    "question": "What is the Availity Payer ID for FCS claims?",
-    "options": [
-      "WAFCS",
-      "WLPNT",
-      "FCSTPA",
-      "WAHCA"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 6 and page 51 both indicate the Availity Payer ID is WLPNT.",
-    "pageReference": "Page 6, 51"
-  },
-  {
-    "id": 30,
-    "category": "Service Definitions",
-    "subcategory": "Excluded Services",
-    "question": "Which type of employment setting is excluded from FCS supported employment services?",
-    "options": [
-      "Competitive employment",
-      "Integrated community employment",
-      "Sheltered workshop settings",
-      "Part-time employment"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 14 explicitly excludes employment support for individuals in subminimum or sheltered workshop settings.",
-    "pageReference": "Page 14"
-  },
-  {
-    "id": 31,
-    "category": "Provider Responsibilities",
-    "subcategory": "Disenrollment",
-    "question": "How many attempts must be made to contact an inactive enrollee before involuntary disenrollment?",
-    "options": [
-      "At least two attempts",
-      "At least three attempts",
-      "At least four attempts",
-      "At least five attempts"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 24 states that at least four attempts at contacting the inactive FCS enrollee must occur over a minimum of six weeks.",
-    "pageReference": "Page 24"
-  },
-  {
-    "id": 32,
-    "category": "Documentation Requirements",
-    "subcategory": "Progress Note Elements",
-    "question": "Which element must be included on each page of treatment records?",
-    "options": [
-      "Provider NPI number",
-      "Enrollee identification information",
-      "Service authorization number",
-      "Billing code"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 62 states that treatment records must include enrollee identification information shown on each page or electronic file.",
-    "pageReference": "Page 62"
-  },
-  {
-    "id": 33,
-    "category": "Prior Authorization",
-    "subcategory": "Waitlist Management",
-    "question": "During an enrollment pause, what is the window for reauthorizing individuals after authorization expires?",
-    "options": [
-      "15 days",
-      "30 days",
-      "45 days",
-      "60 days"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 26 states that during an enrollment pause, the FCS program will have a 30-day window for reauthorizing individuals after their authorization has expired.",
-    "pageReference": "Page 26"
-  },
-  {
-    "id": 34,
-    "category": "Billing Procedures",
-    "subcategory": "Overpayment Recovery",
-    "question": "Within how many days must providers return self-identified overpayments?",
-    "options": [
-      "30 calendar days",
-      "45 calendar days",
-      "60 calendar days",
-      "90 calendar days"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 54 states providers must return overpayments within sixty (60) calendar days after the date on which the overpayment was identified.",
-    "pageReference": "Page 54"
-  },
-  {
-    "id": 35,
-    "category": "Quality Monitoring",
-    "subcategory": "Fraud Reporting",
-    "question": "What is the SIU fraud referral hotline number?",
-    "options": [
-      "844-451-2828",
-      "866-847-8247",
-      "833-731-2274",
-      "800-562-3022"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 35 provides the SIU fraud referral hotline as 866-847-8247.",
-    "pageReference": "Page 35"
-  },
-  {
-    "id": 36,
-    "category": "Service Limits",
-    "subcategory": "TAP Funding",
-    "question": "What is the maximum TAP funding amount per 12-month period for move-in assistance?",
-    "options": [
-      "$3,000",
-      "$4,000",
-      "$5,000",
-      "$6,000"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 67 states that move-in assistance can be up to $5,000 total per 12-month period.",
-    "pageReference": "Page 67"
-  },
-  {
-    "id": 37,
-    "category": "Provider Qualifications",
-    "subcategory": "Required Documentation",
-    "question": "What type of NPI is required for FCS provider contracting?",
-    "options": [
-      "Type 1 individual NPI",
-      "Type 2 organization NPI",
-      "Either Type 1 or Type 2",
-      "Both Type 1 and Type 2"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 6 specifies that providers need an NPI number (type 2 organization NPI) for contracting.",
-    "pageReference": "Page 6"
-  },
-  {
-    "id": 38,
-    "category": "Documentation Requirements",
-    "subcategory": "SMART Goals",
-    "question": "What does the 'M' in SMART goals stand for?",
-    "options": [
-      "Manageable",
-      "Measurable",
-      "Meaningful",
-      "Motivated"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 63 explains that SMART goals are Specific, Measurable, Achievable, Relevant, and Time-Bound.",
-    "pageReference": "Page 63"
-  },
-  {
-    "id": 39,
-    "category": "Billing Procedures",
-    "subcategory": "Payment Disputes",
-    "question": "How many days do providers have to submit a claim payment appeal after the reconsideration determination?",
-    "options": [
-      "15 calendar days",
-      "30 calendar days",
-      "45 calendar days",
-      "60 calendar days"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 59 states that claim payment appeals must be submitted within 30 calendar days of the date on the reconsideration determination letter.",
-    "pageReference": "Page 59"
-  },
-  {
-    "id": 40,
-    "category": "Service Definitions",
-    "subcategory": "Housing Principles",
-    "question": "According to Supportive Housing principles, can tenants be evicted for rejecting services?",
-    "options": [
-      "Yes, after 30 days",
-      "Yes, with provider approval",
-      "No, never",
-      "Yes, with state approval"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 10 clearly states that tenants cannot be evicted from their housing for rejecting services, disenrolling from FCS services or for changing FCS service provider.",
-    "pageReference": "Page 10"
-  }
-]
+{
+  "questions": [
+    {
+      "id": "q_001",
+      "category": "Eligibility Criteria",
+      "text": "What is the minimum age requirement for Supportive Housing services?",
+      "options": {
+        "A": "14 years or older",
+        "B": "16 years or older",
+        "C": "18 years or older",
+        "D": "21 years or older"
+      },
+      "correct": "B",
+      "explanation": "According to page 9, eligible populations for Supportive Housing services include individuals who are 16 or older.",
+      "studyPages": [9],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_002",
+      "category": "Eligibility Criteria",
+      "text": "Which of the following is NOT a health needs-based criteria for CSS eligibility?",
+      "options": {
+        "A": "Mental health need",
+        "B": "Need for outpatient substance use disorder treatment",
+        "C": "Need for assistance with three or more ADLs",
+        "D": "Need for employment support"
+      },
+      "correct": "D",
+      "explanation": "Employment support is not listed as a health needs-based criteria for CSS. The criteria listed on page 9 include mental health need, substance use disorder treatment, and ADL assistance.",
+      "studyPages": [9],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_003",
+      "category": "Billing Codes",
+      "text": "What is the billing code for Supportive Housing services per diem?",
+      "options": {
+        "A": "H0043",
+        "B": "H2023",
+        "C": "H2025",
+        "D": "H0044"
+      },
+      "correct": "A",
+      "explanation": "Page 9 states that when billing for Supportive Housing services, use code H0043 for per diem services.",
+      "studyPages": [9],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_004",
+      "category": "Billing Codes",
+      "text": "What is the daily rate for Community Support Services (H0043)?",
+      "options": {
+        "A": "$105",
+        "B": "$112",
+        "C": "$125",
+        "D": "$137"
+      },
+      "correct": "B",
+      "explanation": "According to the FCS Rate Increase Table on page 44, the permanent rate for H0043 effective July 1, 2020 is $112 per diem.",
+      "studyPages": [44],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_005",
+      "category": "Service Limits",
+      "text": "What is the benefit limitation for CSS services over a 180-day period?",
+      "options": {
+        "A": "15 days",
+        "B": "30 days",
+        "C": "60 days",
+        "D": "90 days"
+      },
+      "correct": "B",
+      "explanation": "Page 11 states that CSS encounters have a benefit limitation of 30 days over a 180-day authorization period.",
+      "studyPages": [11],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_006",
+      "category": "Eligibility Criteria",
+      "text": "What is the minimum age requirement for Individual Placement and Support (IPS) services?",
+      "options": {
+        "A": "14 years",
+        "B": "16 years",
+        "C": "18 years",
+        "D": "21 years"
+      },
+      "correct": "B",
+      "explanation": "Page 14 states that the individual must be at least 16 years of age to meet IPS eligibility criteria.",
+      "studyPages": [14],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_007",
+      "category": "Billing Codes",
+      "text": "What is the billing code for Pre-employment services?",
+      "options": {
+        "A": "H0043",
+        "B": "H2023",
+        "C": "H2025",
+        "D": "H2026"
+      },
+      "correct": "B",
+      "explanation": "Page 15 identifies H2023 as the code for Pre-employment services - activities that assist an individual with obtaining employment.",
+      "studyPages": [15],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_008",
+      "category": "Billing Codes",
+      "text": "What is the rate per 15-minute unit for supported employment services (H2023 and H2025)?",
+      "options": {
+        "A": "$25",
+        "B": "$27",
+        "C": "$33",
+        "D": "$35"
+      },
+      "correct": "B",
+      "explanation": "The FCS Rate Increase Table on page 44 shows the permanent rate effective July 1, 2020 for both H2023 and H2025 is $27 per 15-minute unit.",
+      "studyPages": [44],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_009",
+      "category": "Service Limits",
+      "text": "What is the maximum number of units allowed for supported employment services over a 180-day period?",
+      "options": {
+        "A": "60 units",
+        "B": "90 units",
+        "C": "120 units",
+        "D": "150 units"
+      },
+      "correct": "C",
+      "explanation": "Page 16 states that pre-employment and employment-sustaining services are limited to 120 units over a 180-day period.",
+      "studyPages": [16],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_010",
+      "category": "Documentation Requirements",
+      "text": "What documentation format is commonly used for progress notes?",
+      "options": {
+        "A": "SOAP format",
+        "B": "DARP format",
+        "C": "PIE format",
+        "D": "DAP format"
+      },
+      "correct": "B",
+      "explanation": "Page 63 states that the DARP (Description, Assessment, Response, Plan) format is commonly used and contains all elements required for effective documentation.",
+      "studyPages": [63],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_011",
+      "category": "Provider Qualifications",
+      "text": "How many years of experience in coordination of Supportive Housing services are required for provider qualification?",
+      "options": {
+        "A": "One year",
+        "B": "Two years",
+        "C": "Three years",
+        "D": "Five years"
+      },
+      "correct": "B",
+      "explanation": "Page 28 states that providers need two years' experience in the coordination of Supportive Housing or in the coordination of independent living services in a social service setting under qualified supervision.",
+      "studyPages": [28],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_012",
+      "category": "Documentation Requirements",
+      "text": "What is the minimum duration for a billable telephone call?",
+      "options": {
+        "A": "10 minutes",
+        "B": "15 minutes",
+        "C": "20 minutes",
+        "D": "30 minutes"
+      },
+      "correct": "B",
+      "explanation": "Pages 12 and 14 both state that telephone calls of at least 15 minutes are billable.",
+      "studyPages": [12, 14],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_013",
+      "category": "Billing Procedures",
+      "text": "What is the timely filing deadline for claims submission?",
+      "options": {
+        "A": "90 calendar days",
+        "B": "180 calendar days",
+        "C": "365 calendar days",
+        "D": "730 calendar days"
+      },
+      "correct": "C",
+      "explanation": "Page 20 states that timely filing is within 365 calendar days of the date of service.",
+      "studyPages": [20],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_014",
+      "category": "Prior Authorization",
+      "text": "Can CSS services be provided or billed before authorization?",
+      "options": {
+        "A": "Yes, for emergency situations",
+        "B": "Yes, with provider approval",
+        "C": "No, never",
+        "D": "Yes, with retroactive approval"
+      },
+      "correct": "C",
+      "explanation": "Page 12 clearly states that CSS may not be provided or billed prior to an authorization for service.",
+      "studyPages": [12],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_015",
+      "category": "Service Definitions",
+      "text": "Which of the following is NOT excluded from CSS benefits?",
+      "options": {
+        "A": "Payment of rent",
+        "B": "Capital costs for housing modification",
+        "C": "Care coordination services",
+        "D": "Utilities expenses"
+      },
+      "correct": "C",
+      "explanation": "Page 11-12 lists CSS exclusions which include rent, capital costs, utilities, but care coordination is part of the service.",
+      "studyPages": [11, 12],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_016",
+      "category": "Quality Monitoring",
+      "text": "By what day of the month must providers submit their monthly outcome and capacity reports?",
+      "options": {
+        "A": "5th",
+        "B": "10th",
+        "C": "15th",
+        "D": "30th"
+      },
+      "correct": "B",
+      "explanation": "Page 32 states that Provider Outcome and Capacity Reports are due before the 10th of every month.",
+      "studyPages": [32],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_017",
+      "category": "Eligibility Criteria",
+      "text": "What qualifies as 'frequent' institutional contacts for CSS eligibility?",
+      "options": {
+        "A": "One or more contacts in 12 months",
+        "B": "Two or more contacts in 12 months",
+        "C": "Three or more contacts in 12 months",
+        "D": "Four or more contacts in 12 months"
+      },
+      "correct": "B",
+      "explanation": "Page 9 defines frequent as two or more contacts in the past 12 months.",
+      "studyPages": [9],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_018",
+      "category": "Provider Qualifications",
+      "text": "Which certification is acceptable for staff performing Supported Employment Services?",
+      "options": {
+        "A": "CESP (Certified Employment Support Professional)",
+        "B": "LCSW (Licensed Clinical Social Worker)",
+        "C": "RN (Registered Nurse)",
+        "D": "CADC (Certified Alcohol and Drug Counselor)"
+      },
+      "correct": "A",
+      "explanation": "Page 29 lists CESP certification by the Employment Support Professional Certification Council as one of the acceptable qualifications.",
+      "studyPages": [29],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_019",
+      "category": "Documentation Requirements",
+      "text": "How often are enrollees entitled to a free copy of their treatment record?",
+      "options": {
+        "A": "Once every six months",
+        "B": "Once each year",
+        "C": "Once every two years",
+        "D": "Upon each request"
+      },
+      "correct": "B",
+      "explanation": "Page 62 states that enrollees are entitled to one copy of their treatment record each year at no cost.",
+      "studyPages": [62],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_020",
+      "category": "Billing Procedures",
+      "text": "Within how many calendar days must clean claims be adjudicated?",
+      "options": {
+        "A": "15 days",
+        "B": "30 days",
+        "C": "45 days",
+        "D": "60 days"
+      },
+      "correct": "B",
+      "explanation": "Page 52 states that Wellpoint will adjudicate clean claims to a paid or denied status within 30 calendar days of receipt.",
+      "studyPages": [52],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_021",
+      "category": "Service Definitions",
+      "text": "According to IPS principles, how quickly should job search begin?",
+      "options": {
+        "A": "Within 60 days",
+        "B": "Within 45 days",
+        "C": "Within 30 days",
+        "D": "Within 90 days"
+      },
+      "correct": "C",
+      "explanation": "Page 13 states that beginning the job search process early (within 30 days) demonstrates to enrollees their desire to work is taken seriously.",
+      "studyPages": [13],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_022",
+      "category": "Prior Authorization",
+      "text": "What form must accompany an Exception to Rule (ETR) request?",
+      "options": {
+        "A": "Provider Agreement Form",
+        "B": "Single Case Agreement Form",
+        "C": "Prior Authorization Form",
+        "D": "Service Request Form"
+      },
+      "correct": "B",
+      "explanation": "Page 23 states that providers must submit a signed Single Case Agreement Form with ETR requests.",
+      "studyPages": [23],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_023",
+      "category": "Billing Codes",
+      "text": "What does H2025 code represent?",
+      "options": {
+        "A": "Pre-employment services",
+        "B": "Employment-sustaining services",
+        "C": "Community support services",
+        "D": "Assessment services"
+      },
+      "correct": "B",
+      "explanation": "Page 16 identifies H2025 as Employment-sustaining services - activities that support the individual in retaining and maintaining employment.",
+      "studyPages": [16],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_024",
+      "category": "Service Limits",
+      "text": "How long is each authorization period for FCS services?",
+      "options": {
+        "A": "90 days",
+        "B": "120 days",
+        "C": "180 days",
+        "D": "365 days"
+      },
+      "correct": "C",
+      "explanation": "Multiple references throughout the manual indicate authorization periods are 180 days.",
+      "studyPages": [11, 16],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_025",
+      "category": "Provider Responsibilities",
+      "text": "When must critical incidents be reported to Wellpoint?",
+      "options": {
+        "A": "Within 24 hours",
+        "B": "On the same business day",
+        "C": "Within 48 hours",
+        "D": "Within 72 hours"
+      },
+      "correct": "B",
+      "explanation": "Page 6 states that critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness.",
+      "studyPages": [6],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_026",
+      "category": "Documentation Requirements",
+      "text": "How old can an assessment be when submitted to Wellpoint?",
+      "options": {
+        "A": "No more than 5 business days",
+        "B": "No more than 10 business days",
+        "C": "No more than 15 business days",
+        "D": "No more than 30 business days"
+      },
+      "correct": "B",
+      "explanation": "Page 22 states that the assessment may not be more than 10 business days old when submitted.",
+      "studyPages": [22],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_027",
+      "category": "Quality Monitoring",
+      "text": "What is the maximum routine in-office wait time for scheduled appointments?",
+      "options": {
+        "A": "30 minutes",
+        "B": "45 minutes",
+        "C": "60 minutes",
+        "D": "90 minutes"
+      },
+      "correct": "B",
+      "explanation": "Page 28 states that in-office wait time for scheduled appointments should not routinely exceed 45 minutes.",
+      "studyPages": [28],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_028",
+      "category": "Eligibility Criteria",
+      "text": "Which is NOT an eligible Apple Health coverage group for FCS?",
+      "options": {
+        "A": "CN Aged",
+        "B": "ACA Expansion Adults",
+        "C": "Emergency Medicaid",
+        "D": "CN Pregnant Women"
+      },
+      "correct": "C",
+      "explanation": "Page 21 lists eligible coverage groups, which do not include Emergency Medicaid.",
+      "studyPages": [21],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_029",
+      "category": "Billing Procedures",
+      "text": "What is the Availity Payer ID for FCS claims?",
+      "options": {
+        "A": "WAFCS",
+        "B": "WLPNT",
+        "C": "FCSTPA",
+        "D": "WAHCA"
+      },
+      "correct": "B",
+      "explanation": "Page 6 and page 51 both indicate the Availity Payer ID is WLPNT.",
+      "studyPages": [6, 51],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_030",
+      "category": "Service Definitions",
+      "text": "Which type of employment setting is excluded from FCS supported employment services?",
+      "options": {
+        "A": "Competitive employment",
+        "B": "Integrated community employment",
+        "C": "Sheltered workshop settings",
+        "D": "Part-time employment"
+      },
+      "correct": "C",
+      "explanation": "Page 14 explicitly excludes employment support for individuals in subminimum or sheltered workshop settings.",
+      "studyPages": [14],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_031",
+      "category": "Provider Responsibilities",
+      "text": "How many attempts must be made to contact an inactive enrollee before involuntary disenrollment?",
+      "options": {
+        "A": "At least two attempts",
+        "B": "At least three attempts",
+        "C": "At least four attempts",
+        "D": "At least five attempts"
+      },
+      "correct": "C",
+      "explanation": "Page 24 states that at least four attempts at contacting the inactive FCS enrollee must occur over a minimum of six weeks.",
+      "studyPages": [24],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_032",
+      "category": "Documentation Requirements",
+      "text": "Which element must be included on each page of treatment records?",
+      "options": {
+        "A": "Provider NPI number",
+        "B": "Enrollee identification information",
+        "C": "Service authorization number",
+        "D": "Billing code"
+      },
+      "correct": "B",
+      "explanation": "Page 62 states that treatment records must include enrollee identification information shown on each page or electronic file.",
+      "studyPages": [62],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_033",
+      "category": "Prior Authorization",
+      "text": "During an enrollment pause, what is the window for reauthorizing individuals after authorization expires?",
+      "options": {
+        "A": "15 days",
+        "B": "30 days",
+        "C": "45 days",
+        "D": "60 days"
+      },
+      "correct": "B",
+      "explanation": "Page 26 states that during an enrollment pause, the FCS program will have a 30-day window for reauthorizing individuals after their authorization has expired.",
+      "studyPages": [26],
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_034",
+      "category": "Billing Procedures",
+      "text": "Within how many days must providers return self-identified overpayments?",
+      "options": {
+        "A": "30 calendar days",
+        "B": "45 calendar days",
+        "C": "60 calendar days",
+        "D": "90 calendar days"
+      },
+      "correct": "C",
+      "explanation": "Page 54 states providers must return overpayments within sixty (60) calendar days after the date on which the overpayment was identified.",
+      "studyPages": [54],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_035",
+      "category": "Quality Monitoring",
+      "text": "What is the SIU fraud referral hotline number?",
+      "options": {
+        "A": "844-451-2828",
+        "B": "866-847-8247",
+        "C": "833-731-2274",
+        "D": "800-562-3022"
+      },
+      "correct": "B",
+      "explanation": "Page 35 provides the SIU fraud referral hotline as 866-847-8247.",
+      "studyPages": [35],
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_036",
+      "category": "Service Limits",
+      "text": "What is the maximum TAP funding amount per 12-month period for move-in assistance?",
+      "options": {
+        "A": "$3,000",
+        "B": "$4,000",
+        "C": "$5,000",
+        "D": "$6,000"
+      },
+      "correct": "C",
+      "explanation": "Page 67 states that move-in assistance can be up to $5,000 total per 12-month period.",
+      "studyPages": [67],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_037",
+      "category": "Provider Qualifications",
+      "text": "What type of NPI is required for FCS provider contracting?",
+      "options": {
+        "A": "Type 1 individual NPI",
+        "B": "Type 2 organization NPI",
+        "C": "Either Type 1 or Type 2",
+        "D": "Both Type 1 and Type 2"
+      },
+      "correct": "B",
+      "explanation": "Page 6 specifies that providers need an NPI number (type 2 organization NPI) for contracting.",
+      "studyPages": [6],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_038",
+      "category": "Documentation Requirements",
+      "text": "What does the 'M' in SMART goals stand for?",
+      "options": {
+        "A": "Manageable",
+        "B": "Measurable",
+        "C": "Meaningful",
+        "D": "Motivated"
+      },
+      "correct": "B",
+      "explanation": "Page 63 explains that SMART goals are Specific, Measurable, Achievable, Relevant, and Time-Bound.",
+      "studyPages": [63],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_039",
+      "category": "Billing Procedures",
+      "text": "How many days do providers have to submit a claim payment appeal after the reconsideration determination?",
+      "options": {
+        "A": "15 calendar days",
+        "B": "30 calendar days",
+        "C": "45 calendar days",
+        "D": "60 calendar days"
+      },
+      "correct": "B",
+      "explanation": "Page 59 states that claim payment appeals must be submitted within 30 calendar days of the date on the reconsideration determination letter.",
+      "studyPages": [59],
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_040",
+      "category": "Service Definitions",
+      "text": "According to Supportive Housing principles, can tenants be evicted for rejecting services?",
+      "options": {
+        "A": "Yes, after 30 days",
+        "B": "Yes, with provider approval",
+        "C": "No, never",
+        "D": "Yes, with state approval"
+      },
+      "correct": "C",
+      "explanation": "Page 10 clearly states that tenants cannot be evicted from their housing for rejecting services, disenrolling from FCS services or for changing FCS service provider.",
+      "studyPages": [10],
+      "difficulty": "Medium"
+    }
+  ]
+}

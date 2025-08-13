@@ -1,322 +1,344 @@
-[
-  {
-    "id": 1,
-    "category": "Billing Situations",
-    "title": "Telephone Contact Billing",
-    "scenario": "A CSS provider has a 12-minute phone call with an enrollee to check on their housing stability. The enrollee was distressed and needed support. Can the provider bill for this service?",
-    "question": "Is this telephone contact billable?",
-    "options": [
-      "Yes, all phone calls with enrollees are billable",
-      "No, the call must be at least 15 minutes to be billable",
-      "Yes, but only if it's video call",
-      "No, phone calls are never billable"
-    ],
-    "correctAnswer": 1,
-    "explanation": "According to page 12, telephone calls of at least 15 minutes are billable. Since this call was only 12 minutes, it cannot be billed.",
-    "pageReference": "Page 12"
-  },
-  {
-    "id": 2,
-    "category": "Eligibility Determinations",
-    "title": "Age-Based Eligibility",
-    "scenario": "A 15-year-old youth who has been chronically homeless for the past year is referred for Supportive Housing services. They meet all other eligibility criteria including mental health needs.",
-    "question": "Can this youth be enrolled in CSS?",
-    "options": [
-      "Yes, age exceptions can be made for homeless youth",
-      "No, they must be at least 16 years old",
-      "Yes, if they have parental consent",
-      "No, they must be 18 or older"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 9 clearly states that eligible populations for Supportive Housing services include individuals who are 16 or older. No exceptions are mentioned for younger individuals.",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 3,
-    "category": "Documentation Challenges",
-    "title": "Late Assessment Submission",
-    "scenario": "A provider completes an eligibility assessment on March 1st but doesn't submit it to Wellpoint until March 15th due to staff illness. Wellpoint receives the assessment on March 16th.",
-    "question": "Will Wellpoint accept this assessment?",
-    "options": [
-      "Yes, assessments are valid for 30 days",
-      "No, the assessment is more than 10 business days old",
-      "Yes, if the provider provides documentation of the illness",
-      "No, assessments must be submitted within 5 days"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 22 states that the assessment may not be more than 10 business days old when submitted to Wellpoint. March 1st to March 16th exceeds this limit.",
-    "pageReference": "Page 22"
-  },
-  {
-    "id": 4,
-    "category": "Service Authorization",
-    "title": "Pre-Authorization Services",
-    "scenario": "An enrollee in crisis needs immediate CSS services. The provider begins providing services on Monday while waiting for Wellpoint's authorization, which arrives Wednesday.",
-    "question": "Can the provider bill for Monday and Tuesday's services?",
-    "options": [
-      "Yes, crisis situations allow retroactive billing",
-      "No, CSS may not be provided or billed prior to authorization",
-      "Yes, with proper documentation",
-      "No, unless approved by supervisor"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 12 explicitly states that CSS may not be provided or billed prior to an authorization for service, with no exceptions mentioned.",
-    "pageReference": "Page 12"
-  },
-  {
-    "id": 5,
-    "category": "Billing Situations",
-    "title": "Service Limit Exception",
-    "scenario": "An enrollee has used 28 of their 30 authorized CSS days with 60 days remaining in their authorization period. They need continued intensive support due to a housing crisis.",
-    "question": "What should the provider do to continue services?",
-    "options": [
-      "Continue services and bill after the period ends",
-      "Submit an Exception to Rule (ETR) request with supporting documentation",
-      "Wait until the next authorization period",
-      "Transfer the enrollee to another provider"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 23 explains that providers can submit an ETR Form with a signed Single Case Agreement Form and supporting documentation for additional units when clinically necessary.",
-    "pageReference": "Page 23"
-  },
-  {
-    "id": 6,
-    "category": "Provider Compliance Issues",
-    "title": "Critical Incident Reporting Delay",
-    "scenario": "On Friday afternoon, a provider learns that an enrollee was hospitalized Thursday evening due to a mental health crisis. The provider reports the incident to Wellpoint on Monday morning.",
-    "question": "Did the provider meet reporting requirements?",
-    "options": [
-      "Yes, they reported within 72 hours",
-      "No, they should have reported on the same business day they became aware",
-      "Yes, weekends don't count for reporting",
-      "No, they should have reported within 24 hours"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 6 states that critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness. The provider became aware Friday and should have reported that day.",
-    "pageReference": "Page 6"
-  },
-  {
-    "id": 7,
-    "category": "Billing Situations",
-    "title": "Overpayment Discovery",
-    "scenario": "During an internal audit, a provider discovers they accidentally billed for 35 days of CSS services instead of 30 days for an enrollee three months ago. They received $560 in overpayment.",
-    "question": "What is the provider's obligation?",
-    "options": [
-      "Report and return the overpayment within 60 calendar days of discovery",
-      "Wait for Wellpoint to discover the error",
-      "Keep the overpayment if not discovered within 90 days",
-      "Report it at the annual audit"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Page 54 states that providers must return overpayments within sixty (60) calendar days after the date on which the overpayment was identified.",
-    "pageReference": "Page 54"
-  },
-  {
-    "id": 8,
-    "category": "Eligibility Determinations",
-    "title": "Institutional Contact Frequency",
-    "scenario": "An individual had one psychiatric hospitalization 11 months ago that lasted 45 days, and no other institutional contacts. They have significant mental health needs.",
-    "question": "Do they meet the risk factor criteria for CSS based on institutional contacts?",
-    "options": [
-      "Yes, one lengthy stay qualifies",
-      "No, they need frequent (2+) or lengthy (90+ days) stays",
-      "Yes, any psychiatric hospitalization qualifies",
-      "No, it must be within the last 6 months"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 9 defines frequent as 2+ contacts in 12 months and lengthy as 90+ consecutive days. One 45-day stay doesn't meet either criterion.",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 9,
-    "category": "Documentation Challenges",
-    "title": "Progress Note Requirements",
-    "scenario": "A provider writes: 'Met with client. Discussed housing. Client doing well. Plan to meet next week.' They include the date but no times.",
-    "question": "What critical documentation element is missing?",
-    "options": [
-      "Enrollee's response to interventions",
-      "Exact start and end times",
-      "SMART goals",
-      "All of the above"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Page 63-64 requires exact start and end times (not rounded), detailed interventions, enrollee responses, and connection to specific goals in the care plan.",
-    "pageReference": "Page 63-64"
-  },
-  {
-    "id": 10,
-    "category": "Service Authorization",
-    "title": "Inactive Enrollee Disenrollment",
-    "scenario": "A provider has tried to contact an enrollee 3 times over 4 weeks using phone calls and one home visit. The enrollee hasn't responded to any attempts.",
-    "question": "Can the provider initiate involuntary disenrollment?",
-    "options": [
-      "Yes, 3 attempts is sufficient",
-      "No, they need at least 4 attempts over 6+ weeks",
-      "Yes, if they document the attempts",
-      "No, only Wellpoint can disenroll"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 24 requires at least four attempts over a minimum of six weeks, with each attempt at least one week apart.",
-    "pageReference": "Page 24"
-  },
-  {
-    "id": 11,
-    "category": "Billing Situations",
-    "title": "Clean Claim Denial",
-    "scenario": "A provider submits a clean claim on January 15th. By March 20th, they haven't received payment or denial. The claim was complete and accurate when submitted.",
-    "question": "What is the provider entitled to?",
-    "options": [
-      "Automatic approval of the claim",
-      "Interest on the payment if approved",
-      "Double payment",
-      "Priority processing"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 52 states that if Wellpoint doesn't pay the claim within 61 calendar days, they will pay all applicable interest as required by law.",
-    "pageReference": "Page 52"
-  },
-  {
-    "id": 12,
-    "category": "Provider Compliance Issues",
-    "title": "Wait Time Violation",
-    "scenario": "An enrollee arrives for their 2:00 PM appointment. Due to provider delays, they aren't seen until 3:15 PM. The provider didn't notify the enrollee of the delay.",
-    "question": "What should the provider have done?",
-    "options": [
-      "Seen the enrollee within 30 minutes",
-      "Notified the enrollee immediately and offered a new appointment",
-      "Provided a discount for the wait",
-      "Apologized when they saw the enrollee"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 28 states that wait times shouldn't exceed 45 minutes, enrollees should be notified immediately of delays, and offered a new appointment if wait exceeds 45 minutes.",
-    "pageReference": "Page 28"
-  },
-  {
-    "id": 13,
-    "category": "Service Authorization",
-    "title": "TAP Funding Request",
-    "scenario": "A CSS enrollee needs $6,000 for first month's rent, last month's rent, and security deposit to move into an apartment. The monthly rent is $1,800.",
-    "question": "Can this be approved through standard TAP funding?",
-    "options": [
-      "Yes, it's for move-in assistance",
-      "No, it exceeds the $5,000 limit and needs an ETP",
-      "Yes, if split into multiple requests",
-      "No, TAP doesn't cover rent"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 67 states move-in assistance is limited to $5,000 total. Amounts above this require an Exception to Policy (ETP) request.",
-    "pageReference": "Page 67"
-  },
-  {
-    "id": 14,
-    "category": "Eligibility Determinations",
-    "title": "Employment Service Age Requirement",
-    "scenario": "A 17-year-old with autism spectrum disorder wants to enroll in supported employment services. They receive SSI benefits and meet all other IPS criteria.",
-    "question": "Are they eligible for IPS services?",
-    "options": [
-      "No, they must be 18 for employment services",
-      "Yes, they meet the minimum age of 16",
-      "No, they need work history first",
-      "Yes, but only with parental consent"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 14 states that individuals must be at least 16 years of age for IPS eligibility. At 17, they meet this requirement.",
-    "pageReference": "Page 14"
-  },
-  {
-    "id": 15,
-    "category": "Documentation Challenges",
-    "title": "Treatment Record Access",
-    "scenario": "An enrollee requests copies of their treatment record three times in one year - in January, June, and October. The provider charges $25 for the third copy.",
-    "question": "Is this charge appropriate?",
-    "options": [
-      "Yes, only one free copy per year is required",
-      "No, all copies must be free",
-      "Yes, but only $10 can be charged",
-      "No, unless pre-approved by Wellpoint"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Page 62 states that enrollees are entitled to one copy of their treatment record each year at no cost. Additional copies may incur charges.",
-    "pageReference": "Page 62"
-  },
-  {
-    "id": 16,
-    "category": "Billing Situations",
-    "title": "Supported Employment Units",
-    "scenario": "A provider bills for 8 units (2 hours) of H2023 pre-employment services for job coaching provided during a 4-hour shift. The provider was present the entire time.",
-    "question": "Is this billing appropriate?",
-    "options": [
-      "Yes, partial hours can be billed",
-      "No, all 16 units should be billed",
-      "Yes, if documented properly",
-      "No, only face-to-face time is billable"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Billing should reflect actual services provided. With proper documentation showing 2 hours of actual job coaching during the 4-hour shift, 8 units is appropriate.",
-    "pageReference": "Page 15-16"
-  },
-  {
-    "id": 17,
-    "category": "Provider Compliance Issues",
-    "title": "Fraud Suspicion Reporting",
-    "scenario": "A provider suspects a colleague is billing for services not provided, based on enrollee complaints and documentation discrepancies. They're unsure whether to report it.",
-    "question": "What is the provider's obligation?",
-    "options": [
-      "Report only if they have definitive proof",
-      "Report suspicions to the SIU hotline at 866-847-8247",
-      "Confront the colleague first",
-      "Wait for an audit to catch it"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 35 provides the SIU fraud referral hotline (866-847-8247) and indicates that suspected fraud should be reported.",
-    "pageReference": "Page 35"
-  },
-  {
-    "id": 18,
-    "category": "Service Authorization",
-    "title": "Enrollment Pause Impact",
-    "scenario": "During an enrollment pause, an enrollee's 180-day authorization expired 45 days ago. They still need services and meet all eligibility criteria.",
-    "question": "Can they be reauthorized?",
-    "options": [
-      "Yes, current enrollees can always be reauthorized",
-      "No, they missed the 30-day reauthorization window",
-      "Yes, with an exception request",
-      "No, they must wait for enrollment to reopen"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Page 26 states during enrollment pause, reauthorization must occur within 30 days of expiration. After that, enrollees go on the waitlist.",
-    "pageReference": "Page 26"
-  },
-  {
-    "id": 19,
-    "category": "Documentation Challenges",
-    "title": "Claim Dispute Timeline",
-    "scenario": "A provider receives a claim denial on March 1st. They disagree with the denial but don't file a reconsideration request until May 15th, citing staff turnover as the reason for delay.",
-    "question": "Will the reconsideration be processed?",
-    "options": [
-      "Yes, staff turnover is good cause",
-      "No, it exceeds the 24-month deadline",
-      "Yes, within 24 months from EOP date",
-      "No, without proof of good cause"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Page 58 states reconsideration requests are accepted within 24 months from the date on the EOP. This is well within that timeframe.",
-    "pageReference": "Page 58"
-  },
-  {
-    "id": 20,
-    "category": "Billing Situations",
-    "title": "Multiple Service Billing",
-    "scenario": "An enrollee receives both CSS (H0043) services in the morning and IPS pre-employment (H2023) services in the afternoon on the same day from the same provider.",
-    "question": "Can the provider bill for both services on the same day?",
-    "options": [
-      "No, only one FCS service per day",
-      "Yes, if properly documented and authorized",
-      "No, different providers must deliver each service",
-      "Yes, but at a reduced rate"
-    ],
-    "correctAnswer": 1,
-    "explanation": "With proper authorization for both services and appropriate documentation, providers can bill for different FCS services on the same day.",
-    "pageReference": "Multiple references"
-  }
-]
+{
+  "scenarios": [
+    {
+      "id": "s_001",
+      "title": "Telephone Contact Billing",
+      "description": "A CSS provider has a 12-minute phone call with an enrollee to check on their housing stability. The enrollee was distressed and needed support. Can the provider bill for this service?",
+      "question": "Is this telephone contact billable?",
+      "options": {
+        "A": "Yes, all phone calls with enrollees are billable",
+        "B": "No, the call must be at least 15 minutes to be billable",
+        "C": "Yes, but only if it's video call",
+        "D": "No, phone calls are never billable"
+      },
+      "correct": "B",
+      "explanation": "According to page 12, telephone calls of at least 15 minutes are billable. Since this call was only 12 minutes, it cannot be billed.",
+      "studyPages": [12],
+      "relatedConcepts": ["Billing Requirements", "Telephone Contact", "Documentation"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_002",
+      "title": "Age-Based Eligibility",
+      "description": "A 15-year-old youth who has been chronically homeless for the past year is referred for Supportive Housing services. They meet all other eligibility criteria including mental health needs.",
+      "question": "Can this youth be enrolled in CSS?",
+      "options": {
+        "A": "Yes, age exceptions can be made for homeless youth",
+        "B": "No, they must be at least 16 years old",
+        "C": "Yes, if they have parental consent",
+        "D": "No, they must be 18 or older"
+      },
+      "correct": "B",
+      "explanation": "Page 9 clearly states that eligible populations for Supportive Housing services include individuals who are 16 or older. No exceptions are mentioned for younger individuals.",
+      "studyPages": [9],
+      "relatedConcepts": ["CSS Eligibility", "Age Requirements", "Supportive Housing"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_003",
+      "title": "Late Assessment Submission",
+      "description": "A provider completes an eligibility assessment on March 1st but doesn't submit it to Wellpoint until March 15th due to staff illness. Wellpoint receives the assessment on March 16th.",
+      "question": "Will Wellpoint accept this assessment?",
+      "options": {
+        "A": "Yes, assessments are valid for 30 days",
+        "B": "No, the assessment is more than 10 business days old",
+        "C": "Yes, if the provider provides documentation of the illness",
+        "D": "No, assessments must be submitted within 5 days"
+      },
+      "correct": "B",
+      "explanation": "Page 22 states that the assessment may not be more than 10 business days old when submitted to Wellpoint. March 1st to March 16th exceeds this limit.",
+      "studyPages": [22],
+      "relatedConcepts": ["Assessment Requirements", "Documentation Timelines", "Submission Standards"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_004",
+      "title": "Pre-Authorization Services",
+      "description": "An enrollee in crisis needs immediate CSS services. The provider begins providing services on Monday while waiting for Wellpoint's authorization, which arrives Wednesday.",
+      "question": "Can the provider bill for Monday and Tuesday's services?",
+      "options": {
+        "A": "Yes, crisis situations allow retroactive billing",
+        "B": "No, CSS may not be provided or billed prior to authorization",
+        "C": "Yes, with proper documentation",
+        "D": "No, unless approved by supervisor"
+      },
+      "correct": "B",
+      "explanation": "Page 12 explicitly states that CSS may not be provided or billed prior to an authorization for service, with no exceptions mentioned.",
+      "studyPages": [12],
+      "relatedConcepts": ["Prior Authorization", "CSS Services", "Billing Rules"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_005",
+      "title": "Service Limit Exception",
+      "description": "An enrollee has used 28 of their 30 authorized CSS days with 60 days remaining in their authorization period. They need continued intensive support due to a housing crisis.",
+      "question": "What should the provider do to continue services?",
+      "options": {
+        "A": "Continue services and bill after the period ends",
+        "B": "Submit an Exception to Rule (ETR) request with supporting documentation",
+        "C": "Wait until the next authorization period",
+        "D": "Transfer the enrollee to another provider"
+      },
+      "correct": "B",
+      "explanation": "Page 23 explains that providers can submit an ETR Form with a signed Single Case Agreement Form and supporting documentation for additional units when clinically necessary.",
+      "studyPages": [23],
+      "relatedConcepts": ["ETR Process", "Service Limits", "Authorization Extensions"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_006",
+      "title": "Critical Incident Reporting Delay",
+      "description": "On Friday afternoon, a provider learns that an enrollee was hospitalized Thursday evening due to a mental health crisis. The provider reports the incident to Wellpoint on Monday morning.",
+      "question": "Did the provider meet reporting requirements?",
+      "options": {
+        "A": "Yes, they reported within 72 hours",
+        "B": "No, they should have reported on the same business day they became aware",
+        "C": "Yes, weekends don't count for reporting",
+        "D": "No, they should have reported within 24 hours"
+      },
+      "correct": "B",
+      "explanation": "Page 6 states that critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness. The provider became aware Friday and should have reported that day.",
+      "studyPages": [6],
+      "relatedConcepts": ["Critical Incident Reporting", "Provider Compliance", "Reporting Timelines"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_007",
+      "title": "Overpayment Discovery",
+      "description": "During an internal audit, a provider discovers they accidentally billed for 35 days of CSS services instead of 30 days for an enrollee three months ago. They received $560 in overpayment.",
+      "question": "What is the provider's obligation?",
+      "options": {
+        "A": "Report and return the overpayment within 60 calendar days of discovery",
+        "B": "Wait for Wellpoint to discover the error",
+        "C": "Keep the overpayment if not discovered within 90 days",
+        "D": "Report it at the annual audit"
+      },
+      "correct": "A",
+      "explanation": "Page 54 states that providers must return overpayments within sixty (60) calendar days after the date on which the overpayment was identified.",
+      "studyPages": [54],
+      "relatedConcepts": ["Overpayment Recovery", "Billing Compliance", "Provider Obligations"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_008",
+      "title": "Institutional Contact Frequency",
+      "description": "An individual had one psychiatric hospitalization 11 months ago that lasted 45 days, and no other institutional contacts. They have significant mental health needs.",
+      "question": "Do they meet the risk factor criteria for CSS based on institutional contacts?",
+      "options": {
+        "A": "Yes, one lengthy stay qualifies",
+        "B": "No, they need frequent (2+) or lengthy (90+ days) stays",
+        "C": "Yes, any psychiatric hospitalization qualifies",
+        "D": "No, it must be within the last 6 months"
+      },
+      "correct": "B",
+      "explanation": "Page 9 defines frequent as 2+ contacts in 12 months and lengthy as 90+ consecutive days. One 45-day stay doesn't meet either criterion.",
+      "studyPages": [9],
+      "relatedConcepts": ["Risk Factors", "Eligibility Criteria", "Institutional Contacts"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_009",
+      "title": "Progress Note Requirements",
+      "description": "A provider writes: 'Met with client. Discussed housing. Client doing well. Plan to meet next week.' They include the date but no times.",
+      "question": "What critical documentation element is missing?",
+      "options": {
+        "A": "Enrollee's response to interventions",
+        "B": "Exact start and end times",
+        "C": "SMART goals",
+        "D": "All of the above"
+      },
+      "correct": "D",
+      "explanation": "Page 63-64 requires exact start and end times (not rounded), detailed interventions, enrollee responses, and connection to specific goals in the care plan.",
+      "studyPages": [63, 64],
+      "relatedConcepts": ["DARP Format", "Progress Notes", "Documentation Standards"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_010",
+      "title": "Inactive Enrollee Disenrollment",
+      "description": "A provider has tried to contact an enrollee 3 times over 4 weeks using phone calls and one home visit. The enrollee hasn't responded to any attempts.",
+      "question": "Can the provider initiate involuntary disenrollment?",
+      "options": {
+        "A": "Yes, 3 attempts is sufficient",
+        "B": "No, they need at least 4 attempts over 6+ weeks",
+        "C": "Yes, if they document the attempts",
+        "D": "No, only Wellpoint can disenroll"
+      },
+      "correct": "B",
+      "explanation": "Page 24 requires at least four attempts over a minimum of six weeks, with each attempt at least one week apart.",
+      "studyPages": [24],
+      "relatedConcepts": ["Disenrollment Process", "Due Diligence", "Provider Requirements"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_011",
+      "title": "Clean Claim Denial",
+      "description": "A provider submits a clean claim on January 15th. By March 20th, they haven't received payment or denial. The claim was complete and accurate when submitted.",
+      "question": "What is the provider entitled to?",
+      "options": {
+        "A": "Automatic approval of the claim",
+        "B": "Interest on the payment if approved",
+        "C": "Double payment",
+        "D": "Priority processing"
+      },
+      "correct": "B",
+      "explanation": "Page 52 states that if Wellpoint doesn't pay the claim within 61 calendar days, they will pay all applicable interest as required by law.",
+      "studyPages": [52],
+      "relatedConcepts": ["Clean Claims", "Payment Timelines", "Interest Payments"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_012",
+      "title": "Wait Time Violation",
+      "description": "An enrollee arrives for their 2:00 PM appointment. Due to provider delays, they aren't seen until 3:15 PM. The provider didn't notify the enrollee of the delay.",
+      "question": "What should the provider have done?",
+      "options": {
+        "A": "Seen the enrollee within 30 minutes",
+        "B": "Notified the enrollee immediately and offered a new appointment",
+        "C": "Provided a discount for the wait",
+        "D": "Apologized when they saw the enrollee"
+      },
+      "correct": "B",
+      "explanation": "Page 28 states that wait times shouldn't exceed 45 minutes, enrollees should be notified immediately of delays, and offered a new appointment if wait exceeds 45 minutes.",
+      "studyPages": [28],
+      "relatedConcepts": ["Wait Time Standards", "Provider Compliance", "Customer Service"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_013",
+      "title": "TAP Funding Request",
+      "description": "A CSS enrollee needs $6,000 for first month's rent, last month's rent, and security deposit to move into an apartment. The monthly rent is $1,800.",
+      "question": "Can this be approved through standard TAP funding?",
+      "options": {
+        "A": "Yes, it's for move-in assistance",
+        "B": "No, it exceeds the $5,000 limit and needs an ETP",
+        "C": "Yes, if split into multiple requests",
+        "D": "No, TAP doesn't cover rent"
+      },
+      "correct": "B",
+      "explanation": "Page 67 states move-in assistance is limited to $5,000 total. Amounts above this require an Exception to Policy (ETP) request.",
+      "studyPages": [67],
+      "relatedConcepts": ["TAP Funding", "Move-in Assistance", "Exception to Policy"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_014",
+      "title": "Employment Service Age Requirement",
+      "description": "A 17-year-old with autism spectrum disorder wants to enroll in supported employment services. They receive SSI benefits and meet all other IPS criteria.",
+      "question": "Are they eligible for IPS services?",
+      "options": {
+        "A": "No, they must be 18 for employment services",
+        "B": "Yes, they meet the minimum age of 16",
+        "C": "No, they need work history first",
+        "D": "Yes, but only with parental consent"
+      },
+      "correct": "B",
+      "explanation": "Page 14 states that individuals must be at least 16 years of age for IPS eligibility. At 17, they meet this requirement.",
+      "studyPages": [14],
+      "relatedConcepts": ["IPS Eligibility", "Age Requirements", "Supported Employment"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_015",
+      "title": "Treatment Record Access",
+      "description": "An enrollee requests copies of their treatment record three times in one year - in January, June, and October. The provider charges $25 for the third copy.",
+      "question": "Is this charge appropriate?",
+      "options": {
+        "A": "Yes, only one free copy per year is required",
+        "B": "No, all copies must be free",
+        "C": "Yes, but only $10 can be charged",
+        "D": "No, unless pre-approved by Wellpoint"
+      },
+      "correct": "A",
+      "explanation": "Page 62 states that enrollees are entitled to one copy of their treatment record each year at no cost. Additional copies may incur charges.",
+      "studyPages": [62],
+      "relatedConcepts": ["Treatment Records", "Enrollee Rights", "Documentation Access"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_016",
+      "title": "Supported Employment Units",
+      "description": "A provider bills for 8 units (2 hours) of H2023 pre-employment services for job coaching provided during a 4-hour shift. The provider was present the entire time.",
+      "question": "Is this billing appropriate?",
+      "options": {
+        "A": "Yes, partial hours can be billed",
+        "B": "No, all 16 units should be billed",
+        "C": "Yes, if documented properly",
+        "D": "No, only face-to-face time is billable"
+      },
+      "correct": "C",
+      "explanation": "Billing should reflect actual services provided. With proper documentation showing 2 hours of actual job coaching during the 4-hour shift, 8 units is appropriate.",
+      "studyPages": [15, 16],
+      "relatedConcepts": ["H2023 Billing", "Unit Calculations", "Documentation Requirements"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_017",
+      "title": "Fraud Suspicion Reporting",
+      "description": "A provider suspects a colleague is billing for services not provided, based on enrollee complaints and documentation discrepancies. They're unsure whether to report it.",
+      "question": "What is the provider's obligation?",
+      "options": {
+        "A": "Report only if they have definitive proof",
+        "B": "Report suspicions to the SIU hotline at 866-847-8247",
+        "C": "Confront the colleague first",
+        "D": "Wait for an audit to catch it"
+      },
+      "correct": "B",
+      "explanation": "Page 35 provides the SIU fraud referral hotline (866-847-8247) and indicates that suspected fraud should be reported.",
+      "studyPages": [35],
+      "relatedConcepts": ["Fraud Reporting", "SIU Process", "Provider Obligations"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_018",
+      "title": "Enrollment Pause Impact",
+      "description": "During an enrollment pause, an enrollee's 180-day authorization expired 45 days ago. They still need services and meet all eligibility criteria.",
+      "question": "Can they be reauthorized?",
+      "options": {
+        "A": "Yes, current enrollees can always be reauthorized",
+        "B": "No, they missed the 30-day reauthorization window",
+        "C": "Yes, with an exception request",
+        "D": "No, they must wait for enrollment to reopen"
+      },
+      "correct": "B",
+      "explanation": "Page 26 states during enrollment pause, reauthorization must occur within 30 days of expiration. After that, enrollees go on the waitlist.",
+      "studyPages": [26],
+      "relatedConcepts": ["Enrollment Pause", "Reauthorization Window", "Waitlist Management"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_019",
+      "title": "Claim Dispute Timeline",
+      "description": "A provider receives a claim denial on March 1st. They disagree with the denial but don't file a reconsideration request until May 15th, citing staff turnover as the reason for delay.",
+      "question": "Will the reconsideration be processed?",
+      "options": {
+        "A": "Yes, staff turnover is good cause",
+        "B": "No, it exceeds the 24-month deadline",
+        "C": "Yes, within 24 months from EOP date",
+        "D": "No, without proof of good cause"
+      },
+      "correct": "C",
+      "explanation": "Page 58 states reconsideration requests are accepted within 24 months from the date on the EOP. This is well within that timeframe.",
+      "studyPages": [58],
+      "relatedConcepts": ["Reconsideration Process", "Claim Disputes", "Filing Deadlines"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_020",
+      "title": "Multiple Service Billing",
+      "description": "An enrollee receives both CSS (H0043) services in the morning and IPS pre-employment (H2023) services in the afternoon on the same day from the same provider.",
+      "question": "Can the provider bill for both services on the same day?",
+      "options": {
+        "A": "No, only one FCS service per day",
+        "B": "Yes, if properly documented and authorized",
+        "C": "No, different providers must deliver each service",
+        "D": "Yes, but at a reduced rate"
+      },
+      "correct": "B",
+      "explanation": "With proper authorization for both services and appropriate documentation, providers can bill for different FCS services on the same day.",
+      "studyPages": [9, 15],
+      "relatedConcepts": ["Multiple Services", "Billing Guidelines", "Service Coordination"],
+      "difficulty": "hard"
+    }
+  ]
+}

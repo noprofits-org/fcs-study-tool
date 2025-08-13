@@ -1,317 +1,385 @@
-[
-  {
-    "id": 1,
-    "term": "FCS",
-    "definition": "Foundational Community Supports - Targeted Apple Health (Medicaid) benefits to assist eligible individuals with complex health needs obtain and maintain stable housing and employment.",
-    "category": "Program Overview",
-    "pageReference": "Page 8"
-  },
-  {
-    "id": 2,
-    "term": "TPA",
-    "definition": "Third-Party Administrator - Wellpoint serves as the single TPA contracting with Washington Health Care Authority for the FCS program, facilitating implementation, enhancing quality, supporting providers and paying claims.",
-    "category": "Program Overview",
-    "pageReference": "Page 8"
-  },
-  {
-    "id": 3,
-    "term": "CSS",
-    "definition": "Community Support Services - Services that support individuals with their ability to prepare for and transition to housing, and maintaining tenancy once housing is secured.",
-    "category": "Service Types",
-    "pageReference": "Page 10"
-  },
-  {
-    "id": 4,
-    "term": "IPS",
-    "definition": "Individual Placement and Support - Evidence-based supported employment services that help eligible individuals obtain and maintain stable competitive employment in integrated community settings.",
-    "category": "Service Types",
-    "pageReference": "Page 12"
-  },
-  {
-    "id": 5,
-    "term": "H0043",
-    "definition": "Billing code for Supportive Housing services, per diem, with a rate of $112 per day and benefit limitation of 30 days over a 180-day period.",
-    "category": "Billing Codes",
-    "pageReference": "Page 9, 44"
-  },
-  {
-    "id": 6,
-    "term": "H2023",
-    "definition": "Billing code for Pre-employment services - supported employment activities that assist an individual with obtaining employment, billed per 15-minute unit at $27 per unit.",
-    "category": "Billing Codes",
-    "pageReference": "Page 15, 44"
-  },
-  {
-    "id": 7,
-    "term": "H2025",
-    "definition": "Billing code for Employment-sustaining services - ongoing supports to maintain employment, billed per 15-minute unit at $27 per unit.",
-    "category": "Billing Codes",
-    "pageReference": "Page 16, 44"
-  },
-  {
-    "id": 8,
-    "term": "HCBS",
-    "definition": "Home- and Community-Based Services - Services intended to help Apple Health beneficiaries with complex health needs transition to and maintain community-based housing and employment resources.",
-    "category": "Program Overview",
-    "pageReference": "Page 8"
-  },
-  {
-    "id": 9,
-    "term": "Clean Claim",
-    "definition": "A request for payment that is submitted on time, accurate, on a HIPAA-compliant form, requires no further information to be processed, and is not under investigation for fraud.",
-    "category": "Billing",
-    "pageReference": "Page 52"
-  },
-  {
-    "id": 10,
-    "term": "ETR",
-    "definition": "Exception to Rule/Limited Extension Request - A request for additional supported employment or supportive housing units above the initial authorized amount when clinically necessary.",
-    "category": "Authorization",
-    "pageReference": "Page 23"
-  },
-  {
-    "id": 11,
-    "term": "DARP Format",
-    "definition": "Description, Assessment, Response, Plan - A commonly used template for documenting enrollee interactions in progress notes containing all required elements for effective documentation.",
-    "category": "Documentation",
-    "pageReference": "Page 63"
-  },
-  {
-    "id": 12,
-    "term": "SMART Goals",
-    "definition": "Goals that are Specific, Measurable, Achievable, Relevant, and Time-Bound - required format for treatment plan goals.",
-    "category": "Documentation",
-    "pageReference": "Page 63"
-  },
-  {
-    "id": 13,
-    "term": "Pre-tenancy Supports",
-    "definition": "CSS activities including functional needs assessments, housing preference identification, assistance with applications, budgeting support, and developing individualized community integration plans.",
-    "category": "Service Components",
-    "pageReference": "Page 10"
-  },
-  {
-    "id": 14,
-    "term": "Tenancy-sustaining Services",
-    "definition": "CSS activities that help individuals maintain housing including service planning, care coordination, entitlement assistance, independent living skills development, and landlord communication support.",
-    "category": "Service Components",
-    "pageReference": "Page 11"
-  },
-  {
-    "id": 15,
-    "term": "Chronically Homeless",
-    "definition": "As defined by U.S. Housing and Urban Development (HUD), includes individuals who previously met HUD's definition but have been housed in the last 60 days.",
-    "category": "Eligibility",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 16,
-    "term": "ADL",
-    "definition": "Activities of Daily Living - Basic self-care tasks; needing assistance with three or more ADLs is one health needs-based criteria for FCS eligibility.",
-    "category": "Eligibility",
-    "pageReference": "Page 9, 15"
-  },
-  {
-    "id": 17,
-    "term": "PRISM Score",
-    "definition": "Predictive Risk Intelligence System score - A score of 1.5 or above qualifies as a risk factor for Supportive Housing eligibility.",
-    "category": "Eligibility",
-    "pageReference": "Page 9"
-  },
-  {
-    "id": 18,
-    "term": "Competitive Employment",
-    "definition": "Employment paying at least minimum wage, where employees perform the same work as others without disabilities, in community settings, not reserved for people with disabilities.",
-    "category": "Employment",
-    "pageReference": "Page 12"
-  },
-  {
-    "id": 19,
-    "term": "Zero Exclusion",
-    "definition": "IPS principle that every covered person who wants to work is eligible regardless of diagnosis, symptoms, work history, substance abuse, or cognitive impairment.",
-    "category": "Employment",
-    "pageReference": "Page 13"
-  },
-  {
-    "id": 20,
-    "term": "TAP",
-    "definition": "Transition Assistance Program - Time-limited, flexible funding assistance for FCS-SH enrollees covering housing-related fees, move-in costs, and non-refundable fees.",
-    "category": "Financial Assistance",
-    "pageReference": "Page 65"
-  },
-  {
-    "id": 21,
-    "term": "AHAH-RAP",
-    "definition": "Apple Health and Homes Rental Assistance Program - Connects supportive housing services with rental assistance through tenant-based vouchers.",
-    "category": "Financial Assistance",
-    "pageReference": "Page 69"
-  },
-  {
-    "id": 22,
-    "term": "Availity",
-    "definition": "Wellpoint's exclusive partner for managing Electronic Data Interchange (EDI) transactions and electronic claims submission. Payer ID: WLPNT.",
-    "category": "Claims Processing",
-    "pageReference": "Page 44, 51"
-  },
-  {
-    "id": 23,
-    "term": "Timely Filing",
-    "definition": "The requirement to submit claims within 365 calendar days of the date of service.",
-    "category": "Billing",
-    "pageReference": "Page 20"
-  },
-  {
-    "id": 24,
-    "term": "Person-Centered Planning",
-    "definition": "Enrollee-driven planning approach where service/care plans reflect enrollee needs, choices, strengths and goals, with evidence of enrollee authorship.",
-    "category": "Service Delivery",
-    "pageReference": "Page 63"
-  },
-  {
-    "id": 25,
-    "term": "Collateral Services",
-    "definition": "Work performed on behalf of an enrollee including external care coordination, housing search, landlord engagement, and employer outreach.",
-    "category": "Service Components",
-    "pageReference": "Page 10, 16"
-  },
-  {
-    "id": 26,
-    "term": "Job Carving",
-    "definition": "Working with enrollee and employer to modify an existing job description to contain some but not all tasks when an applicant cannot perform all duties.",
-    "category": "Employment",
-    "pageReference": "Page 16"
-  },
-  {
-    "id": 27,
-    "term": "Benefits Counseling",
-    "definition": "Helping enrollees understand how employment income impacts government benefits like Social Security and Medicaid to make informed decisions about work.",
-    "category": "Employment",
-    "pageReference": "Page 13"
-  },
-  {
-    "id": 28,
-    "term": "Follow-along Supports",
-    "definition": "Time-unlimited, individualized employment support provided as long as the enrollee wants and needs it, with the goal of increasing independence.",
-    "category": "Employment",
-    "pageReference": "Page 13, 17"
-  },
-  {
-    "id": 29,
-    "term": "Critical Incident",
-    "definition": "Events that must be reported to Wellpoint on the same business day of occurrence or provider awareness.",
-    "category": "Quality & Compliance",
-    "pageReference": "Page 6"
-  },
-  {
-    "id": 30,
-    "term": "Fidelity Review",
-    "definition": "Assessment measuring whether a program operates according to standardized practices using objective rating systems to determine adherence to established models.",
-    "category": "Quality & Compliance",
-    "pageReference": "Page 32"
-  },
-  {
-    "id": 31,
-    "term": "SIU",
-    "definition": "Special Investigations Unit - Reviews all reports of provider or member fraud, waste and abuse. Fraud hotline: 866-847-8247.",
-    "category": "Compliance",
-    "pageReference": "Page 35"
-  },
-  {
-    "id": 32,
-    "term": "Overpayment",
-    "definition": "Claims paid in error that must be returned within 60 calendar days of identification to avoid False Claims Act liability.",
-    "category": "Billing",
-    "pageReference": "Page 54"
-  },
-  {
-    "id": 33,
-    "term": "Reconsideration",
-    "definition": "First step in provider payment dispute process - initial request to investigate the outcome of a finalized claim, must be filed within 24 months.",
-    "category": "Claims Disputes",
-    "pageReference": "Page 58"
-  },
-  {
-    "id": 34,
-    "term": "NPI",
-    "definition": "National Provider Identifier - Type 2 organization NPI required for FCS provider contracting.",
-    "category": "Provider Requirements",
-    "pageReference": "Page 6, 30"
-  },
-  {
-    "id": 35,
-    "term": "ProviderOne ID",
-    "definition": "Medicaid ID number assigned by Washington State Health Care Authority required for FCS provider enrollment.",
-    "category": "Provider Requirements",
-    "pageReference": "Page 30"
-  },
-  {
-    "id": 36,
-    "term": "CESP",
-    "definition": "Certified Employment Support Professional - Certification by the Employment Support Professional Certification Council acceptable for supported employment staff.",
-    "category": "Provider Qualifications",
-    "pageReference": "Page 29"
-  },
-  {
-    "id": 37,
-    "term": "CARF",
-    "definition": "Commission on Accreditation of Rehabilitation Facilities - Accreditation in Employment Services meets supported employment provider requirements.",
-    "category": "Provider Qualifications",
-    "pageReference": "Page 29"
-  },
-  {
-    "id": 38,
-    "term": "Good Cause",
-    "definition": "Valid reasons for delayed claim filing including administrative errors, incorrect enrollee information, unavoidable delays in documentation, or circumstances beyond provider control.",
-    "category": "Claims Processing",
-    "pageReference": "Page 56-57"
-  },
-  {
-    "id": 39,
-    "term": "ERA",
-    "definition": "Electronic Remittance Advice - Electronic data interchange transaction (X12 835) providing explanation of payment for claims.",
-    "category": "Claims Processing",
-    "pageReference": "Page 49"
-  },
-  {
-    "id": 40,
-    "term": "EFT",
-    "definition": "Electronic Funds Transfer - Secure method to receive claim payments directly to provider's bank account using automated clearinghouse network.",
-    "category": "Payment Methods",
-    "pageReference": "Page 49"
-  },
-  {
-    "id": 41,
-    "term": "HMIS",
-    "definition": "Homeless Management Information System - Database that may contain documentation to validate health needs or risk factors for FCS eligibility.",
-    "category": "Data Systems",
-    "pageReference": "Page 71"
-  },
-  {
-    "id": 42,
-    "term": "FMR",
-    "definition": "Fair Market Rent - TAP monthly rent must be under 120% FMR; AHAH-RAP covers up to 130% FMR.",
-    "category": "Financial Assistance",
-    "pageReference": "Page 67, 69"
-  },
-  {
-    "id": 43,
-    "term": "Single Case Agreement",
-    "definition": "Form confirming Wellpoint authorization for services required for specific episode of care, must accompany ETR requests.",
-    "category": "Authorization",
-    "pageReference": "Page 24"
-  },
-  {
-    "id": 44,
-    "term": "Prepayment Review",
-    "definition": "Process where providers must submit medical records with each claim for SIU review when identified as outliers or for unusual billing practices.",
-    "category": "Compliance",
-    "pageReference": "Page 38"
-  },
-  {
-    "id": 45,
-    "term": "Authorization Period",
-    "definition": "180-day timeframe during which FCS services are authorized; can be renewed if enrollee continues to meet eligibility criteria.",
-    "category": "Service Authorization",
-    "pageReference": "Page 11, 16"
-  }
-]
+{
+  "categories": [
+    "Billing",
+    "Billing Codes",
+    "Claims Disputes",
+    "Claims Processing",
+    "Compliance",
+    "Data Systems",
+    "Documentation",
+    "Eligibility",
+    "Employment",
+    "Financial Assistance",
+    "Payment Methods",
+    "Program Overview",
+    "Provider Qualifications",
+    "Provider Requirements",
+    "Quality & Compliance",
+    "Service Authorization",
+    "Service Components",
+    "Service Delivery",
+    "Service Types"
+  ],
+  "terms": [
+    {
+      "id": "term_001",
+      "term": "FCS",
+      "definition": "Foundational Community Supports - Targeted Apple Health (Medicaid) benefits to assist eligible individuals with complex health needs obtain and maintain stable housing and employment.",
+      "category": "Program Overview",
+      "testRelevant": true,
+      "keywords": ["foundational", "community", "supports"]
+    },
+    {
+      "id": "term_002",
+      "term": "TPA",
+      "definition": "Third-Party Administrator - Wellpoint serves as the single TPA contracting with Washington Health Care Authority for the FCS program, facilitating implementation, enhancing quality, supporting providers and paying claims.",
+      "category": "Program Overview",
+      "testRelevant": true,
+      "keywords": ["third-party", "administrator", "wellpoint"]
+    },
+    {
+      "id": "term_003",
+      "term": "CSS",
+      "definition": "Community Support Services - Services that support individuals with their ability to prepare for and transition to housing, and maintaining tenancy once housing is secured.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["community", "support", "housing"]
+    },
+    {
+      "id": "term_004",
+      "term": "IPS",
+      "definition": "Individual Placement and Support - Evidence-based supported employment services that help eligible individuals obtain and maintain stable competitive employment in integrated community settings.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["employment", "placement", "support"]
+    },
+    {
+      "id": "term_005",
+      "term": "H0043",
+      "definition": "Billing code for Supportive Housing services, per diem, with a rate of $112 per day and benefit limitation of 30 days over a 180-day period.",
+      "category": "Billing Codes",
+      "testRelevant": true,
+      "keywords": ["billing", "housing", "per diem"]
+    },
+    {
+      "id": "term_006",
+      "term": "H2023",
+      "definition": "Billing code for Pre-employment services - supported employment activities that assist an individual with obtaining employment, billed per 15-minute unit at $27 per unit.",
+      "category": "Billing Codes",
+      "testRelevant": true,
+      "keywords": ["pre-employment", "billing", "units"]
+    },
+    {
+      "id": "term_007",
+      "term": "H2025",
+      "definition": "Billing code for Employment-sustaining services - ongoing supports to maintain employment, billed per 15-minute unit at $27 per unit.",
+      "category": "Billing Codes",
+      "testRelevant": true,
+      "keywords": ["employment-sustaining", "billing", "units"]
+    },
+    {
+      "id": "term_008",
+      "term": "HCBS",
+      "definition": "Home- and Community-Based Services - Services intended to help Apple Health beneficiaries with complex health needs transition to and maintain community-based housing and employment resources.",
+      "category": "Program Overview",
+      "testRelevant": true,
+      "keywords": ["home", "community-based", "services"]
+    },
+    {
+      "id": "term_009",
+      "term": "Clean Claim",
+      "definition": "A request for payment that is submitted on time, accurate, on a HIPAA-compliant form, requires no further information to be processed, and is not under investigation for fraud.",
+      "category": "Billing",
+      "testRelevant": true,
+      "keywords": ["clean", "claim", "payment"]
+    },
+    {
+      "id": "term_010",
+      "term": "ETR",
+      "definition": "Exception to Rule/Limited Extension Request - A request for additional supported employment or supportive housing units above the initial authorized amount when clinically necessary.",
+      "category": "Service Authorization",
+      "testRelevant": true,
+      "keywords": ["exception", "extension", "authorization"]
+    },
+    {
+      "id": "term_011",
+      "term": "DARP Format",
+      "definition": "Description, Assessment, Response, Plan - A commonly used template for documenting enrollee interactions in progress notes containing all required elements for effective documentation.",
+      "category": "Documentation",
+      "testRelevant": true,
+      "keywords": ["documentation", "progress notes", "format"]
+    },
+    {
+      "id": "term_012",
+      "term": "SMART Goals",
+      "definition": "Goals that are Specific, Measurable, Achievable, Relevant, and Time-Bound - required format for treatment plan goals.",
+      "category": "Documentation",
+      "testRelevant": true,
+      "keywords": ["goals", "treatment plan", "measurable"]
+    },
+    {
+      "id": "term_013",
+      "term": "Pre-tenancy Supports",
+      "definition": "CSS activities including functional needs assessments, housing preference identification, assistance with applications, budgeting support, and developing individualized community integration plans.",
+      "category": "Service Components",
+      "testRelevant": true,
+      "keywords": ["pre-tenancy", "housing", "assessment"]
+    },
+    {
+      "id": "term_014",
+      "term": "Tenancy-sustaining Services",
+      "definition": "CSS activities that help individuals maintain housing including service planning, care coordination, entitlement assistance, independent living skills development, and landlord communication support.",
+      "category": "Service Components",
+      "testRelevant": true,
+      "keywords": ["tenancy", "sustaining", "housing"]
+    },
+    {
+      "id": "term_015",
+      "term": "Chronically Homeless",
+      "definition": "As defined by U.S. Housing and Urban Development (HUD), includes individuals who previously met HUD's definition but have been housed in the last 60 days.",
+      "category": "Eligibility",
+      "testRelevant": true,
+      "keywords": ["homeless", "HUD", "eligibility"]
+    },
+    {
+      "id": "term_016",
+      "term": "ADL",
+      "definition": "Activities of Daily Living - Basic self-care tasks; needing assistance with three or more ADLs is one health needs-based criteria for FCS eligibility.",
+      "category": "Eligibility",
+      "testRelevant": true,
+      "keywords": ["activities", "daily living", "self-care"]
+    },
+    {
+      "id": "term_017",
+      "term": "PRISM Score",
+      "definition": "Predictive Risk Intelligence System score - A score of 1.5 or above qualifies as a risk factor for Supportive Housing eligibility.",
+      "category": "Eligibility",
+      "testRelevant": true,
+      "keywords": ["predictive", "risk", "score"]
+    },
+    {
+      "id": "term_018",
+      "term": "Competitive Employment",
+      "definition": "Employment paying at least minimum wage, where employees perform the same work as others without disabilities, in community settings, not reserved for people with disabilities.",
+      "category": "Employment",
+      "testRelevant": true,
+      "keywords": ["competitive", "minimum wage", "integrated"]
+    },
+    {
+      "id": "term_019",
+      "term": "Zero Exclusion",
+      "definition": "IPS principle that every covered person who wants to work is eligible regardless of diagnosis, symptoms, work history, substance abuse, or cognitive impairment.",
+      "category": "Employment",
+      "testRelevant": true,
+      "keywords": ["zero", "exclusion", "eligibility"]
+    },
+    {
+      "id": "term_020",
+      "term": "TAP",
+      "definition": "Transition Assistance Program - Time-limited, flexible funding assistance for FCS-SH enrollees covering housing-related fees, move-in costs, and non-refundable fees.",
+      "category": "Financial Assistance",
+      "testRelevant": true,
+      "keywords": ["transition", "assistance", "funding"]
+    },
+    {
+      "id": "term_021",
+      "term": "AHAH-RAP",
+      "definition": "Apple Health and Homes Rental Assistance Program - Connects supportive housing services with rental assistance through tenant-based vouchers.",
+      "category": "Financial Assistance",
+      "testRelevant": true,
+      "keywords": ["rental", "assistance", "vouchers"]
+    },
+    {
+      "id": "term_022",
+      "term": "Availity",
+      "definition": "Wellpoint's exclusive partner for managing Electronic Data Interchange (EDI) transactions and electronic claims submission. Payer ID: WLPNT.",
+      "category": "Claims Processing",
+      "testRelevant": true,
+      "keywords": ["electronic", "claims", "EDI"]
+    },
+    {
+      "id": "term_023",
+      "term": "Timely Filing",
+      "definition": "The requirement to submit claims within 365 calendar days of the date of service.",
+      "category": "Billing",
+      "testRelevant": true,
+      "keywords": ["timely", "filing", "365 days"]
+    },
+    {
+      "id": "term_024",
+      "term": "Person-Centered Planning",
+      "definition": "Enrollee-driven planning approach where service/care plans reflect enrollee needs, choices, strengths and goals, with evidence of enrollee authorship.",
+      "category": "Service Delivery",
+      "testRelevant": true,
+      "keywords": ["person-centered", "enrollee", "planning"]
+    },
+    {
+      "id": "term_025",
+      "term": "Collateral Services",
+      "definition": "Work performed on behalf of an enrollee including external care coordination, housing search, landlord engagement, and employer outreach.",
+      "category": "Service Components",
+      "testRelevant": true,
+      "keywords": ["collateral", "coordination", "behalf"]
+    },
+    {
+      "id": "term_026",
+      "term": "Job Carving",
+      "definition": "Working with enrollee and employer to modify an existing job description to contain some but not all tasks when an applicant cannot perform all duties.",
+      "category": "Employment",
+      "testRelevant": true,
+      "keywords": ["job", "modification", "tasks"]
+    },
+    {
+      "id": "term_027",
+      "term": "Benefits Counseling",
+      "definition": "Helping enrollees understand how employment income impacts government benefits like Social Security and Medicaid to make informed decisions about work.",
+      "category": "Employment",
+      "testRelevant": true,
+      "keywords": ["benefits", "counseling", "income"]
+    },
+    {
+      "id": "term_028",
+      "term": "Follow-along Supports",
+      "definition": "Time-unlimited, individualized employment support provided as long as the enrollee wants and needs it, with the goal of increasing independence.",
+      "category": "Employment",
+      "testRelevant": true,
+      "keywords": ["follow-along", "unlimited", "support"]
+    },
+    {
+      "id": "term_029",
+      "term": "Critical Incident",
+      "definition": "Events that must be reported to Wellpoint on the same business day of occurrence or provider awareness.",
+      "category": "Quality & Compliance",
+      "testRelevant": true,
+      "keywords": ["critical", "incident", "reporting"]
+    },
+    {
+      "id": "term_030",
+      "term": "Fidelity Review",
+      "definition": "Assessment measuring whether a program operates according to standardized practices using objective rating systems to determine adherence to established models.",
+      "category": "Quality & Compliance",
+      "testRelevant": true,
+      "keywords": ["fidelity", "assessment", "standards"]
+    },
+    {
+      "id": "term_031",
+      "term": "SIU",
+      "definition": "Special Investigations Unit - Reviews all reports of provider or member fraud, waste and abuse. Fraud hotline: 866-847-8247.",
+      "category": "Compliance",
+      "testRelevant": true,
+      "keywords": ["investigations", "fraud", "abuse"]
+    },
+    {
+      "id": "term_032",
+      "term": "Overpayment",
+      "definition": "Claims paid in error that must be returned within 60 calendar days of identification to avoid False Claims Act liability.",
+      "category": "Billing",
+      "testRelevant": true,
+      "keywords": ["overpayment", "60 days", "return"]
+    },
+    {
+      "id": "term_033",
+      "term": "Reconsideration",
+      "definition": "First step in provider payment dispute process - initial request to investigate the outcome of a finalized claim, must be filed within 24 months.",
+      "category": "Claims Disputes",
+      "testRelevant": true,
+      "keywords": ["reconsideration", "dispute", "24 months"]
+    },
+    {
+      "id": "term_034",
+      "term": "NPI",
+      "definition": "National Provider Identifier - Type 2 organization NPI required for FCS provider contracting.",
+      "category": "Provider Requirements",
+      "testRelevant": true,
+      "keywords": ["national", "provider", "identifier"]
+    },
+    {
+      "id": "term_035",
+      "term": "ProviderOne ID",
+      "definition": "Medicaid ID number assigned by Washington State Health Care Authority required for FCS provider enrollment.",
+      "category": "Provider Requirements",
+      "testRelevant": true,
+      "keywords": ["medicaid", "providerone", "enrollment"]
+    },
+    {
+      "id": "term_036",
+      "term": "CESP",
+      "definition": "Certified Employment Support Professional - Certification by the Employment Support Professional Certification Council acceptable for supported employment staff.",
+      "category": "Provider Qualifications",
+      "testRelevant": true,
+      "keywords": ["certified", "employment", "professional"]
+    },
+    {
+      "id": "term_037",
+      "term": "CARF",
+      "definition": "Commission on Accreditation of Rehabilitation Facilities - Accreditation in Employment Services meets supported employment provider requirements.",
+      "category": "Provider Qualifications",
+      "testRelevant": true,
+      "keywords": ["accreditation", "rehabilitation", "facilities"]
+    },
+    {
+      "id": "term_038",
+      "term": "Good Cause",
+      "definition": "Valid reasons for delayed claim filing including administrative errors, incorrect enrollee information, unavoidable delays in documentation, or circumstances beyond provider control.",
+      "category": "Claims Processing",
+      "testRelevant": true,
+      "keywords": ["good cause", "delayed", "filing"]
+    },
+    {
+      "id": "term_039",
+      "term": "ERA",
+      "definition": "Electronic Remittance Advice - Electronic data interchange transaction (X12 835) providing explanation of payment for claims.",
+      "category": "Claims Processing",
+      "testRelevant": true,
+      "keywords": ["electronic", "remittance", "payment"]
+    },
+    {
+      "id": "term_040",
+      "term": "EFT",
+      "definition": "Electronic Funds Transfer - Secure method to receive claim payments directly to provider's bank account using automated clearinghouse network.",
+      "category": "Payment Methods",
+      "testRelevant": true,
+      "keywords": ["electronic", "funds", "transfer"]
+    },
+    {
+      "id": "term_041",
+      "term": "HMIS",
+      "definition": "Homeless Management Information System - Database that may contain documentation to validate health needs or risk factors for FCS eligibility.",
+      "category": "Data Systems",
+      "testRelevant": true,
+      "keywords": ["homeless", "management", "information"]
+    },
+    {
+      "id": "term_042",
+      "term": "FMR",
+      "definition": "Fair Market Rent - TAP monthly rent must be under 120% FMR; AHAH-RAP covers up to 130% FMR.",
+      "category": "Financial Assistance",
+      "testRelevant": true,
+      "keywords": ["fair market", "rent", "percentage"]
+    },
+    {
+      "id": "term_043",
+      "term": "Single Case Agreement",
+      "definition": "Form confirming Wellpoint authorization for services required for specific episode of care, must accompany ETR requests.",
+      "category": "Service Authorization",
+      "testRelevant": true,
+      "keywords": ["single case", "agreement", "authorization"]
+    },
+    {
+      "id": "term_044",
+      "term": "Prepayment Review",
+      "definition": "Process where providers must submit medical records with each claim for SIU review when identified as outliers or for unusual billing practices.",
+      "category": "Compliance",
+      "testRelevant": true,
+      "keywords": ["prepayment", "review", "outliers"]
+    },
+    {
+      "id": "term_045",
+      "term": "Authorization Period",
+      "definition": "180-day timeframe during which FCS services are authorized; can be renewed if enrollee continues to meet eligibility criteria.",
+      "category": "Service Authorization",
+      "testRelevant": true,
+      "keywords": ["180-day", "authorization", "timeframe"]
+    }
+  ]
+}
