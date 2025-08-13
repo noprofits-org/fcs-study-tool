@@ -1,344 +1,322 @@
-{
-  "scenarios": [
-    {
-      "id": "s_001",
-      "title": "Emergency Removal Decision",
-      "description": "You arrive at a home for a welfare check and find a 4-year-old alone. The neighbor says the parent left 3 hours ago to 'run errands.' The home has food but no heat (it's winter), and the child appears clean but scared.",
-      "question": "What is the appropriate response?",
-      "options": {
-        "A": "Remove the child immediately due to abandonment",
-        "B": "Wait for parent to return while ensuring child safety",
-        "C": "Leave the child with the neighbor",
-        "D": "Document and close - child appears safe"
-      },
-      "correct": "B",
-      "explanation": "Wait for parent while ensuring safety. Three hours alone doesn't automatically constitute abandonment requiring removal. Assess when parent returns. See manual pages 37, 38, 85 for detailed information.",
-      "studyPages": [37, 38, 85],
-      "relatedConcepts": ["Emergency Removal", "Safety Assessment", "Reasonable Efforts"],
-      "difficulty": "hard"
-    },
-    {
-      "id": "s_002",
-      "title": "Voluntary Services Eligibility",
-      "description": "A single mother of three comes to your office requesting help. She works full-time but is struggling with her 14-year-old's behavior. The family income is 210% of Federal Poverty Level. There's no history of abuse or neglect.",
-      "question": "Is this family eligible for voluntary services?",
-      "options": {
-        "A": "No, income exceeds 200% FPL limit",
-        "B": "Yes, voluntary prevention services have no income limit",
-        "C": "Only if behavior problems are documented",
-        "D": "Must be court-referred for services"
-      },
-      "correct": "B",
-      "explanation": "Voluntary prevention services are available to any family requesting help, regardless of income, to prevent future crisis. See manual pages 88, 89 for detailed information.",
-      "studyPages": [88, 89],
-      "relatedConcepts": ["Prevention Services", "Voluntary Services", "Eligibility"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_003",
-      "title": "Medication Consent Crisis",
-      "description": "A 12-year-old in foster care is having severe behavioral episodes. The psychiatrist recommends starting an antipsychotic medication immediately. The foster parents agree, but you can't reach the birth parents who retain medical rights.",
-      "question": "How should you proceed?",
-      "options": {
-        "A": "Start medication with foster parent consent only",
-        "B": "Obtain emergency court order for psychotropic medication",
-        "C": "Wait until birth parents can be contacted",
-        "D": "Use agency medical consent authority"
-      },
-      "correct": "B",
-      "explanation": "Psychotropic medications require court approval when parents can't consent. Emergency orders can be obtained for urgent situations. See manual pages 104, 105 for detailed information.",
-      "studyPages": [104, 105],
-      "relatedConcepts": ["Medical Consent", "Psychotropic Medication", "Court Authority"],
-      "difficulty": "hard"
-    },
-    {
-      "id": "s_004",
-      "title": "Kinship Placement Dilemma",
-      "description": "Children need placement after removal. The maternal grandmother volunteers but lives out of state. She has a clean background check but her adult son (who visits weekly) has an old drug conviction from 15 years ago.",
-      "question": "Can the children be placed with grandmother?",
-      "options": {
-        "A": "No, due to son's criminal history",
-        "B": "Yes, with ICPC approval and safety plan",
-        "C": "Only if son agrees to no contact",
-        "D": "Requires full home study first"
-      },
-      "correct": "B",
-      "explanation": "Interstate placement requires ICPC approval. Old conviction doesn't automatically disqualify if safety plan addresses any concerns. See manual pages 57, 58, 60, 90, 91 for detailed information.",
-      "studyPages": [57, 58, 60, 90, 91],
-      "relatedConcepts": ["Kinship Care", "ICPC", "Safety Planning"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_005",
-      "title": "Confidentiality Challenge",
-      "description": "A teacher calls asking about a student in your caseload. She's noticed behavioral changes and wants to know if something is happening at home. The family has not signed a release for the school.",
-      "question": "What information can you share?",
-      "options": {
-        "A": "Full case details to help the child",
-        "B": "Confirm involvement only",
-        "C": "Nothing without written release",
-        "D": "General safety information only"
-      },
-      "correct": "C",
-      "explanation": "Without a signed release, no information can be shared with the school, even to confirm involvement. See manual pages 96, 97 for detailed information.",
-      "studyPages": [96, 97],
-      "relatedConcepts": ["Confidentiality", "Information Sharing", "Release Requirements"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_006",
-      "title": "Aging Out Preparation",
-      "description": "A 17-year-old in care will turn 18 in 6 months. She wants to drop out of school to work full-time. She has no permanent connections and limited life skills.",
-      "question": "What is the primary intervention priority?",
-      "options": {
-        "A": "Support her employment decision",
-        "B": "Focus on education completion and transition planning",
-        "C": "Find immediate independent housing",
-        "D": "Transfer to adult services"
-      },
-      "correct": "B",
-      "explanation": "Education completion and comprehensive transition planning are priorities. Planning should have started at 16. See manual pages 61, 62, 63 for detailed information.",
-      "studyPages": [61, 62, 63],
-      "relatedConcepts": ["Transition Planning", "Aging Out", "Independent Living"],
-      "difficulty": "easy"
-    },
-    {
-      "id": "s_007",
-      "title": "Cultural Considerations",
-      "description": "A Native American child needs placement. The tribe has been notified per ICWA requirements. A tribal placement is available in 2 weeks, but a non-Native foster home is available immediately.",
-      "question": "What is the appropriate placement decision?",
-      "options": {
-        "A": "Place immediately in non-Native home",
-        "B": "Wait for tribal placement if child is safe",
-        "C": "Let child choose placement",
-        "D": "Court must decide"
-      },
-      "correct": "B",
-      "explanation": "ICWA preferences should be followed when possible. Short wait for culturally appropriate placement is reasonable if child safety permits. See manual pages 108, 109 for detailed information.",
-      "studyPages": [108, 109],
-      "relatedConcepts": ["ICWA", "Cultural Placement", "Tribal Rights"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_008",
-      "title": "Investigation Timeline Pressure",
-      "description": "You receive a new investigation assignment on Friday afternoon. The report alleges physical abuse. Monday is a holiday. The family lives 2 hours away in a rural area.",
-      "question": "When must you make first contact?",
-      "options": {
-        "A": "Before end of business Friday",
-        "B": "By Tuesday (next business day)",
-        "C": "Within 24 hours regardless of holiday",
-        "D": "Within 72 hours of assignment"
-      },
-      "correct": "C",
-      "explanation": "Initial contact for abuse allegations must occur within 24 hours regardless of weekends or holidays. See manual pages 13, 14 for detailed information.",
-      "studyPages": [13, 14],
-      "relatedConcepts": ["Investigation Timelines", "Initial Contact", "Priority Response"],
-      "difficulty": "easy"
-    },
-    {
-      "id": "s_009",
-      "title": "Service Refusal Documentation",
-      "description": "After substantiated neglect, parents are court-ordered to participate in parenting classes. They attend one session then refuse to continue, saying the classes are 'stupid and unhelpful.'",
-      "question": "What is the required response?",
-      "options": {
-        "A": "Close case for non-compliance",
-        "B": "Find alternative parenting program",
-        "C": "Document refusal and notify court",
-        "D": "Mandate participation with consequences"
-      },
-      "correct": "C",
-      "explanation": "Document specific refusal and notify court of non-compliance with orders. Court will determine consequences. See manual pages 27, 28, 55 for detailed information.",
-      "studyPages": [27, 28, 55],
-      "relatedConcepts": ["Service Refusal", "Court Orders", "Documentation"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_010",
-      "title": "Safety Plan Adequacy",
-      "description": "Mom's boyfriend has anger issues but no violence history. Mom agrees he'll leave when he's upset and she'll call 911 if needed. Children (ages 8 and 10) know to go to their room if he yells.",
-      "question": "Is this safety plan adequate?",
-      "options": {
-        "A": "Yes, it addresses the concerns",
-        "B": "No, children shouldn't be responsible for safety",
-        "C": "Only with daily monitoring",
-        "D": "Requires boyfriend to move out"
-      },
-      "correct": "B",
-      "explanation": "Safety plans cannot rely on children to protect themselves. Adult protective actions must be concrete and reliable. See manual pages 40, 41 for detailed information.",
-      "studyPages": [40, 41],
-      "relatedConcepts": ["Safety Planning", "Protective Capacity", "Risk Assessment"],
-      "difficulty": "hard"
-    },
-    {
-      "id": "s_011",
-      "title": "Concurrent Planning Conflict",
-      "description": "Parents have made minimal progress on reunification plan after 12 months. The children (ages 2 and 4) are thriving in pre-adoptive foster home. Parents request more time and blame their attorney.",
-      "question": "What concurrent planning action is required?",
-      "options": {
-        "A": "Give parents 6 more months",
-        "B": "Begin termination proceedings while continuing services",
-        "C": "Move children to non-adoptive home",
-        "D": "Increase parent services"
-      },
-      "correct": "B",
-      "explanation": "After 12 months with minimal progress, must pursue permanency while continuing reasonable efforts. See manual pages 92, 93 for detailed information.",
-      "studyPages": [92, 93],
-      "relatedConcepts": ["Concurrent Planning", "Permanency Timelines", "Reasonable Efforts"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_012",
-      "title": "Mandated Reporter Liability",
-      "description": "A therapist in your agency suspects abuse but wants to wait until next session to 'gather more information' before reporting. The child disclosed abuse but then recanted.",
-      "question": "What must you tell the therapist?",
-      "options": {
-        "A": "Waiting is appropriate for clarity",
-        "B": "Report must be made immediately",
-        "C": "Recantation negates need to report",
-        "D": "Consult with supervisor first"
-      },
-      "correct": "B",
-      "explanation": "Mandated reporters must report immediately upon suspicion, regardless of recantation or desire for more information. See manual pages 8, 9, 23 for detailed information.",
-      "studyPages": [8, 9, 23],
-      "relatedConcepts": ["Mandated Reporting", "Legal Liability", "Immediate Action"],
-      "difficulty": "easy"
-    },
-    {
-      "id": "s_013",
-      "title": "Placement Stability Crisis",
-      "description": "A 15-year-old has been in 4 placements in 6 months due to behavioral issues. Current foster parents give 7-day notice. The teen threatens to run if moved again.",
-      "question": "What is the best intervention approach?",
-      "options": {
-        "A": "Find another traditional foster home",
-        "B": "Residential treatment placement",
-        "C": "Wraparound services and placement support",
-        "D": "Let teen choose next placement"
-      },
-      "correct": "C",
-      "explanation": "Multiple placement failures indicate need for intensive wraparound services to stabilize current placement rather than another move. See manual pages 110, 111 for detailed information.",
-      "studyPages": [110, 111],
-      "relatedConcepts": ["Placement Stability", "Wraparound Services", "Youth Engagement"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_014",
-      "title": "Documentation Deadline",
-      "description": "You conducted a critical home visit on Tuesday where you observed concerning conditions. It's now Friday afternoon and you haven't written the visit note due to other emergencies.",
-      "question": "What is required regarding documentation?",
-      "options": {
-        "A": "Complete by end of business today",
-        "B": "Can wait until Monday",
-        "C": "Already missed 72-hour deadline",
-        "D": "Verbal report to supervisor sufficient"
-      },
-      "correct": "C",
-      "explanation": "Critical visits must be documented within 72 hours. The deadline has passed and late entry should note reason for delay. See manual pages 112, 113 for detailed information.",
-      "studyPages": [112, 113],
-      "relatedConcepts": ["Documentation Timeline", "Critical Incidents", "Record Requirements"],
-      "difficulty": "easy"
-    },
-    {
-      "id": "s_015",
-      "title": "Supervision Override",
-      "description": "You believe a child is safe to remain home with services. Your supervisor disagrees and wants immediate removal. You have assessed the family for 3 weeks; supervisor has not met them.",
-      "question": "How should this be resolved?",
-      "options": {
-        "A": "Follow supervisor's directive",
-        "B": "Request formal case staffing",
-        "C": "Document disagreement and proceed with your plan",
-        "D": "Ask another supervisor"
-      },
-      "correct": "B",
-      "explanation": "Disagreements on safety require formal staffing with supervisory team to review all information and reach consensus. See manual pages 78, 79 for detailed information.",
-      "studyPages": [78, 79],
-      "relatedConcepts": ["Supervision", "Safety Decisions", "Case Staffing"],
-      "difficulty": "hard"
-    },
-    {
-      "id": "s_016",
-      "title": "Resource Family Support",
-      "description": "Foster parents call at 10 PM saying their 7-year-old foster child is having night terrors and aggressive outbursts. They're exhausted and considering giving notice.",
-      "question": "What immediate support should be offered?",
-      "options": {
-        "A": "Tell them to call back during business hours",
-        "B": "Arrange respite care and crisis support",
-        "C": "Start looking for new placement",
-        "D": "Advise calling 911 if child is aggressive"
-      },
-      "correct": "B",
-      "explanation": "Immediate respite and crisis support can prevent placement disruption. Foster families need 24/7 support access. See manual pages 114, 115 for detailed information.",
-      "studyPages": [114, 115],
-      "relatedConcepts": ["Resource Family Support", "Crisis Intervention", "Placement Preservation"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_017",
-      "title": "Court Report Accuracy",
-      "description": "While preparing a court report, you realize your supervisor's summary contains factual errors about visit frequency and parent participation. Court is tomorrow.",
-      "question": "What must you do?",
-      "options": {
-        "A": "Submit as written - supervisor approved",
-        "B": "Correct errors and notify supervisor",
-        "C": "Verbally correct in court testimony",
-        "D": "Add addendum noting discrepancies"
-      },
-      "correct": "B",
-      "explanation": "Court reports must be accurate. Errors must be corrected before submission regardless of who made them. See manual pages 116, 117 for detailed information.",
-      "studyPages": [116, 117],
-      "relatedConcepts": ["Court Reports", "Professional Integrity", "Documentation Accuracy"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_018",
-      "title": "Educational Rights",
-      "description": "A 16-year-old in care wants to enroll in an alternative school program. Foster parents object, wanting traditional school. Birth parents (who retain ed rights) can't be reached.",
-      "question": "Who makes the educational decision?",
-      "options": {
-        "A": "Foster parents as daily caregivers",
-        "B": "Youth can decide at age 16",
-        "C": "Agency education liaison with youth input",
-        "D": "Must wait for birth parent consent"
-      },
-      "correct": "C",
-      "explanation": "When parents with education rights are unavailable, agency education liaison makes decisions with youth input, especially for teens. See manual pages 118, 119 for detailed information.",
-      "studyPages": [118, 119],
-      "relatedConcepts": ["Education Rights", "Youth Voice", "Surrogate Decision-Making"],
-      "difficulty": "hard"
-    },
-    {
-      "id": "s_019",
-      "title": "Relative Notification",
-      "description": "A child enters care on Friday evening via emergency removal. The family provides a list of 15 relatives who might help. When must these relatives be notified?",
-      "question": "What is the timeline for relative notification?",
-      "options": {
-        "A": "Within 30 days of removal",
-        "B": "Within 72 hours of removal",
-        "C": "At the first court hearing",
-        "D": "After background checks complete"
-      },
-      "correct": "A",
-      "explanation": "Federal law requires relative notification within 30 days of removal to explore placement options. See manual pages 120, 121 for detailed information.",
-      "studyPages": [120, 121],
-      "relatedConcepts": ["Relative Notification", "Family Finding", "Placement Options"],
-      "difficulty": "medium"
-    },
-    {
-      "id": "s_020",
-      "title": "Service Array Limits",
-      "description": "A family needs intensive therapy, but the only qualified provider has a 3-month waitlist. Parent needs services now to meet court timelines. Budget won't allow out-of-network providers.",
-      "question": "What is the appropriate response?",
-      "options": {
-        "A": "Document unavailability and wait",
-        "B": "Refer to less qualified provider",
-        "C": "Request exception for out-of-network provider",
-        "D": "Extend court timelines automatically"
-      },
-      "correct": "C",
-      "explanation": "When required services are unavailable, must request exceptions to ensure reasonable efforts and meet court timelines. See manual pages 122, 123 for detailed information.",
-      "studyPages": [122, 123],
-      "relatedConcepts": ["Service Availability", "Reasonable Efforts", "Budget Exceptions"],
-      "difficulty": "hard"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "category": "Billing Situations",
+    "title": "Telephone Contact Billing",
+    "scenario": "A CSS provider has a 12-minute phone call with an enrollee to check on their housing stability. The enrollee was distressed and needed support. Can the provider bill for this service?",
+    "question": "Is this telephone contact billable?",
+    "options": [
+      "Yes, all phone calls with enrollees are billable",
+      "No, the call must be at least 15 minutes to be billable",
+      "Yes, but only if it's video call",
+      "No, phone calls are never billable"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to page 12, telephone calls of at least 15 minutes are billable. Since this call was only 12 minutes, it cannot be billed.",
+    "pageReference": "Page 12"
+  },
+  {
+    "id": 2,
+    "category": "Eligibility Determinations",
+    "title": "Age-Based Eligibility",
+    "scenario": "A 15-year-old youth who has been chronically homeless for the past year is referred for Supportive Housing services. They meet all other eligibility criteria including mental health needs.",
+    "question": "Can this youth be enrolled in CSS?",
+    "options": [
+      "Yes, age exceptions can be made for homeless youth",
+      "No, they must be at least 16 years old",
+      "Yes, if they have parental consent",
+      "No, they must be 18 or older"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 9 clearly states that eligible populations for Supportive Housing services include individuals who are 16 or older. No exceptions are mentioned for younger individuals.",
+    "pageReference": "Page 9"
+  },
+  {
+    "id": 3,
+    "category": "Documentation Challenges",
+    "title": "Late Assessment Submission",
+    "scenario": "A provider completes an eligibility assessment on March 1st but doesn't submit it to Wellpoint until March 15th due to staff illness. Wellpoint receives the assessment on March 16th.",
+    "question": "Will Wellpoint accept this assessment?",
+    "options": [
+      "Yes, assessments are valid for 30 days",
+      "No, the assessment is more than 10 business days old",
+      "Yes, if the provider provides documentation of the illness",
+      "No, assessments must be submitted within 5 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 22 states that the assessment may not be more than 10 business days old when submitted to Wellpoint. March 1st to March 16th exceeds this limit.",
+    "pageReference": "Page 22"
+  },
+  {
+    "id": 4,
+    "category": "Service Authorization",
+    "title": "Pre-Authorization Services",
+    "scenario": "An enrollee in crisis needs immediate CSS services. The provider begins providing services on Monday while waiting for Wellpoint's authorization, which arrives Wednesday.",
+    "question": "Can the provider bill for Monday and Tuesday's services?",
+    "options": [
+      "Yes, crisis situations allow retroactive billing",
+      "No, CSS may not be provided or billed prior to authorization",
+      "Yes, with proper documentation",
+      "No, unless approved by supervisor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 12 explicitly states that CSS may not be provided or billed prior to an authorization for service, with no exceptions mentioned.",
+    "pageReference": "Page 12"
+  },
+  {
+    "id": 5,
+    "category": "Billing Situations",
+    "title": "Service Limit Exception",
+    "scenario": "An enrollee has used 28 of their 30 authorized CSS days with 60 days remaining in their authorization period. They need continued intensive support due to a housing crisis.",
+    "question": "What should the provider do to continue services?",
+    "options": [
+      "Continue services and bill after the period ends",
+      "Submit an Exception to Rule (ETR) request with supporting documentation",
+      "Wait until the next authorization period",
+      "Transfer the enrollee to another provider"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 23 explains that providers can submit an ETR Form with a signed Single Case Agreement Form and supporting documentation for additional units when clinically necessary.",
+    "pageReference": "Page 23"
+  },
+  {
+    "id": 6,
+    "category": "Provider Compliance Issues",
+    "title": "Critical Incident Reporting Delay",
+    "scenario": "On Friday afternoon, a provider learns that an enrollee was hospitalized Thursday evening due to a mental health crisis. The provider reports the incident to Wellpoint on Monday morning.",
+    "question": "Did the provider meet reporting requirements?",
+    "options": [
+      "Yes, they reported within 72 hours",
+      "No, they should have reported on the same business day they became aware",
+      "Yes, weekends don't count for reporting",
+      "No, they should have reported within 24 hours"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 6 states that critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness. The provider became aware Friday and should have reported that day.",
+    "pageReference": "Page 6"
+  },
+  {
+    "id": 7,
+    "category": "Billing Situations",
+    "title": "Overpayment Discovery",
+    "scenario": "During an internal audit, a provider discovers they accidentally billed for 35 days of CSS services instead of 30 days for an enrollee three months ago. They received $560 in overpayment.",
+    "question": "What is the provider's obligation?",
+    "options": [
+      "Report and return the overpayment within 60 calendar days of discovery",
+      "Wait for Wellpoint to discover the error",
+      "Keep the overpayment if not discovered within 90 days",
+      "Report it at the annual audit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Page 54 states that providers must return overpayments within sixty (60) calendar days after the date on which the overpayment was identified.",
+    "pageReference": "Page 54"
+  },
+  {
+    "id": 8,
+    "category": "Eligibility Determinations",
+    "title": "Institutional Contact Frequency",
+    "scenario": "An individual had one psychiatric hospitalization 11 months ago that lasted 45 days, and no other institutional contacts. They have significant mental health needs.",
+    "question": "Do they meet the risk factor criteria for CSS based on institutional contacts?",
+    "options": [
+      "Yes, one lengthy stay qualifies",
+      "No, they need frequent (2+) or lengthy (90+ days) stays",
+      "Yes, any psychiatric hospitalization qualifies",
+      "No, it must be within the last 6 months"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 9 defines frequent as 2+ contacts in 12 months and lengthy as 90+ consecutive days. One 45-day stay doesn't meet either criterion.",
+    "pageReference": "Page 9"
+  },
+  {
+    "id": 9,
+    "category": "Documentation Challenges",
+    "title": "Progress Note Requirements",
+    "scenario": "A provider writes: 'Met with client. Discussed housing. Client doing well. Plan to meet next week.' They include the date but no times.",
+    "question": "What critical documentation element is missing?",
+    "options": [
+      "Enrollee's response to interventions",
+      "Exact start and end times",
+      "SMART goals",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Page 63-64 requires exact start and end times (not rounded), detailed interventions, enrollee responses, and connection to specific goals in the care plan.",
+    "pageReference": "Page 63-64"
+  },
+  {
+    "id": 10,
+    "category": "Service Authorization",
+    "title": "Inactive Enrollee Disenrollment",
+    "scenario": "A provider has tried to contact an enrollee 3 times over 4 weeks using phone calls and one home visit. The enrollee hasn't responded to any attempts.",
+    "question": "Can the provider initiate involuntary disenrollment?",
+    "options": [
+      "Yes, 3 attempts is sufficient",
+      "No, they need at least 4 attempts over 6+ weeks",
+      "Yes, if they document the attempts",
+      "No, only Wellpoint can disenroll"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 24 requires at least four attempts over a minimum of six weeks, with each attempt at least one week apart.",
+    "pageReference": "Page 24"
+  },
+  {
+    "id": 11,
+    "category": "Billing Situations",
+    "title": "Clean Claim Denial",
+    "scenario": "A provider submits a clean claim on January 15th. By March 20th, they haven't received payment or denial. The claim was complete and accurate when submitted.",
+    "question": "What is the provider entitled to?",
+    "options": [
+      "Automatic approval of the claim",
+      "Interest on the payment if approved",
+      "Double payment",
+      "Priority processing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 52 states that if Wellpoint doesn't pay the claim within 61 calendar days, they will pay all applicable interest as required by law.",
+    "pageReference": "Page 52"
+  },
+  {
+    "id": 12,
+    "category": "Provider Compliance Issues",
+    "title": "Wait Time Violation",
+    "scenario": "An enrollee arrives for their 2:00 PM appointment. Due to provider delays, they aren't seen until 3:15 PM. The provider didn't notify the enrollee of the delay.",
+    "question": "What should the provider have done?",
+    "options": [
+      "Seen the enrollee within 30 minutes",
+      "Notified the enrollee immediately and offered a new appointment",
+      "Provided a discount for the wait",
+      "Apologized when they saw the enrollee"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 28 states that wait times shouldn't exceed 45 minutes, enrollees should be notified immediately of delays, and offered a new appointment if wait exceeds 45 minutes.",
+    "pageReference": "Page 28"
+  },
+  {
+    "id": 13,
+    "category": "Service Authorization",
+    "title": "TAP Funding Request",
+    "scenario": "A CSS enrollee needs $6,000 for first month's rent, last month's rent, and security deposit to move into an apartment. The monthly rent is $1,800.",
+    "question": "Can this be approved through standard TAP funding?",
+    "options": [
+      "Yes, it's for move-in assistance",
+      "No, it exceeds the $5,000 limit and needs an ETP",
+      "Yes, if split into multiple requests",
+      "No, TAP doesn't cover rent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 67 states move-in assistance is limited to $5,000 total. Amounts above this require an Exception to Policy (ETP) request.",
+    "pageReference": "Page 67"
+  },
+  {
+    "id": 14,
+    "category": "Eligibility Determinations",
+    "title": "Employment Service Age Requirement",
+    "scenario": "A 17-year-old with autism spectrum disorder wants to enroll in supported employment services. They receive SSI benefits and meet all other IPS criteria.",
+    "question": "Are they eligible for IPS services?",
+    "options": [
+      "No, they must be 18 for employment services",
+      "Yes, they meet the minimum age of 16",
+      "No, they need work history first",
+      "Yes, but only with parental consent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 14 states that individuals must be at least 16 years of age for IPS eligibility. At 17, they meet this requirement.",
+    "pageReference": "Page 14"
+  },
+  {
+    "id": 15,
+    "category": "Documentation Challenges",
+    "title": "Treatment Record Access",
+    "scenario": "An enrollee requests copies of their treatment record three times in one year - in January, June, and October. The provider charges $25 for the third copy.",
+    "question": "Is this charge appropriate?",
+    "options": [
+      "Yes, only one free copy per year is required",
+      "No, all copies must be free",
+      "Yes, but only $10 can be charged",
+      "No, unless pre-approved by Wellpoint"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Page 62 states that enrollees are entitled to one copy of their treatment record each year at no cost. Additional copies may incur charges.",
+    "pageReference": "Page 62"
+  },
+  {
+    "id": 16,
+    "category": "Billing Situations",
+    "title": "Supported Employment Units",
+    "scenario": "A provider bills for 8 units (2 hours) of H2023 pre-employment services for job coaching provided during a 4-hour shift. The provider was present the entire time.",
+    "question": "Is this billing appropriate?",
+    "options": [
+      "Yes, partial hours can be billed",
+      "No, all 16 units should be billed",
+      "Yes, if documented properly",
+      "No, only face-to-face time is billable"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Billing should reflect actual services provided. With proper documentation showing 2 hours of actual job coaching during the 4-hour shift, 8 units is appropriate.",
+    "pageReference": "Page 15-16"
+  },
+  {
+    "id": 17,
+    "category": "Provider Compliance Issues",
+    "title": "Fraud Suspicion Reporting",
+    "scenario": "A provider suspects a colleague is billing for services not provided, based on enrollee complaints and documentation discrepancies. They're unsure whether to report it.",
+    "question": "What is the provider's obligation?",
+    "options": [
+      "Report only if they have definitive proof",
+      "Report suspicions to the SIU hotline at 866-847-8247",
+      "Confront the colleague first",
+      "Wait for an audit to catch it"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 35 provides the SIU fraud referral hotline (866-847-8247) and indicates that suspected fraud should be reported.",
+    "pageReference": "Page 35"
+  },
+  {
+    "id": 18,
+    "category": "Service Authorization",
+    "title": "Enrollment Pause Impact",
+    "scenario": "During an enrollment pause, an enrollee's 180-day authorization expired 45 days ago. They still need services and meet all eligibility criteria.",
+    "question": "Can they be reauthorized?",
+    "options": [
+      "Yes, current enrollees can always be reauthorized",
+      "No, they missed the 30-day reauthorization window",
+      "Yes, with an exception request",
+      "No, they must wait for enrollment to reopen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 26 states during enrollment pause, reauthorization must occur within 30 days of expiration. After that, enrollees go on the waitlist.",
+    "pageReference": "Page 26"
+  },
+  {
+    "id": 19,
+    "category": "Documentation Challenges",
+    "title": "Claim Dispute Timeline",
+    "scenario": "A provider receives a claim denial on March 1st. They disagree with the denial but don't file a reconsideration request until May 15th, citing staff turnover as the reason for delay.",
+    "question": "Will the reconsideration be processed?",
+    "options": [
+      "Yes, staff turnover is good cause",
+      "No, it exceeds the 24-month deadline",
+      "Yes, within 24 months from EOP date",
+      "No, without proof of good cause"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 58 states reconsideration requests are accepted within 24 months from the date on the EOP. This is well within that timeframe.",
+    "pageReference": "Page 58"
+  },
+  {
+    "id": 20,
+    "category": "Billing Situations",
+    "title": "Multiple Service Billing",
+    "scenario": "An enrollee receives both CSS (H0043) services in the morning and IPS pre-employment (H2023) services in the afternoon on the same day from the same provider.",
+    "question": "Can the provider bill for both services on the same day?",
+    "options": [
+      "No, only one FCS service per day",
+      "Yes, if properly documented and authorized",
+      "No, different providers must deliver each service",
+      "Yes, but at a reduced rate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "With proper authorization for both services and appropriate documentation, providers can bill for different FCS services on the same day.",
+    "pageReference": "Multiple references"
+  }
+]

@@ -1,604 +1,602 @@
-{
-  "questions": [
-    {
-      "id": "q_001",
-      "text": "What is the maximum time frame for completing an initial assessment after receiving a referral?",
-      "options": {
-        "A": "24 hours",
-        "B": "48 hours",
-        "C": "72 hours",
-        "D": "5 business days"
-      },
-      "correct": "C",
-      "explanation": "Initial assessments must be completed within 72 hours of receiving a referral to ensure timely service delivery. See manual pages 12, 15 for detailed information.",
-      "studyPages": [12, 15],
-      "category": "Timeline Requirements",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_002",
-      "text": "Which of the following is NOT considered a mandatory reporter under FCS guidelines?",
-      "options": {
-        "A": "Teachers and school personnel",
-        "B": "Healthcare providers",
-        "C": "Neighbors and community members",
-        "D": "Social workers and case managers"
-      },
-      "correct": "C",
-      "explanation": "Neighbors and community members are encouraged but not mandated to report concerns. Mandatory reporters include professionals who work directly with children. See manual pages 8, 9, 23 for detailed information.",
-      "studyPages": [8, 9, 23],
-      "category": "Reporting Requirements",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_003",
-      "text": "A family's income is 185% of the Federal Poverty Level. Are they eligible for FCS services?",
-      "options": {
-        "A": "Yes, automatically eligible",
-        "B": "No, income exceeds limits",
-        "C": "Yes, if they meet other criteria",
-        "D": "Only for emergency services"
-      },
-      "correct": "C",
-      "explanation": "Families up to 200% FPL may be eligible if they meet other qualifying criteria such as risk factors or special circumstances. See manual pages 18, 19, 31 for detailed information.",
-      "studyPages": [18, 19, 31],
-      "category": "Eligibility",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_004",
-      "text": "How often must a comprehensive case review be conducted for active cases?",
-      "options": {
-        "A": "Monthly",
-        "B": "Every 90 days",
-        "C": "Every 6 months",
-        "D": "Annually"
-      },
-      "correct": "B",
-      "explanation": "Comprehensive case reviews must be conducted every 90 days to ensure services remain appropriate and goals are being met. See manual pages 42, 43 for detailed information.",
-      "studyPages": [42, 43],
-      "category": "Case Management",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_005",
-      "text": "What documentation is required when a parent refuses services?",
-      "options": {
-        "A": "Verbal acknowledgment only",
-        "B": "Written refusal form signed by parent",
-        "C": "Email confirmation",
-        "D": "No documentation needed"
-      },
-      "correct": "B",
-      "explanation": "A written refusal form must be signed by the parent and maintained in the case file to document informed refusal of services. See manual pages 27, 28, 55 for detailed information.",
-      "studyPages": [27, 28, 55],
-      "category": "Documentation",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_006",
-      "text": "During a home visit, you observe potential safety hazards. What is your first action?",
-      "options": {
-        "A": "Remove the child immediately",
-        "B": "Document and assess immediate risk",
-        "C": "Contact law enforcement",
-        "D": "Schedule a follow-up visit"
-      },
-      "correct": "B",
-      "explanation": "First document observations and assess if there is immediate risk to the child. Action depends on severity and immediacy of danger. See manual pages 34, 35, 36 for detailed information.",
-      "studyPages": [34, 35, 36],
-      "category": "Safety Assessment",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_007",
-      "text": "What is the minimum frequency for face-to-face contact with children in care?",
-      "options": {
-        "A": "Weekly",
-        "B": "Bi-weekly",
-        "C": "Monthly",
-        "D": "Quarterly"
-      },
-      "correct": "C",
-      "explanation": "Face-to-face contact with children in care must occur at minimum monthly to monitor well-being and placement stability. See manual pages 47, 48 for detailed information.",
-      "studyPages": [47, 48],
-      "category": "Case Management",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_008",
-      "text": "A 17-year-old youth is aging out of care. When should transition planning begin?",
-      "options": {
-        "A": "At age 18",
-        "B": "6 months before 18th birthday",
-        "C": "At age 16",
-        "D": "1 year before aging out"
-      },
-      "correct": "C",
-      "explanation": "Transition planning must begin at age 16 to ensure adequate preparation for independence and connection to adult services. See manual pages 61, 62, 63 for detailed information.",
-      "studyPages": [61, 62, 63],
-      "category": "Transition Services",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_009",
-      "text": "Which consent is required for routine medical care of a child in foster care?",
-      "options": {
-        "A": "Birth parent consent only",
-        "B": "Court order required",
-        "C": "Caregiver can consent",
-        "D": "Social worker approval"
-      },
-      "correct": "C",
-      "explanation": "Foster caregivers have authority to consent for routine medical care. Major medical procedures may require additional approvals. See manual pages 52, 53 for detailed information.",
-      "studyPages": [52, 53],
-      "category": "Medical Consent",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_010",
-      "text": "How long must case records be retained after case closure?",
-      "options": {
-        "A": "3 years",
-        "B": "5 years",
-        "C": "7 years",
-        "D": "10 years"
-      },
-      "correct": "C",
-      "explanation": "Case records must be retained for 7 years after case closure to meet state and federal requirements. See manual pages 68, 69 for detailed information.",
-      "studyPages": [68, 69],
-      "category": "Documentation",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_011",
-      "text": "What constitutes 'imminent risk' requiring immediate intervention?",
-      "options": {
-        "A": "Any safety concern",
-        "B": "Threat of serious harm within 24-48 hours",
-        "C": "Past history of abuse",
-        "D": "Parental substance use"
-      },
-      "correct": "B",
-      "explanation": "Imminent risk means threat of serious harm likely to occur within 24-48 hours without intervention. See manual pages 37, 38, 39 for detailed information.",
-      "studyPages": [37, 38, 39],
-      "category": "Safety Assessment",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "q_012",
-      "text": "A parent requests their case file. What information can be withheld?",
-      "options": {
-        "A": "Nothing - full access required",
-        "B": "Third-party information and safety-sensitive details",
-        "C": "All assessment documents",
-        "D": "Financial information only"
-      },
-      "correct": "B",
-      "explanation": "Third-party information and details that could compromise safety investigations may be redacted. Most other information must be provided. See manual pages 71, 72, 73 for detailed information.",
-      "studyPages": [71, 72, 73],
-      "category": "Privacy Rights",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "q_013",
-      "text": "When must a supervisor review and approve a safety plan?",
-      "options": {
-        "A": "Within 24 hours of creation",
-        "B": "Within 48 hours",
-        "C": "Within 72 hours",
-        "D": "At the next supervision meeting"
-      },
-      "correct": "A",
-      "explanation": "Safety plans require supervisor review and approval within 24 hours to ensure appropriate protective measures. See manual pages 40, 41 for detailed information.",
-      "studyPages": [40, 41],
-      "category": "Supervision Requirements",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_014",
-      "text": "What is the maximum caseload for ongoing FCS workers?",
-      "options": {
-        "A": "15 cases",
-        "B": "20 cases",
-        "C": "25 cases",
-        "D": "30 cases"
-      },
-      "correct": "B",
-      "explanation": "Maximum caseload for ongoing workers is 20 cases to ensure quality service delivery and compliance with standards. See manual pages 76, 77 for detailed information.",
-      "studyPages": [76, 77],
-      "category": "Workload Standards",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_015",
-      "text": "Which factor automatically qualifies a family for intensive services?",
-      "options": {
-        "A": "Single parent household",
-        "B": "Previous substantiated abuse with re-referral",
-        "C": "Low income status",
-        "D": "Parent with disability"
-      },
-      "correct": "B",
-      "explanation": "Previous substantiated abuse with a new referral automatically qualifies for intensive services due to elevated risk. See manual pages 20, 21, 22 for detailed information.",
-      "studyPages": [20, 21, 22],
-      "category": "Service Levels",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_016",
-      "text": "How soon must initial contact be attempted after case assignment?",
-      "options": {
-        "A": "Same day",
-        "B": "Within 24 hours",
-        "C": "Within 48 hours",
-        "D": "Within 72 hours"
-      },
-      "correct": "B",
-      "explanation": "Initial contact must be attempted within 24 hours of case assignment to begin engagement and assessment process. See manual pages 13, 14 for detailed information.",
-      "studyPages": [13, 14],
-      "category": "Timeline Requirements",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_017",
-      "text": "What triggers mandatory reporting to law enforcement?",
-      "options": {
-        "A": "Any abuse allegation",
-        "B": "Suspected criminal conduct or severe physical abuse",
-        "C": "Neglect concerns",
-        "D": "All safety concerns"
-      },
-      "correct": "B",
-      "explanation": "Law enforcement must be notified for suspected criminal conduct or severe physical abuse requiring investigation. See manual pages 24, 25, 26 for detailed information.",
-      "studyPages": [24, 25, 26],
-      "category": "Reporting Requirements",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_018",
-      "text": "When can services be terminated without family agreement?",
-      "options": {
-        "A": "Never - family must agree",
-        "B": "After 3 failed contact attempts",
-        "C": "When safety concerns are resolved and court orders completed",
-        "D": "After 6 months automatically"
-      },
-      "correct": "C",
-      "explanation": "Services can be terminated when safety concerns are resolved and any court-ordered requirements are completed, even without family agreement. See manual pages 65, 66, 67 for detailed information.",
-      "studyPages": [65, 66, 67],
-      "category": "Case Closure",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "q_019",
-      "text": "What assessment tool is required for all new investigations?",
-      "options": {
-        "A": "Safety Assessment Tool",
-        "B": "Risk Assessment Matrix",
-        "C": "Family Evaluation Form",
-        "D": "Structured Decision Making (SDM) tools"
-      },
-      "correct": "D",
-      "explanation": "Structured Decision Making (SDM) tools must be used for all investigations to ensure consistent assessment. See manual pages 32, 33 for detailed information.",
-      "studyPages": [32, 33],
-      "category": "Assessment Tools",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_020",
-      "text": "How many business days to complete a comprehensive family assessment?",
-      "options": {
-        "A": "10 days",
-        "B": "20 days",
-        "C": "30 days",
-        "D": "45 days"
-      },
-      "correct": "C",
-      "explanation": "Comprehensive family assessments must be completed within 30 business days to determine service needs and develop plans. See manual pages 16, 17 for detailed information.",
-      "studyPages": [16, 17],
-      "category": "Timeline Requirements",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_021",
-      "text": "Which situation requires a formal staffing with supervisory team?",
-      "options": {
-        "A": "All new cases",
-        "B": "Cases with disagreement on safety decisions",
-        "C": "Routine case closures",
-        "D": "Monthly reviews"
-      },
-      "correct": "B",
-      "explanation": "Formal staffing with supervisory team is required when there's disagreement on safety decisions or complex case decisions. See manual pages 78, 79 for detailed information.",
-      "studyPages": [78, 79],
-      "category": "Supervision Requirements",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_022",
-      "text": "What percentage of visits must occur in the child's residence?",
-      "options": {
-        "A": "25%",
-        "B": "50%",
-        "C": "75%",
-        "D": "100%"
-      },
-      "correct": "B",
-      "explanation": "At least 50% of visits must occur in the child's residence to properly assess living conditions and family dynamics. See manual pages 49, 50 for detailed information.",
-      "studyPages": [49, 50],
-      "category": "Case Management",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_023",
-      "text": "When is parental consent NOT required for services?",
-      "options": {
-        "A": "Never - always required",
-        "B": "Court-ordered services or immediate safety concerns",
-        "C": "Preventive services only",
-        "D": "Assessment phase only"
-      },
-      "correct": "B",
-      "explanation": "Parental consent is not required for court-ordered services or when immediate safety concerns necessitate intervention. See manual pages 29, 30 for detailed information.",
-      "studyPages": [29, 30],
-      "category": "Legal Requirements",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "q_024",
-      "text": "What must be included in every case plan?",
-      "options": {
-        "A": "Specific, measurable goals with timeframes",
-        "B": "Generic service recommendations",
-        "C": "Worker's opinions only",
-        "D": "Court requirements only"
-      },
-      "correct": "A",
-      "explanation": "Case plans must include specific, measurable goals with clear timeframes and responsibilities. See manual pages 44, 45, 46 for detailed information.",
-      "studyPages": [44, 45, 46],
-      "category": "Case Planning",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_025",
-      "text": "How long do families have to appeal a service decision?",
-      "options": {
-        "A": "10 days",
-        "B": "30 days",
-        "C": "60 days",
-        "D": "90 days"
-      },
-      "correct": "B",
-      "explanation": "Families have 30 days from notification to appeal service decisions through the formal appeals process. See manual pages 74, 75 for detailed information.",
-      "studyPages": [74, 75],
-      "category": "Appeals Process",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_026",
-      "text": "What training is required within first year of employment?",
-      "options": {
-        "A": "Orientation only",
-        "B": "Core training plus 40 hours continuing education",
-        "C": "Online modules only",
-        "D": "Shadowing experienced workers"
-      },
-      "correct": "B",
-      "explanation": "New workers must complete core training plus 40 hours of continuing education within first year. See manual pages 80, 81, 82 for detailed information.",
-      "studyPages": [80, 81, 82],
-      "category": "Training Requirements",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_027",
-      "text": "Which children require monthly photographs for documentation?",
-      "options": {
-        "A": "All children in care",
-        "B": "Children under age 5 or non-verbal",
-        "C": "Only infants",
-        "D": "No photos required"
-      },
-      "correct": "B",
-      "explanation": "Monthly photographs are required for children under 5 or non-verbal children to document physical condition. See manual pages 54, 55 for detailed information.",
-      "studyPages": [54, 55],
-      "category": "Documentation",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "q_028",
-      "text": "What determines eligibility for kinship care placement?",
-      "options": {
-        "A": "Blood relationship only",
-        "B": "Background check and home study approval",
-        "C": "Family request only",
-        "D": "Geographic proximity"
-      },
-      "correct": "B",
-      "explanation": "Kinship placements require background checks and home study approval regardless of relationship. See manual pages 57, 58, 59 for detailed information.",
-      "studyPages": [57, 58, 59],
-      "category": "Placement Decisions",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_029",
-      "text": "When must critical incidents be reported to state office?",
-      "options": {
-        "A": "Within 2 hours",
-        "B": "Within 24 hours",
-        "C": "Within 48 hours",
-        "D": "Within 72 hours"
-      },
-      "correct": "A",
-      "explanation": "Critical incidents must be reported to state office within 2 hours of discovery for immediate review. See manual pages 83, 84 for detailed information.",
-      "studyPages": [83, 84],
-      "category": "Reporting Requirements",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_030",
-      "text": "What action requires court approval within 72 hours?",
-      "options": {
-        "A": "Starting services",
-        "B": "Emergency removal of child",
-        "C": "Case plan changes",
-        "D": "Worker assignment"
-      },
-      "correct": "B",
-      "explanation": "Emergency removal requires court hearing within 72 hours to review and approve continued placement. See manual pages 85, 86, 87 for detailed information.",
-      "studyPages": [85, 86, 87],
-      "category": "Legal Requirements",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_031",
-      "text": "Which families are eligible for voluntary prevention services?",
-      "options": {
-        "A": "Only those with prior involvement",
-        "B": "Any family requesting help before crisis",
-        "C": "Court-referred only",
-        "D": "Income-eligible only"
-      },
-      "correct": "B",
-      "explanation": "Any family can request voluntary prevention services before crisis to strengthen family functioning. See manual pages 88, 89 for detailed information.",
-      "studyPages": [88, 89],
-      "category": "Prevention Services",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_032",
-      "text": "What is required for interstate placement of children?",
-      "options": {
-        "A": "Family agreement only",
-        "B": "ICPC approval process",
-        "C": "Court order only",
-        "D": "Worker discretion"
-      },
-      "correct": "B",
-      "explanation": "Interstate Compact on Placement of Children (ICPC) approval is required for all interstate placements. See manual pages 60, 90, 91 for detailed information.",
-      "studyPages": [60, 90, 91],
-      "category": "Placement Decisions",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_033",
-      "text": "How often must concurrent planning be reviewed?",
-      "options": {
-        "A": "Monthly",
-        "B": "Every court hearing",
-        "C": "Every 6 months",
-        "D": "Annually"
-      },
-      "correct": "B",
-      "explanation": "Concurrent planning must be reviewed at every court hearing to ensure timely permanency. See manual pages 92, 93 for detailed information.",
-      "studyPages": [92, 93],
-      "category": "Permanency Planning",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_034",
-      "text": "What threshold must be met for substantiated finding?",
-      "options": {
-        "A": "Beyond reasonable doubt",
-        "B": "Clear and convincing",
-        "C": "Preponderance of evidence",
-        "D": "Any credible evidence"
-      },
-      "correct": "C",
-      "explanation": "Preponderance of evidence (more likely than not) is the standard for substantiated findings. See manual pages 94, 95 for detailed information.",
-      "studyPages": [94, 95],
-      "category": "Investigation Standards",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "q_035",
-      "text": "When can information be shared without release?",
-      "options": {
-        "A": "Never",
-        "B": "Between agencies for child protection",
-        "C": "With any professional",
-        "D": "Public information only"
-      },
-      "correct": "B",
-      "explanation": "Information can be shared between agencies without release when necessary for child protection. See manual pages 96, 97 for detailed information.",
-      "studyPages": [96, 97],
-      "category": "Confidentiality",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_036",
-      "text": "What requires immediate notification to placing agency?",
-      "options": {
-        "A": "Any behavior issue",
-        "B": "Serious injury, allegation, or placement disruption",
-        "C": "School problems",
-        "D": "Medical appointments"
-      },
-      "correct": "B",
-      "explanation": "Serious injuries, abuse allegations, or placement disruptions require immediate notification. See manual pages 98, 99 for detailed information.",
-      "studyPages": [98, 99],
-      "category": "Notification Requirements",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_037",
-      "text": "How long to complete adoption home studies?",
-      "options": {
-        "A": "30 days",
-        "B": "60 days",
-        "C": "90 days",
-        "D": "120 days"
-      },
-      "correct": "D",
-      "explanation": "Adoption home studies must be completed within 120 days of application for timely processing. See manual pages 100, 101 for detailed information.",
-      "studyPages": [100, 101],
-      "category": "Adoption Process",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_038",
-      "text": "What age can youth sign their own service agreements?",
-      "options": {
-        "A": "14 years",
-        "B": "16 years",
-        "C": "18 years",
-        "D": "21 years"
-      },
-      "correct": "C",
-      "explanation": "Youth can sign their own service agreements at age 18 when they reach legal majority. See manual pages 102, 103 for detailed information.",
-      "studyPages": [102, 103],
-      "category": "Youth Services",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "q_039",
-      "text": "Which medication requires court approval for children in care?",
-      "options": {
-        "A": "All medications",
-        "B": "Psychotropic medications",
-        "C": "Over-the-counter only",
-        "D": "Emergency medications"
-      },
-      "correct": "B",
-      "explanation": "Psychotropic medications require court approval to ensure appropriate oversight and monitoring. See manual pages 104, 105 for detailed information.",
-      "studyPages": [104, 105],
-      "category": "Medical Consent",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "q_040",
-      "text": "What is minimum education requirement for FCS workers?",
-      "options": {
-        "A": "High school diploma",
-        "B": "Associate degree",
-        "C": "Bachelor's degree in related field",
-        "D": "Master's degree"
-      },
-      "correct": "C",
-      "explanation": "Minimum requirement is Bachelor's degree in social work or related human services field. See manual pages 106, 107 for detailed information.",
-      "studyPages": [106, 107],
-      "category": "Staffing Requirements",
-      "difficulty": "Easy"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "category": "Eligibility Criteria",
+    "subcategory": "CSS Eligibility",
+    "question": "What is the minimum age requirement for Supportive Housing services?",
+    "options": [
+      "14 years or older",
+      "16 years or older",
+      "18 years or older",
+      "21 years or older"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to page 9, eligible populations for Supportive Housing services include individuals who are 16 or older.",
+    "pageReference": "Page 9"
+  },
+  {
+    "id": 2,
+    "category": "Eligibility Criteria",
+    "subcategory": "CSS Eligibility",
+    "question": "Which of the following is NOT a health needs-based criteria for CSS eligibility?",
+    "options": [
+      "Mental health need",
+      "Need for outpatient substance use disorder treatment",
+      "Need for assistance with three or more ADLs",
+      "Need for employment support"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Employment support is not listed as a health needs-based criteria for CSS. The criteria listed on page 9 include mental health need, substance use disorder treatment, and ADL assistance.",
+    "pageReference": "Page 9"
+  },
+  {
+    "id": 3,
+    "category": "Billing Codes",
+    "subcategory": "CSS Billing",
+    "question": "What is the billing code for Supportive Housing services per diem?",
+    "options": [
+      "H0043",
+      "H2023",
+      "H2025",
+      "H0044"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Page 9 states that when billing for Supportive Housing services, use code H0043 for per diem services.",
+    "pageReference": "Page 9"
+  },
+  {
+    "id": 4,
+    "category": "Billing Codes",
+    "subcategory": "CSS Billing",
+    "question": "What is the daily rate for Community Support Services (H0043)?",
+    "options": [
+      "$105",
+      "$112",
+      "$125",
+      "$137"
+    ],
+    "correctAnswer": 1,
+    "explanation": "According to the FCS Rate Increase Table on page 44, the permanent rate for H0043 effective July 1, 2020 is $112 per diem.",
+    "pageReference": "Page 44"
+  },
+  {
+    "id": 5,
+    "category": "Service Limits",
+    "subcategory": "CSS Service Limits",
+    "question": "What is the benefit limitation for CSS services over a 180-day period?",
+    "options": [
+      "15 days",
+      "30 days",
+      "60 days",
+      "90 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 11 states that CSS encounters have a benefit limitation of 30 days over a 180-day authorization period.",
+    "pageReference": "Page 11"
+  },
+  {
+    "id": 6,
+    "category": "Eligibility Criteria",
+    "subcategory": "IPS Eligibility",
+    "question": "What is the minimum age requirement for Individual Placement and Support (IPS) services?",
+    "options": [
+      "14 years",
+      "16 years",
+      "18 years",
+      "21 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 14 states that the individual must be at least 16 years of age to meet IPS eligibility criteria.",
+    "pageReference": "Page 14"
+  },
+  {
+    "id": 7,
+    "category": "Billing Codes",
+    "subcategory": "IPS Billing",
+    "question": "What is the billing code for Pre-employment services?",
+    "options": [
+      "H0043",
+      "H2023",
+      "H2025",
+      "H2026"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 15 identifies H2023 as the code for Pre-employment services - activities that assist an individual with obtaining employment.",
+    "pageReference": "Page 15"
+  },
+  {
+    "id": 8,
+    "category": "Billing Codes",
+    "subcategory": "IPS Billing",
+    "question": "What is the rate per 15-minute unit for supported employment services (H2023 and H2025)?",
+    "options": [
+      "$25",
+      "$27",
+      "$33",
+      "$35"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The FCS Rate Increase Table on page 44 shows the permanent rate effective July 1, 2020 for both H2023 and H2025 is $27 per 15-minute unit.",
+    "pageReference": "Page 44"
+  },
+  {
+    "id": 9,
+    "category": "Service Limits",
+    "subcategory": "IPS Service Limits",
+    "question": "What is the maximum number of units allowed for supported employment services over a 180-day period?",
+    "options": [
+      "60 units",
+      "90 units",
+      "120 units",
+      "150 units"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 16 states that pre-employment and employment-sustaining services are limited to 120 units over a 180-day period.",
+    "pageReference": "Page 16"
+  },
+  {
+    "id": 10,
+    "category": "Documentation Requirements",
+    "subcategory": "Progress Notes",
+    "question": "What documentation format is commonly used for progress notes?",
+    "options": [
+      "SOAP format",
+      "DARP format",
+      "PIE format",
+      "DAP format"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 63 states that the DARP (Description, Assessment, Response, Plan) format is commonly used and contains all elements required for effective documentation.",
+    "pageReference": "Page 63"
+  },
+  {
+    "id": 11,
+    "category": "Provider Qualifications",
+    "subcategory": "Supportive Housing",
+    "question": "How many years of experience in coordination of Supportive Housing services are required for provider qualification?",
+    "options": [
+      "One year",
+      "Two years",
+      "Three years",
+      "Five years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 28 states that providers need two years' experience in the coordination of Supportive Housing or in the coordination of independent living services in a social service setting under qualified supervision.",
+    "pageReference": "Page 28"
+  },
+  {
+    "id": 12,
+    "category": "Documentation Requirements",
+    "subcategory": "Telephone Contact",
+    "question": "What is the minimum duration for a billable telephone call?",
+    "options": [
+      "10 minutes",
+      "15 minutes",
+      "20 minutes",
+      "30 minutes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pages 12 and 14 both state that telephone calls of at least 15 minutes are billable.",
+    "pageReference": "Page 12"
+  },
+  {
+    "id": 13,
+    "category": "Billing Procedures",
+    "subcategory": "Timely Filing",
+    "question": "What is the timely filing deadline for claims submission?",
+    "options": [
+      "90 calendar days",
+      "180 calendar days",
+      "365 calendar days",
+      "730 calendar days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 20 states that timely filing is within 365 calendar days of the date of service.",
+    "pageReference": "Page 20"
+  },
+  {
+    "id": 14,
+    "category": "Prior Authorization",
+    "subcategory": "CSS Services",
+    "question": "Can CSS services be provided or billed before authorization?",
+    "options": [
+      "Yes, for emergency situations",
+      "Yes, with provider approval",
+      "No, never",
+      "Yes, with retroactive approval"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 12 clearly states that CSS may not be provided or billed prior to an authorization for service.",
+    "pageReference": "Page 12"
+  },
+  {
+    "id": 15,
+    "category": "Service Definitions",
+    "subcategory": "CSS Exclusions",
+    "question": "Which of the following is NOT excluded from CSS benefits?",
+    "options": [
+      "Payment of rent",
+      "Capital costs for housing modification",
+      "Care coordination services",
+      "Utilities expenses"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 11-12 lists CSS exclusions which include rent, capital costs, utilities, but care coordination is part of the service.",
+    "pageReference": "Page 11-12"
+  },
+  {
+    "id": 16,
+    "category": "Quality Monitoring",
+    "subcategory": "Reporting Requirements",
+    "question": "By what day of the month must providers submit their monthly outcome and capacity reports?",
+    "options": [
+      "5th",
+      "10th",
+      "15th",
+      "30th"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 32 states that Provider Outcome and Capacity Reports are due before the 10th of every month.",
+    "pageReference": "Page 32"
+  },
+  {
+    "id": 17,
+    "category": "Eligibility Criteria",
+    "subcategory": "Risk Factors",
+    "question": "What qualifies as 'frequent' institutional contacts for CSS eligibility?",
+    "options": [
+      "One or more contacts in 12 months",
+      "Two or more contacts in 12 months",
+      "Three or more contacts in 12 months",
+      "Four or more contacts in 12 months"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 9 defines frequent as two or more contacts in the past 12 months.",
+    "pageReference": "Page 9"
+  },
+  {
+    "id": 18,
+    "category": "Provider Qualifications",
+    "subcategory": "Supported Employment",
+    "question": "Which certification is acceptable for staff performing Supported Employment Services?",
+    "options": [
+      "CESP (Certified Employment Support Professional)",
+      "LCSW (Licensed Clinical Social Worker)",
+      "RN (Registered Nurse)",
+      "CADC (Certified Alcohol and Drug Counselor)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Page 29 lists CESP certification by the Employment Support Professional Certification Council as one of the acceptable qualifications.",
+    "pageReference": "Page 29"
+  },
+  {
+    "id": 19,
+    "category": "Documentation Requirements",
+    "subcategory": "Treatment Records",
+    "question": "How often are enrollees entitled to a free copy of their treatment record?",
+    "options": [
+      "Once every six months",
+      "Once each year",
+      "Once every two years",
+      "Upon each request"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 62 states that enrollees are entitled to one copy of their treatment record each year at no cost.",
+    "pageReference": "Page 62"
+  },
+  {
+    "id": 20,
+    "category": "Billing Procedures",
+    "subcategory": "Clean Claims",
+    "question": "Within how many calendar days must clean claims be adjudicated?",
+    "options": [
+      "15 days",
+      "30 days",
+      "45 days",
+      "60 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 52 states that Wellpoint will adjudicate clean claims to a paid or denied status within 30 calendar days of receipt.",
+    "pageReference": "Page 52"
+  },
+  {
+    "id": 21,
+    "category": "Service Definitions",
+    "subcategory": "IPS Principles",
+    "question": "According to IPS principles, how quickly should job search begin?",
+    "options": [
+      "Within 60 days",
+      "Within 45 days",
+      "Within 30 days",
+      "Within 90 days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 13 states that beginning the job search process early (within 30 days) demonstrates to enrollees their desire to work is taken seriously.",
+    "pageReference": "Page 13"
+  },
+  {
+    "id": 22,
+    "category": "Prior Authorization",
+    "subcategory": "Exception Requests",
+    "question": "What form must accompany an Exception to Rule (ETR) request?",
+    "options": [
+      "Provider Agreement Form",
+      "Single Case Agreement Form",
+      "Prior Authorization Form",
+      "Service Request Form"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 23 states that providers must submit a signed Single Case Agreement Form with ETR requests.",
+    "pageReference": "Page 23"
+  },
+  {
+    "id": 23,
+    "category": "Billing Codes",
+    "subcategory": "Employment Services",
+    "question": "What does H2025 code represent?",
+    "options": [
+      "Pre-employment services",
+      "Employment-sustaining services",
+      "Community support services",
+      "Assessment services"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 16 identifies H2025 as Employment-sustaining services - activities that support the individual in retaining and maintaining employment.",
+    "pageReference": "Page 16"
+  },
+  {
+    "id": 24,
+    "category": "Service Limits",
+    "subcategory": "Reauthorization",
+    "question": "How long is each authorization period for FCS services?",
+    "options": [
+      "90 days",
+      "120 days",
+      "180 days",
+      "365 days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Multiple references throughout the manual indicate authorization periods are 180 days.",
+    "pageReference": "Page 11, 16"
+  },
+  {
+    "id": 25,
+    "category": "Provider Responsibilities",
+    "subcategory": "Critical Incidents",
+    "question": "When must critical incidents be reported to Wellpoint?",
+    "options": [
+      "Within 24 hours",
+      "On the same business day",
+      "Within 48 hours",
+      "Within 72 hours"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 6 states that critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness.",
+    "pageReference": "Page 6"
+  },
+  {
+    "id": 26,
+    "category": "Documentation Requirements",
+    "subcategory": "Assessment Validity",
+    "question": "How old can an assessment be when submitted to Wellpoint?",
+    "options": [
+      "No more than 5 business days",
+      "No more than 10 business days",
+      "No more than 15 business days",
+      "No more than 30 business days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 22 states that the assessment may not be more than 10 business days old when submitted.",
+    "pageReference": "Page 22"
+  },
+  {
+    "id": 27,
+    "category": "Quality Monitoring",
+    "subcategory": "Wait Times",
+    "question": "What is the maximum routine in-office wait time for scheduled appointments?",
+    "options": [
+      "30 minutes",
+      "45 minutes",
+      "60 minutes",
+      "90 minutes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 28 states that in-office wait time for scheduled appointments should not routinely exceed 45 minutes.",
+    "pageReference": "Page 28"
+  },
+  {
+    "id": 28,
+    "category": "Eligibility Criteria",
+    "subcategory": "Medicaid Coverage",
+    "question": "Which is NOT an eligible Apple Health coverage group for FCS?",
+    "options": [
+      "CN Aged",
+      "ACA Expansion Adults",
+      "Emergency Medicaid",
+      "CN Pregnant Women"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 21 lists eligible coverage groups, which do not include Emergency Medicaid.",
+    "pageReference": "Page 21"
+  },
+  {
+    "id": 29,
+    "category": "Billing Procedures",
+    "subcategory": "Electronic Claims",
+    "question": "What is the Availity Payer ID for FCS claims?",
+    "options": [
+      "WAFCS",
+      "WLPNT",
+      "FCSTPA",
+      "WAHCA"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 6 and page 51 both indicate the Availity Payer ID is WLPNT.",
+    "pageReference": "Page 6, 51"
+  },
+  {
+    "id": 30,
+    "category": "Service Definitions",
+    "subcategory": "Excluded Services",
+    "question": "Which type of employment setting is excluded from FCS supported employment services?",
+    "options": [
+      "Competitive employment",
+      "Integrated community employment",
+      "Sheltered workshop settings",
+      "Part-time employment"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 14 explicitly excludes employment support for individuals in subminimum or sheltered workshop settings.",
+    "pageReference": "Page 14"
+  },
+  {
+    "id": 31,
+    "category": "Provider Responsibilities",
+    "subcategory": "Disenrollment",
+    "question": "How many attempts must be made to contact an inactive enrollee before involuntary disenrollment?",
+    "options": [
+      "At least two attempts",
+      "At least three attempts",
+      "At least four attempts",
+      "At least five attempts"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 24 states that at least four attempts at contacting the inactive FCS enrollee must occur over a minimum of six weeks.",
+    "pageReference": "Page 24"
+  },
+  {
+    "id": 32,
+    "category": "Documentation Requirements",
+    "subcategory": "Progress Note Elements",
+    "question": "Which element must be included on each page of treatment records?",
+    "options": [
+      "Provider NPI number",
+      "Enrollee identification information",
+      "Service authorization number",
+      "Billing code"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 62 states that treatment records must include enrollee identification information shown on each page or electronic file.",
+    "pageReference": "Page 62"
+  },
+  {
+    "id": 33,
+    "category": "Prior Authorization",
+    "subcategory": "Waitlist Management",
+    "question": "During an enrollment pause, what is the window for reauthorizing individuals after authorization expires?",
+    "options": [
+      "15 days",
+      "30 days",
+      "45 days",
+      "60 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 26 states that during an enrollment pause, the FCS program will have a 30-day window for reauthorizing individuals after their authorization has expired.",
+    "pageReference": "Page 26"
+  },
+  {
+    "id": 34,
+    "category": "Billing Procedures",
+    "subcategory": "Overpayment Recovery",
+    "question": "Within how many days must providers return self-identified overpayments?",
+    "options": [
+      "30 calendar days",
+      "45 calendar days",
+      "60 calendar days",
+      "90 calendar days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 54 states providers must return overpayments within sixty (60) calendar days after the date on which the overpayment was identified.",
+    "pageReference": "Page 54"
+  },
+  {
+    "id": 35,
+    "category": "Quality Monitoring",
+    "subcategory": "Fraud Reporting",
+    "question": "What is the SIU fraud referral hotline number?",
+    "options": [
+      "844-451-2828",
+      "866-847-8247",
+      "833-731-2274",
+      "800-562-3022"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 35 provides the SIU fraud referral hotline as 866-847-8247.",
+    "pageReference": "Page 35"
+  },
+  {
+    "id": 36,
+    "category": "Service Limits",
+    "subcategory": "TAP Funding",
+    "question": "What is the maximum TAP funding amount per 12-month period for move-in assistance?",
+    "options": [
+      "$3,000",
+      "$4,000",
+      "$5,000",
+      "$6,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 67 states that move-in assistance can be up to $5,000 total per 12-month period.",
+    "pageReference": "Page 67"
+  },
+  {
+    "id": 37,
+    "category": "Provider Qualifications",
+    "subcategory": "Required Documentation",
+    "question": "What type of NPI is required for FCS provider contracting?",
+    "options": [
+      "Type 1 individual NPI",
+      "Type 2 organization NPI",
+      "Either Type 1 or Type 2",
+      "Both Type 1 and Type 2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 6 specifies that providers need an NPI number (type 2 organization NPI) for contracting.",
+    "pageReference": "Page 6"
+  },
+  {
+    "id": 38,
+    "category": "Documentation Requirements",
+    "subcategory": "SMART Goals",
+    "question": "What does the 'M' in SMART goals stand for?",
+    "options": [
+      "Manageable",
+      "Measurable",
+      "Meaningful",
+      "Motivated"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 63 explains that SMART goals are Specific, Measurable, Achievable, Relevant, and Time-Bound.",
+    "pageReference": "Page 63"
+  },
+  {
+    "id": 39,
+    "category": "Billing Procedures",
+    "subcategory": "Payment Disputes",
+    "question": "How many days do providers have to submit a claim payment appeal after the reconsideration determination?",
+    "options": [
+      "15 calendar days",
+      "30 calendar days",
+      "45 calendar days",
+      "60 calendar days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Page 59 states that claim payment appeals must be submitted within 30 calendar days of the date on the reconsideration determination letter.",
+    "pageReference": "Page 59"
+  },
+  {
+    "id": 40,
+    "category": "Service Definitions",
+    "subcategory": "Housing Principles",
+    "question": "According to Supportive Housing principles, can tenants be evicted for rejecting services?",
+    "options": [
+      "Yes, after 30 days",
+      "Yes, with provider approval",
+      "No, never",
+      "Yes, with state approval"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Page 10 clearly states that tenants cannot be evicted from their housing for rejecting services, disenrolling from FCS services or for changing FCS service provider.",
+    "pageReference": "Page 10"
+  }
+]
