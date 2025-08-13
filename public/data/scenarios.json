@@ -1,0 +1,324 @@
+{
+  "scenarios": [
+    {
+      "id": "s1",
+      "title": "New Provider Enrollment",
+      "description": "A behavioral health agency wants to become an FCS provider. They have experience providing mental health services but are new to the FCS program. What documentation must they submit to begin the contracting process?",
+      "options": [
+        "Only their state license and insurance information",
+        "W-9, Type 2 organization NPI, Provider Medicaid ID, and primary contact information",
+        "Just a completed application form",
+        "Financial statements and client references"
+      ],
+      "correctAnswer": 1,
+      "explanation": "New providers must submit a W-9, Type 2 organization NPI number, Provider Medicaid ID, and primary contact information including address, phone number, and email to FCSTPA@Wellpoint.com.",
+      "category": "Provider Enrollment",
+      "difficulty": "Medium",
+      "pageRef": 6
+    },
+    {
+      "id": "s2",
+      "title": "Critical Incident Reporting",
+      "description": "A provider discovers at 3 PM that an enrollee was hospitalized last night due to a medical emergency. The provider just learned about this incident. When must they report this to Wellpoint?",
+      "options": [
+        "Within 24 hours of the incident",
+        "By the end of the same business day they became aware",
+        "Within 48 hours",
+        "At the next monthly report"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Critical incidents must be reported to Wellpoint on the same business day of occurrence or provider awareness. Since the provider became aware at 3 PM, they must report it today.",
+      "category": "Provider Requirements",
+      "difficulty": "Hard",
+      "pageRef": 6
+    },
+    {
+      "id": "s3",
+      "title": "Billing for Services",
+      "description": "A provider spent 45 minutes conducting a housing assessment with an enrollee, followed by 30 minutes coordinating with landlords on the enrollee's behalf. Can they bill using the H0043 per diem code?",
+      "options": [
+        "No, they didn't meet the minimum time requirement",
+        "Yes, they provided 75 minutes of service with face-to-face interaction",
+        "No, landlord coordination doesn't count",
+        "Only if documented properly"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, they can bill H0043. The per diem code requires at least 60 minutes of services including at least one instance of face-to-face interaction. They provided 75 minutes total with face-to-face assessment time.",
+      "category": "Billing and Claims",
+      "difficulty": "Medium",
+      "pageRef": 9
+    },
+    {
+      "id": "s4",
+      "title": "Eligibility Determination",
+      "description": "A 17-year-old has been homeless for 6 months, has mental health needs requiring stabilization, and needs help with 2 ADLs. Are they eligible for Supportive Housing services?",
+      "options": [
+        "Yes, they meet all eligibility criteria",
+        "No, they don't need help with enough ADLs",
+        "No, they haven't been homeless long enough",
+        "Yes, but only for employment services"
+      ],
+      "correctAnswer": 1,
+      "explanation": "No, they don't meet the criteria. While they are over 16 and have mental health needs, they only need help with 2 ADLs (requirement is 3 or more) and don't meet the chronic homelessness definition or other risk factors.",
+      "category": "Eligibility",
+      "difficulty": "Hard",
+      "pageRef": 8
+    },
+    {
+      "id": "s5",
+      "title": "Tenant Rights",
+      "description": "An enrollee in Supportive Housing decides to stop participating in FCS services but wants to keep their apartment. The landlord threatens eviction. What principle protects the tenant?",
+      "options": [
+        "They have no protection and can be evicted",
+        "Tenant choice principle - they cannot be evicted for rejecting services",
+        "Only if they find another service provider",
+        "They have 30 days to resume services"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The tenant choice principle protects enrollees from eviction for rejecting services, disenrolling from FCS services, or changing FCS service providers.",
+      "category": "Supportive Housing",
+      "difficulty": "Medium",
+      "pageRef": 9
+    },
+    {
+      "id": "s6",
+      "title": "Claims Submission Error",
+      "description": "A provider submitted electronic claims through a clearinghouse but used payer ID 'WLPWA' instead of the correct ID. What will happen to these claims?",
+      "options": [
+        "They will be automatically forwarded",
+        "They will be rejected due to incorrect payer ID",
+        "They will process but take longer",
+        "They will be held for manual review"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Claims will be rejected. The correct electronic claims payer ID for Availity is 'WLPNT', not 'WLPWA'.",
+      "category": "Billing and Claims",
+      "difficulty": "Medium",
+      "pageRef": 6
+    },
+    {
+      "id": "s7",
+      "title": "Address Change Request",
+      "description": "A provider needs to update their billing address but not their service location address. They submit a request but forget to include something required. What did they likely forget?",
+      "options": [
+        "A new W-9 form",
+        "Phone numbers (even if unchanged)",
+        "Notarized documentation",
+        "Staff roster"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Phone numbers are required for all address change requests, even if unchanged, to ensure accuracy in the system.",
+      "category": "Provider Requirements",
+      "difficulty": "Medium",
+      "pageRef": 7
+    },
+    {
+      "id": "s8",
+      "title": "PRISM Score Eligibility",
+      "description": "An individual has a PRISM score of 1.4, stable housing, and complex physical health needs. Are they eligible for FCS services?",
+      "options": [
+        "Yes, complex health needs are sufficient",
+        "No, they need a PRISM score of 1.5 or above",
+        "Yes, if they have Medicaid",
+        "No, they have stable housing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "No, they don't meet eligibility. While they have complex physical health needs (health criteria), they need at least one risk factor. Their PRISM score is below 1.5 and they have stable housing.",
+      "category": "Eligibility",
+      "difficulty": "Hard",
+      "pageRef": 8
+    },
+    {
+      "id": "s9",
+      "title": "Service Coordination",
+      "description": "A property manager notices a tenant struggling with rent payments and contacts the FCS support services staff. Is this appropriate coordination?",
+      "options": [
+        "No, housing and services must be completely separate",
+        "Yes, coordination helps prevent evictions and ensures support access",
+        "Only if the tenant consents first",
+        "No, this violates tenant privacy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, this is appropriate. Property managers and support service staff should coordinate to help prevent evictions and ensure tenants have access to necessary services and supports.",
+      "category": "Supportive Housing",
+      "difficulty": "Medium",
+      "pageRef": 9
+    },
+    {
+      "id": "s10",
+      "title": "Claim Payment Dispute",
+      "description": "A provider wants to dispute a denied claim from 45 days ago. They have all supporting documentation ready. What information must they include in their dispute?",
+      "options": [
+        "Just the claim number and amount",
+        "Only the enrollee's name and date of service",
+        "Provider details (name, NPI/TIN), enrollee info, claim details, and supporting documentation",
+        "A brief explanation of why they disagree"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Claim payment disputes require comprehensive information: provider name, address, phone, email, NPI/TIN, enrollee's name and Medicaid ID, disputed claim details, and all supporting documentation.",
+      "category": "Billing and Claims",
+      "difficulty": "Medium",
+      "pageRef": 7
+    },
+    {
+      "id": "s11",
+      "title": "Housing Preference Assessment",
+      "description": "During intake, a provider needs to assess an enrollee's housing preferences. What type of assessment should they conduct?",
+      "options": [
+        "Medical needs assessment",
+        "Functional needs assessment",
+        "Psychological evaluation",
+        "Financial assessment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A functional needs assessment should be conducted to identify the enrollee's preferences related to housing (type, location, roommates, accommodations) and support needs.",
+      "category": "Supportive Housing",
+      "difficulty": "Medium",
+      "pageRef": 10
+    },
+    {
+      "id": "s12",
+      "title": "Provider Availability",
+      "description": "An enrollee calls the FCS Provider Services line at 6 PM Pacific time on a Wednesday. Will they reach a live representative?",
+      "options": [
+        "Yes, services are 24/7",
+        "No, but the IVR system is available",
+        "Yes, until 8 PM",
+        "No services after 5 PM"
+      ],
+      "correctAnswer": 1,
+      "explanation": "No live representative will be available as the FCS team works Monday-Friday 8 a.m.-5 p.m. Pacific time. However, the IVR system is available 24/7.",
+      "category": "Contact Information",
+      "difficulty": "Easy",
+      "pageRef": 5
+    },
+    {
+      "id": "s13",
+      "title": "TIN Change Process",
+      "description": "A provider organization is changing their Tax ID number. They prepare a letter on letterhead with all required information but use their official stamp for the signature. Will this be accepted?",
+      "options": [
+        "Yes, official stamps are acceptable",
+        "No, stamped signatures are not accepted",
+        "Yes, if notarized",
+        "Only with additional verification"
+      ],
+      "correctAnswer": 1,
+      "explanation": "No, the letter will not be accepted. TIN change letters must have a physical signature; stamped signatures are explicitly not accepted.",
+      "category": "Provider Requirements",
+      "difficulty": "Medium",
+      "pageRef": 7
+    },
+    {
+      "id": "s14",
+      "title": "Institutional Stay History",
+      "description": "An individual had three separate week-long stays in a skilled nursing facility over the past year. Do they meet the risk factor criteria for frequent institutional stays?",
+      "options": [
+        "No, each stay was too short",
+        "Yes, they had two or more contacts in 12 months",
+        "No, skilled nursing doesn't count",
+        "Only if documented properly"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, they meet the criteria. 'Frequent' is defined as two or more contacts in the past 12 months, regardless of length. They had three separate stays.",
+      "category": "Eligibility",
+      "difficulty": "Medium",
+      "pageRef": 8
+    },
+    {
+      "id": "s15",
+      "title": "Electronic Claims Setup",
+      "description": "A new provider wants to start submitting claims electronically. Where should they submit their claims and what system should they use?",
+      "options": [
+        "ProviderOne portal only",
+        "Availity.com using payer ID WLPNT",
+        "Direct email to Wellpoint",
+        "Washington state portal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Electronic claims should be submitted through Availity.com using the payer ID WLPNT for proper routing and processing.",
+      "category": "Billing and Claims",
+      "difficulty": "Easy",
+      "pageRef": 6
+    },
+    {
+      "id": "s16",
+      "title": "Collateral Services",
+      "description": "A case manager spends 2 hours meeting with potential landlords to find housing options for an enrollee who wasn't present. Can this time count toward billable services?",
+      "options": [
+        "No, the enrollee must be present",
+        "Yes, this is considered collateral services",
+        "Only one hour can be billed",
+        "No, only direct services count"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, this counts as collateral services. Housing search and landlord engagement on behalf of a specific individual are included in Community Support Services.",
+      "category": "Supportive Housing",
+      "difficulty": "Medium",
+      "pageRef": 10
+    },
+    {
+      "id": "s17",
+      "title": "Chronic Homelessness Exception",
+      "description": "An individual was chronically homeless but got housed 45 days ago. They're struggling to maintain housing and need FCS services. Are they still eligible?",
+      "options": [
+        "No, they're housed now",
+        "Yes, they can qualify if housed within the last 60 days",
+        "Only with special approval",
+        "No, they need to be currently homeless"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, individuals who previously met the HUD definition of chronic homelessness but have been housed in the last 60 days still qualify for services.",
+      "category": "Eligibility",
+      "difficulty": "Hard",
+      "pageRef": 8
+    },
+    {
+      "id": "s18",
+      "title": "Housing Integration Rights",
+      "description": "A provider suggests placing all FCS enrollees with disabilities in one apartment building for easier service delivery. Is this appropriate?",
+      "options": [
+        "Yes, it's more efficient",
+        "No, tenants have the right to integrated settings",
+        "Only with enrollee consent",
+        "Yes, if it's high quality housing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "No, this violates the integration principle. Supportive Housing tenants with disabilities have the right to receive housing and services in the most integrated settings available.",
+      "category": "Supportive Housing",
+      "difficulty": "Medium",
+      "pageRef": 9
+    },
+    {
+      "id": "s19",
+      "title": "Service Delivery Flexibility",
+      "description": "Due to severe weather, a provider cannot meet an enrollee in person but spends an hour on the phone providing housing support and coordination. Can they bill for this service?",
+      "options": [
+        "No, services must be in-person only",
+        "Yes, services can be provided flexibly",
+        "Only half the time can be billed",
+        "No, phone services don't count"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, Supportive Housing services can be provided flexibly, including in-person or on behalf of an individual. However, each per diem still requires at least one face-to-face interaction.",
+      "category": "Supportive Housing",
+      "difficulty": "Hard",
+      "pageRef": 8
+    },
+    {
+      "id": "s20",
+      "title": "Frequent Caregiver Turnover",
+      "description": "An elderly individual has had 4 different in-home caregivers in the past 10 months due to scheduling conflicts. Do they meet the risk factor for frequent caregiver turnover?",
+      "options": [
+        "No, it must be within 12 months",
+        "Yes, they had 3 or more different providers",
+        "No, scheduling conflicts don't count",
+        "Only if currently without care"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, they meet the criteria. Frequent turnover is defined as utilizing three or more different in-home caregiver providers within the last 12 months. They had 4 in 10 months.",
+      "category": "Eligibility",
+      "difficulty": "Medium",
+      "pageRef": 8
+    }
+  ]
+}
