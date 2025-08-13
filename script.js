@@ -80,6 +80,10 @@ function initializeEventListeners() {
     // Flashcard flip
     document.getElementById('flashcard').addEventListener('click', function() {
         this.classList.toggle('flipped');
+        // Track flashcard review for gamification
+        if (!this.classList.contains('flipped')) {
+            gamification.onFlashcardReviewed();
+        }
     });
 
     // Filters
@@ -131,6 +135,11 @@ function showMode(mode) {
         content.classList.remove('active');
     });
     document.getElementById(`${mode}Mode`).classList.add('active');
+    
+    // Handle gamification dashboard
+    if (mode === 'progress') {
+        renderGamificationDashboard();
+    }
 }
 
 // Question functionality
@@ -185,6 +194,26 @@ function displayQuestion() {
 function selectAnswer(key, question) {
     questionAnswers[question.id] = key;
     saveProgress();
+    
+    // Track for gamification
+    const isCorrect = key === question.correct;
+    const answered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
+    const correct = filteredQuestions.filter(q => questionAnswers[q.id] === q.correct).length;
+    
+    // Check if this is a test completion
+    if (answered === filteredQuestions.length && filteredQuestions.length >= 20) {
+        gamification.onFullTestCompleted(correct, filteredQuestions.length);
+    } else if (answered > 0 && answered % 10 === 0) {
+        // Practice test every 10 questions
+        gamification.onPracticeTestCompleted(correct, answered);
+    }
+    
+    // Update category score if filtering by category
+    const category = document.getElementById('categoryFilter').value;
+    if (category !== 'all' && answered > 0) {
+        gamification.lastCategoryScore = Math.round((correct / answered) * 100);
+    }
+    
     displayQuestion();
 }
 
@@ -221,6 +250,16 @@ function filterQuestions() {
     
     currentQuestionIndex = 0;
     displayQuestion();
+    
+    // Check category scores for gamification
+    if (category !== 'all') {
+        const categoryAnswered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
+        const categoryCorrect = filteredQuestions.filter(q => questionAnswers[q.id] === q.correct).length;
+        if (categoryAnswered > 0) {
+            const categoryScore = Math.round((categoryCorrect / categoryAnswered) * 100);
+            gamification.lastCategoryScore = categoryScore;
+        }
+    }
 }
 
 function updateQuestionStats() {
@@ -286,6 +325,10 @@ function displayScenario() {
 function selectScenarioAnswer(key, scenario) {
     scenarioAnswers[scenario.id] = key;
     saveProgress();
+    
+    // Track for gamification
+    gamification.onScenarioCompleted();
+    
     displayScenario();
 }
 
@@ -371,6 +414,11 @@ function filterTerms() {
         return categoryMatch && searchMatch;
     });
     
+    // Track category study for gamification
+    if (category !== 'all') {
+        gamification.onCategoryStudied(category);
+    }
+    
     displayTerms();
 }
 
@@ -415,6 +463,11 @@ function navigateFlashcard(direction) {
     if (newIndex >= 0 && newIndex < filteredTerms.length) {
         currentFlashcardIndex = newIndex;
         displayFlashcard();
+        
+        // Track category for gamification
+        if (filteredTerms[currentFlashcardIndex]) {
+            gamification.onCategoryStudied(filteredTerms[currentFlashcardIndex].category);
+        }
     }
 }
 
@@ -463,5 +516,37 @@ function resetScenarios() {
         saveProgress();
         displayScenario();
         updateScenarioStats();
+    }
+}
+
+// Gamification dashboard rendering
+function renderGamificationDashboard() {
+    const dashboardContainer = document.getElementById('gamificationDashboard');
+    dashboardContainer.innerHTML = gamification.renderDashboard();
+    
+    // Add event listeners for gamification settings
+    const toggleBtn = document.getElementById('toggleGamification');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            gamification.data.settings.enabled = !gamification.data.settings.enabled;
+            gamification.save();
+            renderGamificationDashboard();
+        });
+    }
+    
+    const soundToggle = document.getElementById('soundToggle');
+    if (soundToggle) {
+        soundToggle.addEventListener('change', (e) => {
+            gamification.data.settings.soundEnabled = e.target.checked;
+            gamification.save();
+        });
+    }
+    
+    const animationToggle = document.getElementById('animationToggle');
+    if (animationToggle) {
+        animationToggle.addEventListener('change', (e) => {
+            gamification.data.settings.animationsEnabled = e.target.checked;
+            gamification.save();
+        });
     }
 }

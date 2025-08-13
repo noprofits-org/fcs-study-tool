@@ -28,6 +28,7 @@
             <button class="mode-btn" data-mode="scenarios">Scenarios</button>
             <button class="mode-btn" data-mode="terms">Terms</button>
             <button class="mode-btn" data-mode="flashcards">Flashcards</button>
+            <button class="mode-btn" data-mode="progress">My Progress</button>
         </nav>
 
         <!-- Question Mode -->
@@ -196,6 +197,11 @@
                 <button id="nextFlashcard" class="nav-btn">Next</button>
             </div>
         </div>
+        
+        <!-- Progress Mode (Gamification Dashboard) -->
+        <div id="progressMode" class="mode-content">
+            <div id="gamificationDashboard"></div>
+        </div>
     </div>
 
     <footer>
@@ -203,6 +209,7 @@
         <p class="version">Version 1.0 | Data based on current FCS Manual</p>
     </footer>
 
+    <script src="gamification.js"></script>
     <script src="script.js"></script>
     
     <!-- Service Worker Registration -->
