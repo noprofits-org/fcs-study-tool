@@ -1,0 +1,604 @@
+{
+  "questions": [
+    {
+      "id": "q_001",
+      "text": "What is the maximum time frame for completing an initial assessment after receiving a referral?",
+      "options": {
+        "A": "24 hours",
+        "B": "48 hours",
+        "C": "72 hours",
+        "D": "5 business days"
+      },
+      "correct": "C",
+      "explanation": "Initial assessments must be completed within 72 hours of receiving a referral to ensure timely service delivery. See manual pages 12, 15 for detailed information.",
+      "studyPages": [12, 15],
+      "category": "Timeline Requirements",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_002",
+      "text": "Which of the following is NOT considered a mandatory reporter under FCS guidelines?",
+      "options": {
+        "A": "Teachers and school personnel",
+        "B": "Healthcare providers",
+        "C": "Neighbors and community members",
+        "D": "Social workers and case managers"
+      },
+      "correct": "C",
+      "explanation": "Neighbors and community members are encouraged but not mandated to report concerns. Mandatory reporters include professionals who work directly with children. See manual pages 8, 9, 23 for detailed information.",
+      "studyPages": [8, 9, 23],
+      "category": "Reporting Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_003",
+      "text": "A family's income is 185% of the Federal Poverty Level. Are they eligible for FCS services?",
+      "options": {
+        "A": "Yes, automatically eligible",
+        "B": "No, income exceeds limits",
+        "C": "Yes, if they meet other criteria",
+        "D": "Only for emergency services"
+      },
+      "correct": "C",
+      "explanation": "Families up to 200% FPL may be eligible if they meet other qualifying criteria such as risk factors or special circumstances. See manual pages 18, 19, 31 for detailed information.",
+      "studyPages": [18, 19, 31],
+      "category": "Eligibility",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_004",
+      "text": "How often must a comprehensive case review be conducted for active cases?",
+      "options": {
+        "A": "Monthly",
+        "B": "Every 90 days",
+        "C": "Every 6 months",
+        "D": "Annually"
+      },
+      "correct": "B",
+      "explanation": "Comprehensive case reviews must be conducted every 90 days to ensure services remain appropriate and goals are being met. See manual pages 42, 43 for detailed information.",
+      "studyPages": [42, 43],
+      "category": "Case Management",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_005",
+      "text": "What documentation is required when a parent refuses services?",
+      "options": {
+        "A": "Verbal acknowledgment only",
+        "B": "Written refusal form signed by parent",
+        "C": "Email confirmation",
+        "D": "No documentation needed"
+      },
+      "correct": "B",
+      "explanation": "A written refusal form must be signed by the parent and maintained in the case file to document informed refusal of services. See manual pages 27, 28, 55 for detailed information.",
+      "studyPages": [27, 28, 55],
+      "category": "Documentation",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_006",
+      "text": "During a home visit, you observe potential safety hazards. What is your first action?",
+      "options": {
+        "A": "Remove the child immediately",
+        "B": "Document and assess immediate risk",
+        "C": "Contact law enforcement",
+        "D": "Schedule a follow-up visit"
+      },
+      "correct": "B",
+      "explanation": "First document observations and assess if there is immediate risk to the child. Action depends on severity and immediacy of danger. See manual pages 34, 35, 36 for detailed information.",
+      "studyPages": [34, 35, 36],
+      "category": "Safety Assessment",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_007",
+      "text": "What is the minimum frequency for face-to-face contact with children in care?",
+      "options": {
+        "A": "Weekly",
+        "B": "Bi-weekly",
+        "C": "Monthly",
+        "D": "Quarterly"
+      },
+      "correct": "C",
+      "explanation": "Face-to-face contact with children in care must occur at minimum monthly to monitor well-being and placement stability. See manual pages 47, 48 for detailed information.",
+      "studyPages": [47, 48],
+      "category": "Case Management",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_008",
+      "text": "A 17-year-old youth is aging out of care. When should transition planning begin?",
+      "options": {
+        "A": "At age 18",
+        "B": "6 months before 18th birthday",
+        "C": "At age 16",
+        "D": "1 year before aging out"
+      },
+      "correct": "C",
+      "explanation": "Transition planning must begin at age 16 to ensure adequate preparation for independence and connection to adult services. See manual pages 61, 62, 63 for detailed information.",
+      "studyPages": [61, 62, 63],
+      "category": "Transition Services",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_009",
+      "text": "Which consent is required for routine medical care of a child in foster care?",
+      "options": {
+        "A": "Birth parent consent only",
+        "B": "Court order required",
+        "C": "Caregiver can consent",
+        "D": "Social worker approval"
+      },
+      "correct": "C",
+      "explanation": "Foster caregivers have authority to consent for routine medical care. Major medical procedures may require additional approvals. See manual pages 52, 53 for detailed information.",
+      "studyPages": [52, 53],
+      "category": "Medical Consent",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_010",
+      "text": "How long must case records be retained after case closure?",
+      "options": {
+        "A": "3 years",
+        "B": "5 years",
+        "C": "7 years",
+        "D": "10 years"
+      },
+      "correct": "C",
+      "explanation": "Case records must be retained for 7 years after case closure to meet state and federal requirements. See manual pages 68, 69 for detailed information.",
+      "studyPages": [68, 69],
+      "category": "Documentation",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_011",
+      "text": "What constitutes 'imminent risk' requiring immediate intervention?",
+      "options": {
+        "A": "Any safety concern",
+        "B": "Threat of serious harm within 24-48 hours",
+        "C": "Past history of abuse",
+        "D": "Parental substance use"
+      },
+      "correct": "B",
+      "explanation": "Imminent risk means threat of serious harm likely to occur within 24-48 hours without intervention. See manual pages 37, 38, 39 for detailed information.",
+      "studyPages": [37, 38, 39],
+      "category": "Safety Assessment",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_012",
+      "text": "A parent requests their case file. What information can be withheld?",
+      "options": {
+        "A": "Nothing - full access required",
+        "B": "Third-party information and safety-sensitive details",
+        "C": "All assessment documents",
+        "D": "Financial information only"
+      },
+      "correct": "B",
+      "explanation": "Third-party information and details that could compromise safety investigations may be redacted. Most other information must be provided. See manual pages 71, 72, 73 for detailed information.",
+      "studyPages": [71, 72, 73],
+      "category": "Privacy Rights",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_013",
+      "text": "When must a supervisor review and approve a safety plan?",
+      "options": {
+        "A": "Within 24 hours of creation",
+        "B": "Within 48 hours",
+        "C": "Within 72 hours",
+        "D": "At the next supervision meeting"
+      },
+      "correct": "A",
+      "explanation": "Safety plans require supervisor review and approval within 24 hours to ensure appropriate protective measures. See manual pages 40, 41 for detailed information.",
+      "studyPages": [40, 41],
+      "category": "Supervision Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_014",
+      "text": "What is the maximum caseload for ongoing FCS workers?",
+      "options": {
+        "A": "15 cases",
+        "B": "20 cases",
+        "C": "25 cases",
+        "D": "30 cases"
+      },
+      "correct": "B",
+      "explanation": "Maximum caseload for ongoing workers is 20 cases to ensure quality service delivery and compliance with standards. See manual pages 76, 77 for detailed information.",
+      "studyPages": [76, 77],
+      "category": "Workload Standards",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_015",
+      "text": "Which factor automatically qualifies a family for intensive services?",
+      "options": {
+        "A": "Single parent household",
+        "B": "Previous substantiated abuse with re-referral",
+        "C": "Low income status",
+        "D": "Parent with disability"
+      },
+      "correct": "B",
+      "explanation": "Previous substantiated abuse with a new referral automatically qualifies for intensive services due to elevated risk. See manual pages 20, 21, 22 for detailed information.",
+      "studyPages": [20, 21, 22],
+      "category": "Service Levels",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_016",
+      "text": "How soon must initial contact be attempted after case assignment?",
+      "options": {
+        "A": "Same day",
+        "B": "Within 24 hours",
+        "C": "Within 48 hours",
+        "D": "Within 72 hours"
+      },
+      "correct": "B",
+      "explanation": "Initial contact must be attempted within 24 hours of case assignment to begin engagement and assessment process. See manual pages 13, 14 for detailed information.",
+      "studyPages": [13, 14],
+      "category": "Timeline Requirements",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_017",
+      "text": "What triggers mandatory reporting to law enforcement?",
+      "options": {
+        "A": "Any abuse allegation",
+        "B": "Suspected criminal conduct or severe physical abuse",
+        "C": "Neglect concerns",
+        "D": "All safety concerns"
+      },
+      "correct": "B",
+      "explanation": "Law enforcement must be notified for suspected criminal conduct or severe physical abuse requiring investigation. See manual pages 24, 25, 26 for detailed information.",
+      "studyPages": [24, 25, 26],
+      "category": "Reporting Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_018",
+      "text": "When can services be terminated without family agreement?",
+      "options": {
+        "A": "Never - family must agree",
+        "B": "After 3 failed contact attempts",
+        "C": "When safety concerns are resolved and court orders completed",
+        "D": "After 6 months automatically"
+      },
+      "correct": "C",
+      "explanation": "Services can be terminated when safety concerns are resolved and any court-ordered requirements are completed, even without family agreement. See manual pages 65, 66, 67 for detailed information.",
+      "studyPages": [65, 66, 67],
+      "category": "Case Closure",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_019",
+      "text": "What assessment tool is required for all new investigations?",
+      "options": {
+        "A": "Safety Assessment Tool",
+        "B": "Risk Assessment Matrix",
+        "C": "Family Evaluation Form",
+        "D": "Structured Decision Making (SDM) tools"
+      },
+      "correct": "D",
+      "explanation": "Structured Decision Making (SDM) tools must be used for all investigations to ensure consistent assessment. See manual pages 32, 33 for detailed information.",
+      "studyPages": [32, 33],
+      "category": "Assessment Tools",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_020",
+      "text": "How many business days to complete a comprehensive family assessment?",
+      "options": {
+        "A": "10 days",
+        "B": "20 days",
+        "C": "30 days",
+        "D": "45 days"
+      },
+      "correct": "C",
+      "explanation": "Comprehensive family assessments must be completed within 30 business days to determine service needs and develop plans. See manual pages 16, 17 for detailed information.",
+      "studyPages": [16, 17],
+      "category": "Timeline Requirements",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_021",
+      "text": "Which situation requires a formal staffing with supervisory team?",
+      "options": {
+        "A": "All new cases",
+        "B": "Cases with disagreement on safety decisions",
+        "C": "Routine case closures",
+        "D": "Monthly reviews"
+      },
+      "correct": "B",
+      "explanation": "Formal staffing with supervisory team is required when there's disagreement on safety decisions or complex case decisions. See manual pages 78, 79 for detailed information.",
+      "studyPages": [78, 79],
+      "category": "Supervision Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_022",
+      "text": "What percentage of visits must occur in the child's residence?",
+      "options": {
+        "A": "25%",
+        "B": "50%",
+        "C": "75%",
+        "D": "100%"
+      },
+      "correct": "B",
+      "explanation": "At least 50% of visits must occur in the child's residence to properly assess living conditions and family dynamics. See manual pages 49, 50 for detailed information.",
+      "studyPages": [49, 50],
+      "category": "Case Management",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_023",
+      "text": "When is parental consent NOT required for services?",
+      "options": {
+        "A": "Never - always required",
+        "B": "Court-ordered services or immediate safety concerns",
+        "C": "Preventive services only",
+        "D": "Assessment phase only"
+      },
+      "correct": "B",
+      "explanation": "Parental consent is not required for court-ordered services or when immediate safety concerns necessitate intervention. See manual pages 29, 30 for detailed information.",
+      "studyPages": [29, 30],
+      "category": "Legal Requirements",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_024",
+      "text": "What must be included in every case plan?",
+      "options": {
+        "A": "Specific, measurable goals with timeframes",
+        "B": "Generic service recommendations",
+        "C": "Worker's opinions only",
+        "D": "Court requirements only"
+      },
+      "correct": "A",
+      "explanation": "Case plans must include specific, measurable goals with clear timeframes and responsibilities. See manual pages 44, 45, 46 for detailed information.",
+      "studyPages": [44, 45, 46],
+      "category": "Case Planning",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_025",
+      "text": "How long do families have to appeal a service decision?",
+      "options": {
+        "A": "10 days",
+        "B": "30 days",
+        "C": "60 days",
+        "D": "90 days"
+      },
+      "correct": "B",
+      "explanation": "Families have 30 days from notification to appeal service decisions through the formal appeals process. See manual pages 74, 75 for detailed information.",
+      "studyPages": [74, 75],
+      "category": "Appeals Process",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_026",
+      "text": "What training is required within first year of employment?",
+      "options": {
+        "A": "Orientation only",
+        "B": "Core training plus 40 hours continuing education",
+        "C": "Online modules only",
+        "D": "Shadowing experienced workers"
+      },
+      "correct": "B",
+      "explanation": "New workers must complete core training plus 40 hours of continuing education within first year. See manual pages 80, 81, 82 for detailed information.",
+      "studyPages": [80, 81, 82],
+      "category": "Training Requirements",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_027",
+      "text": "Which children require monthly photographs for documentation?",
+      "options": {
+        "A": "All children in care",
+        "B": "Children under age 5 or non-verbal",
+        "C": "Only infants",
+        "D": "No photos required"
+      },
+      "correct": "B",
+      "explanation": "Monthly photographs are required for children under 5 or non-verbal children to document physical condition. See manual pages 54, 55 for detailed information.",
+      "studyPages": [54, 55],
+      "category": "Documentation",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_028",
+      "text": "What determines eligibility for kinship care placement?",
+      "options": {
+        "A": "Blood relationship only",
+        "B": "Background check and home study approval",
+        "C": "Family request only",
+        "D": "Geographic proximity"
+      },
+      "correct": "B",
+      "explanation": "Kinship placements require background checks and home study approval regardless of relationship. See manual pages 57, 58, 59 for detailed information.",
+      "studyPages": [57, 58, 59],
+      "category": "Placement Decisions",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_029",
+      "text": "When must critical incidents be reported to state office?",
+      "options": {
+        "A": "Within 2 hours",
+        "B": "Within 24 hours",
+        "C": "Within 48 hours",
+        "D": "Within 72 hours"
+      },
+      "correct": "A",
+      "explanation": "Critical incidents must be reported to state office within 2 hours of discovery for immediate review. See manual pages 83, 84 for detailed information.",
+      "studyPages": [83, 84],
+      "category": "Reporting Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_030",
+      "text": "What action requires court approval within 72 hours?",
+      "options": {
+        "A": "Starting services",
+        "B": "Emergency removal of child",
+        "C": "Case plan changes",
+        "D": "Worker assignment"
+      },
+      "correct": "B",
+      "explanation": "Emergency removal requires court hearing within 72 hours to review and approve continued placement. See manual pages 85, 86, 87 for detailed information.",
+      "studyPages": [85, 86, 87],
+      "category": "Legal Requirements",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_031",
+      "text": "Which families are eligible for voluntary prevention services?",
+      "options": {
+        "A": "Only those with prior involvement",
+        "B": "Any family requesting help before crisis",
+        "C": "Court-referred only",
+        "D": "Income-eligible only"
+      },
+      "correct": "B",
+      "explanation": "Any family can request voluntary prevention services before crisis to strengthen family functioning. See manual pages 88, 89 for detailed information.",
+      "studyPages": [88, 89],
+      "category": "Prevention Services",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_032",
+      "text": "What is required for interstate placement of children?",
+      "options": {
+        "A": "Family agreement only",
+        "B": "ICPC approval process",
+        "C": "Court order only",
+        "D": "Worker discretion"
+      },
+      "correct": "B",
+      "explanation": "Interstate Compact on Placement of Children (ICPC) approval is required for all interstate placements. See manual pages 60, 90, 91 for detailed information.",
+      "studyPages": [60, 90, 91],
+      "category": "Placement Decisions",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_033",
+      "text": "How often must concurrent planning be reviewed?",
+      "options": {
+        "A": "Monthly",
+        "B": "Every court hearing",
+        "C": "Every 6 months",
+        "D": "Annually"
+      },
+      "correct": "B",
+      "explanation": "Concurrent planning must be reviewed at every court hearing to ensure timely permanency. See manual pages 92, 93 for detailed information.",
+      "studyPages": [92, 93],
+      "category": "Permanency Planning",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_034",
+      "text": "What threshold must be met for substantiated finding?",
+      "options": {
+        "A": "Beyond reasonable doubt",
+        "B": "Clear and convincing",
+        "C": "Preponderance of evidence",
+        "D": "Any credible evidence"
+      },
+      "correct": "C",
+      "explanation": "Preponderance of evidence (more likely than not) is the standard for substantiated findings. See manual pages 94, 95 for detailed information.",
+      "studyPages": [94, 95],
+      "category": "Investigation Standards",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "q_035",
+      "text": "When can information be shared without release?",
+      "options": {
+        "A": "Never",
+        "B": "Between agencies for child protection",
+        "C": "With any professional",
+        "D": "Public information only"
+      },
+      "correct": "B",
+      "explanation": "Information can be shared between agencies without release when necessary for child protection. See manual pages 96, 97 for detailed information.",
+      "studyPages": [96, 97],
+      "category": "Confidentiality",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_036",
+      "text": "What requires immediate notification to placing agency?",
+      "options": {
+        "A": "Any behavior issue",
+        "B": "Serious injury, allegation, or placement disruption",
+        "C": "School problems",
+        "D": "Medical appointments"
+      },
+      "correct": "B",
+      "explanation": "Serious injuries, abuse allegations, or placement disruptions require immediate notification. See manual pages 98, 99 for detailed information.",
+      "studyPages": [98, 99],
+      "category": "Notification Requirements",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_037",
+      "text": "How long to complete adoption home studies?",
+      "options": {
+        "A": "30 days",
+        "B": "60 days",
+        "C": "90 days",
+        "D": "120 days"
+      },
+      "correct": "D",
+      "explanation": "Adoption home studies must be completed within 120 days of application for timely processing. See manual pages 100, 101 for detailed information.",
+      "studyPages": [100, 101],
+      "category": "Adoption Process",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_038",
+      "text": "What age can youth sign their own service agreements?",
+      "options": {
+        "A": "14 years",
+        "B": "16 years",
+        "C": "18 years",
+        "D": "21 years"
+      },
+      "correct": "C",
+      "explanation": "Youth can sign their own service agreements at age 18 when they reach legal majority. See manual pages 102, 103 for detailed information.",
+      "studyPages": [102, 103],
+      "category": "Youth Services",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "q_039",
+      "text": "Which medication requires court approval for children in care?",
+      "options": {
+        "A": "All medications",
+        "B": "Psychotropic medications",
+        "C": "Over-the-counter only",
+        "D": "Emergency medications"
+      },
+      "correct": "B",
+      "explanation": "Psychotropic medications require court approval to ensure appropriate oversight and monitoring. See manual pages 104, 105 for detailed information.",
+      "studyPages": [104, 105],
+      "category": "Medical Consent",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "q_040",
+      "text": "What is minimum education requirement for FCS workers?",
+      "options": {
+        "A": "High school diploma",
+        "B": "Associate degree",
+        "C": "Bachelor's degree in related field",
+        "D": "Master's degree"
+      },
+      "correct": "C",
+      "explanation": "Minimum requirement is Bachelor's degree in social work or related human services field. See manual pages 106, 107 for detailed information.",
+      "studyPages": [106, 107],
+      "category": "Staffing Requirements",
+      "difficulty": "Easy"
+    }
+  ]
+}

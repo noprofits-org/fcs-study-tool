@@ -1,0 +1,373 @@
+{
+  "categories": [
+    "Legal Terms",
+    "Assessment Tools", 
+    "Service Types",
+    "Case Management",
+    "Court Processes",
+    "Placement Terms",
+    "Safety Concepts"
+  ],
+  "terms": [
+    {
+      "id": "term_001",
+      "term": "Adjudication",
+      "definition": "The court process where a judge determines whether allegations of abuse or neglect are substantiated based on evidence presented.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["court", "legal", "determination"]
+    },
+    {
+      "id": "term_002",
+      "term": "ASFA",
+      "definition": "Adoption and Safe Families Act - Federal law requiring permanency decisions within specific timelines, including filing for termination of parental rights in certain circumstances.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["adoption", "permanency", "timeline"]
+    },
+    {
+      "id": "term_003",
+      "term": "Best Interest Determination",
+      "definition": "The standard used to make decisions about children's placement, services, and permanency based on what will best serve their safety, well-being, and development.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["decision", "standard", "child welfare"]
+    },
+    {
+      "id": "term_004",
+      "term": "CAPTA",
+      "definition": "Child Abuse Prevention and Treatment Act - Federal legislation that provides funding and guidelines for child protective services and mandated reporting.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["federal", "abuse", "prevention"]
+    },
+    {
+      "id": "term_005",
+      "term": "Case Plan",
+      "definition": "A written document outlining specific goals, services, timelines, and responsibilities for families to achieve safety and permanency for their children.",
+      "category": "Case Management",
+      "testRelevant": true,
+      "keywords": ["goals", "services", "planning"]
+    },
+    {
+      "id": "term_006",
+      "term": "Concurrent Planning",
+      "definition": "Working simultaneously toward family reunification while developing alternative permanency plans to avoid delays if reunification fails.",
+      "category": "Case Management",
+      "testRelevant": true,
+      "keywords": ["permanency", "planning", "simultaneous"]
+    },
+    {
+      "id": "term_007",
+      "term": "Diligent Search",
+      "definition": "Comprehensive efforts to locate absent parents, relatives, or other connections for children in care, required before proceeding with certain legal actions.",
+      "category": "Case Management",
+      "testRelevant": true,
+      "keywords": ["locate", "relatives", "search"]
+    },
+    {
+      "id": "term_008",
+      "term": "Disposition",
+      "definition": "The court hearing where placement and service decisions are made after adjudication, establishing the legal framework for the case.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["hearing", "placement", "services"]
+    },
+    {
+      "id": "term_009",
+      "term": "Emergency Removal",
+      "definition": "Taking custody of a child without prior court order when imminent danger exists, requiring court review within 72 hours.",
+      "category": "Safety Concepts",
+      "testRelevant": true,
+      "keywords": ["immediate", "danger", "custody"]
+    },
+    {
+      "id": "term_010",
+      "term": "Family Team Meeting",
+      "definition": "Structured meetings bringing together family members, supports, and professionals to make collaborative decisions about child safety and services.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["collaboration", "decision-making", "team"]
+    },
+    {
+      "id": "term_011",
+      "term": "Guardian ad Litem",
+      "definition": "Court-appointed representative who advocates for the best interests of the child in legal proceedings, independent of parents or agency.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["advocate", "court-appointed", "child representative"]
+    },
+    {
+      "id": "term_012",
+      "term": "ICPC",
+      "definition": "Interstate Compact on the Placement of Children - Legal agreement between states governing placement of children across state lines.",
+      "category": "Placement Terms",
+      "testRelevant": true,
+      "keywords": ["interstate", "placement", "compact"]
+    },
+    {
+      "id": "term_013",
+      "term": "ICWA",
+      "definition": "Indian Child Welfare Act - Federal law providing protections and placement preferences for Native American children to preserve cultural connections.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["Native American", "tribal", "cultural"]
+    },
+    {
+      "id": "term_014",
+      "term": "Imminent Risk",
+      "definition": "Threat of serious harm to a child likely to occur within 24-48 hours without protective intervention.",
+      "category": "Safety Concepts",
+      "testRelevant": true,
+      "keywords": ["immediate", "danger", "timeframe"]
+    },
+    {
+      "id": "term_015",
+      "term": "Kinship Care",
+      "definition": "Placement of children with relatives or others with significant relationships when they cannot remain safely with parents.",
+      "category": "Placement Terms",
+      "testRelevant": true,
+      "keywords": ["relatives", "placement", "family"]
+    },
+    {
+      "id": "term_016",
+      "term": "Least Restrictive Environment",
+      "definition": "Principle requiring children be placed in the most family-like setting that can meet their needs, avoiding institutional care when possible.",
+      "category": "Placement Terms",
+      "testRelevant": true,
+      "keywords": ["family-like", "placement", "principle"]
+    },
+    {
+      "id": "term_017",
+      "term": "Mandated Reporter",
+      "definition": "Professionals required by law to report suspected child abuse or neglect, including teachers, healthcare workers, and social workers.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["required", "report", "professional"]
+    },
+    {
+      "id": "term_018",
+      "term": "Permanency Hearing",
+      "definition": "Court review held within 12 months of placement to determine the permanent plan for a child and assess progress toward that goal.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["12 months", "permanent plan", "review"]
+    },
+    {
+      "id": "term_019",
+      "term": "Preponderance of Evidence",
+      "definition": "Legal standard for substantiating abuse/neglect allegations, meaning more likely than not (greater than 50% probability).",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["standard", "evidence", "probability"]
+    },
+    {
+      "id": "term_020",
+      "term": "Protective Capacity",
+      "definition": "A caregiver's ability to recognize threats to child safety and take action to protect the child from harm.",
+      "category": "Safety Concepts",
+      "testRelevant": true,
+      "keywords": ["ability", "protect", "caregiver"]
+    },
+    {
+      "id": "term_021",
+      "term": "Psychotropic Medication",
+      "definition": "Medications affecting mood, thoughts, or behavior that require special consent procedures and court oversight for children in care.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["medication", "mental health", "consent"]
+    },
+    {
+      "id": "term_022",
+      "term": "Reasonable Efforts",
+      "definition": "Services and interventions the agency must provide to prevent removal or achieve reunification, unless exempted by aggravated circumstances.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["services", "prevention", "reunification"]
+    },
+    {
+      "id": "term_023",
+      "term": "Relative Notification",
+      "definition": "Federal requirement to notify adult relatives within 30 days of a child's removal to explore placement and support options.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["30 days", "relatives", "notification"]
+    },
+    {
+      "id": "term_024",
+      "term": "Respite Care",
+      "definition": "Temporary relief services for foster parents or kinship caregivers to prevent placement disruption and support stability.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["temporary", "relief", "support"]
+    },
+    {
+      "id": "term_025",
+      "term": "Safety Plan",
+      "definition": "Written agreement detailing specific actions caregivers will take to protect children from identified safety threats without removal.",
+      "category": "Safety Concepts",
+      "testRelevant": true,
+      "keywords": ["agreement", "protection", "actions"]
+    },
+    {
+      "id": "term_026",
+      "term": "SDM Tools",
+      "definition": "Structured Decision Making tools - Evidence-based assessments used to guide consistent decisions about safety, risk, and case planning.",
+      "category": "Assessment Tools",
+      "testRelevant": true,
+      "keywords": ["structured", "assessment", "evidence-based"]
+    },
+    {
+      "id": "term_027",
+      "term": "Shelter Care Hearing",
+      "definition": "Court hearing within 72 hours of emergency removal to determine if continued out-of-home placement is necessary.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["72 hours", "emergency", "hearing"]
+    },
+    {
+      "id": "term_028",
+      "term": "Substantiated Finding",
+      "definition": "Determination that abuse or neglect allegations are supported by preponderance of evidence after investigation.",
+      "category": "Assessment Tools",
+      "testRelevant": true,
+      "keywords": ["finding", "investigation", "evidence"]
+    },
+    {
+      "id": "term_029",
+      "term": "Termination of Parental Rights",
+      "definition": "Legal process permanently severing parent-child relationship, allowing child to be adopted, requiring clear and convincing evidence.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["permanent", "adoption", "severance"]
+    },
+    {
+      "id": "term_030",
+      "term": "Therapeutic Foster Care",
+      "definition": "Specialized foster homes with trained parents providing intensive support for children with significant emotional/behavioral needs.",
+      "category": "Placement Terms",
+      "testRelevant": true,
+      "keywords": ["specialized", "intensive", "behavioral"]
+    },
+    {
+      "id": "term_031",
+      "term": "Title IV-E",
+      "definition": "Federal funding program that reimburses states for foster care, adoption assistance, and kinship guardianship for eligible children.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["federal", "funding", "eligibility"]
+    },
+    {
+      "id": "term_032",
+      "term": "Transition Planning",
+      "definition": "Process beginning at age 16 to prepare youth in care for adulthood, including education, employment, housing, and connections.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["youth", "independence", "planning"]
+    },
+    {
+      "id": "term_033",
+      "term": "Unsubstantiated",
+      "definition": "Investigation finding when there is insufficient evidence to support abuse/neglect allegations based on preponderance standard.",
+      "category": "Assessment Tools",
+      "testRelevant": true,
+      "keywords": ["insufficient", "evidence", "finding"]
+    },
+    {
+      "id": "term_034",
+      "term": "Voluntary Services",
+      "definition": "Preventive services families can request and receive without court involvement or substantiated abuse/neglect findings.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["preventive", "voluntary", "non-court"]
+    },
+    {
+      "id": "term_035",
+      "term": "Wraparound Services",
+      "definition": "Intensive, individualized services coordinating multiple providers and natural supports to meet complex family needs.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["intensive", "coordinated", "individualized"]
+    },
+    {
+      "id": "term_036",
+      "term": "Alternative Response",
+      "definition": "Assessment approach for low-risk reports focusing on family engagement and services without formal investigation or substantiation.",
+      "category": "Assessment Tools",
+      "testRelevant": true,
+      "keywords": ["assessment", "engagement", "low-risk"]
+    },
+    {
+      "id": "term_037",
+      "term": "CASA",
+      "definition": "Court Appointed Special Advocate - Trained volunteer appointed by judge to advocate for child's best interests in court proceedings.",
+      "category": "Court Processes",
+      "testRelevant": true,
+      "keywords": ["volunteer", "advocate", "court"]
+    },
+    {
+      "id": "term_038",
+      "term": "Child and Family Team",
+      "definition": "Group including family, natural supports, and professionals who meet regularly to develop and monitor case plans collaboratively.",
+      "category": "Case Management",
+      "testRelevant": true,
+      "keywords": ["team", "collaborative", "planning"]
+    },
+    {
+      "id": "term_039",
+      "term": "Educational Surrogate",
+      "definition": "Person appointed to make educational decisions for a child in care when parents are unavailable or rights are terminated.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["education", "decision-making", "surrogate"]
+    },
+    {
+      "id": "term_040",
+      "term": "Family Finding",
+      "definition": "Intensive search process to identify and engage relatives and other connections for children in care to provide placement or support.",
+      "category": "Case Management",
+      "testRelevant": true,
+      "keywords": ["search", "relatives", "connections"]
+    },
+    {
+      "id": "term_041",
+      "term": "Home Study",
+      "definition": "Comprehensive assessment of prospective caregivers including background checks, references, home inspection, and family functioning evaluation.",
+      "category": "Assessment Tools",
+      "testRelevant": true,
+      "keywords": ["assessment", "caregivers", "evaluation"]
+    },
+    {
+      "id": "term_042",
+      "term": "Independent Living Program",
+      "definition": "Services for youth age 16+ in care to develop skills for self-sufficiency including education, employment, housing, and life skills.",
+      "category": "Service Types",
+      "testRelevant": true,
+      "keywords": ["youth", "skills", "self-sufficiency"]
+    },
+    {
+      "id": "term_043",
+      "term": "Notice of Action",
+      "definition": "Formal written notification to families about case decisions, including rights to appeal and timelines for response.",
+      "category": "Legal Terms",
+      "testRelevant": true,
+      "keywords": ["notification", "rights", "appeal"]
+    },
+    {
+      "id": "term_044",
+      "term": "Permanency Goal",
+      "definition": "The planned permanent living arrangement for a child, prioritized as: reunification, adoption, guardianship, or another planned arrangement.",
+      "category": "Case Management",
+      "testRelevant": true,
+      "keywords": ["permanent", "goal", "priority"]
+    },
+    {
+      "id": "term_045",
+      "term": "Present Danger",
+      "definition": "Immediate, significant, and clearly observable threat to child safety requiring immediate protective action.",
+      "category": "Safety Concepts",
+      "testRelevant": true,
+      "keywords": ["immediate", "observable", "threat"]
+    }
+  ]
+}

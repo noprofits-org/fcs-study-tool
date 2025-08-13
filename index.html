@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCS Manual Study Tool</title>
+    <meta name="description" content="Study tool for Wellpoint FCS Provider Manual">
+    <meta name="theme-color" content="#00897b">
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FCS Manual Study Tool</h1>
+            <p class="subtitle">Wellpoint Family & Children's Services Training Module</p>
+            <button id="viewManualBtn" class="view-manual-btn">📄 View FCS Manual</button>
+        </header>
+
+        <nav class="mode-selector">
+            <button class="mode-btn active" data-mode="questions">Questions</button>
+            <button class="mode-btn" data-mode="scenarios">Scenarios</button>
+            <button class="mode-btn" data-mode="terms">Terms</button>
+            <button class="mode-btn" data-mode="flashcards">Flashcards</button>
+        </nav>
+
+        <!-- Question Mode -->
+        <div id="questionsMode" class="mode-content active">
+            <div class="filters">
+                <label>
+                    Category:
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </label>
+                <label>
+                    Difficulty:
+                    <select id="difficultyFilter">
+                        <option value="all">All Difficulties</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </label>
+                <button id="resetQuestions" class="reset-btn">Reset Progress</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Progress:</span>
+                    <span id="questionProgress">0/0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Correct:</span>
+                    <span id="correctCount">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span id="scorePercentage">0%</span>
+                </div>
+            </div>
+
+            <div id="questionContainer" class="question-container">
+                <div class="question-header">
+                    <span id="questionNumber" class="question-number"></span>
+                    <span id="questionDifficulty" class="difficulty-badge"></span>
+                </div>
+                <p id="questionText" class="question-text"></p>
+                <div id="optionsContainer" class="options-container"></div>
+                <div id="explanationContainer" class="explanation-container" style="display: none;">
+                    <h3>Explanation:</h3>
+                    <p id="explanationText"></p>
+                    <div id="studyPages" class="study-pages"></div>
+                </div>
+                <div class="navigation">
+                    <button id="prevQuestion" class="nav-btn">Previous</button>
+                    <button id="nextQuestion" class="nav-btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenarios Mode -->
+        <div id="scenariosMode" class="mode-content">
+            <div class="filters">
+                <label>
+                    Difficulty:
+                    <select id="scenarioDifficultyFilter">
+                        <option value="all">All Difficulties</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </label>
+                <button id="resetScenarios" class="reset-btn">Reset Progress</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Progress:</span>
+                    <span id="scenarioProgress">0/0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Correct:</span>
+                    <span id="scenarioCorrectCount">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span id="scenarioScorePercentage">0%</span>
+                </div>
+            </div>
+
+            <div id="scenarioContainer" class="scenario-container">
+                <div class="scenario-header">
+                    <h2 id="scenarioTitle"></h2>
+                    <span id="scenarioDifficulty" class="difficulty-badge"></span>
+                </div>
+                <p id="scenarioDescription" class="scenario-description"></p>
+                <p id="scenarioQuestion" class="scenario-question"></p>
+                <div id="scenarioOptionsContainer" class="options-container"></div>
+                <div id="scenarioExplanationContainer" class="explanation-container" style="display: none;">
+                    <h3>Explanation:</h3>
+                    <p id="scenarioExplanationText"></p>
+                    <div id="scenarioStudyPages" class="study-pages"></div>
+                    <div id="relatedConcepts" class="related-concepts"></div>
+                </div>
+                <div class="navigation">
+                    <button id="prevScenario" class="nav-btn">Previous</button>
+                    <button id="nextScenario" class="nav-btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms Mode -->
+        <div id="termsMode" class="mode-content">
+            <div class="filters">
+                <label>
+                    Category:
+                    <select id="termCategoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </label>
+                <input type="text" id="termSearch" placeholder="Search terms..." class="search-input">
+            </div>
+
+            <div id="termsContainer" class="terms-container">
+                <div class="terms-grid" id="termsGrid"></div>
+            </div>
+        </div>
+
+        <!-- Flashcards Mode -->
+        <div id="flashcardsMode" class="mode-content">
+            <div class="filters">
+                <label>
+                    Category:
+                    <select id="flashcardCategoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </label>
+                <label>
+                    Study Mode:
+                    <select id="flashcardMode">
+                        <option value="all">All Terms</option>
+                        <option value="test-relevant">Test Relevant Only</option>
+                    </select>
+                </label>
+                <button id="shuffleFlashcards" class="shuffle-btn">🔀 Shuffle</button>
+            </div>
+
+            <div class="flashcard-progress">
+                <span id="flashcardProgress">1 / 1</span>
+            </div>
+
+            <div class="flashcard-container">
+                <div id="flashcard" class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <p id="flashcardTerm"></p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p id="flashcardDefinition"></p>
+                            <div id="flashcardKeywords" class="flashcard-keywords"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="flashcard-hint">Click card to flip</p>
+            </div>
+
+            <div class="navigation">
+                <button id="prevFlashcard" class="nav-btn">Previous</button>
+                <button id="nextFlashcard" class="nav-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>FCS Manual Study Tool - Created for Wellpoint Family & Children's Services</p>
+        <p class="version">Version 1.0 | Data based on current FCS Manual</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+        
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+            console.log('Back online');
+        });
+        
+        window.addEventListener('offline', () => {
+            console.log('Gone offline');
+        });
+        
+        // PWA install prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+        });
+    </script>
+</body>
+</html>

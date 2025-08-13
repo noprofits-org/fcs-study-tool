@@ -1,0 +1,344 @@
+{
+  "scenarios": [
+    {
+      "id": "s_001",
+      "title": "Emergency Removal Decision",
+      "description": "You arrive at a home for a welfare check and find a 4-year-old alone. The neighbor says the parent left 3 hours ago to 'run errands.' The home has food but no heat (it's winter), and the child appears clean but scared.",
+      "question": "What is the appropriate response?",
+      "options": {
+        "A": "Remove the child immediately due to abandonment",
+        "B": "Wait for parent to return while ensuring child safety",
+        "C": "Leave the child with the neighbor",
+        "D": "Document and close - child appears safe"
+      },
+      "correct": "B",
+      "explanation": "Wait for parent while ensuring safety. Three hours alone doesn't automatically constitute abandonment requiring removal. Assess when parent returns. See manual pages 37, 38, 85 for detailed information.",
+      "studyPages": [37, 38, 85],
+      "relatedConcepts": ["Emergency Removal", "Safety Assessment", "Reasonable Efforts"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_002",
+      "title": "Voluntary Services Eligibility",
+      "description": "A single mother of three comes to your office requesting help. She works full-time but is struggling with her 14-year-old's behavior. The family income is 210% of Federal Poverty Level. There's no history of abuse or neglect.",
+      "question": "Is this family eligible for voluntary services?",
+      "options": {
+        "A": "No, income exceeds 200% FPL limit",
+        "B": "Yes, voluntary prevention services have no income limit",
+        "C": "Only if behavior problems are documented",
+        "D": "Must be court-referred for services"
+      },
+      "correct": "B",
+      "explanation": "Voluntary prevention services are available to any family requesting help, regardless of income, to prevent future crisis. See manual pages 88, 89 for detailed information.",
+      "studyPages": [88, 89],
+      "relatedConcepts": ["Prevention Services", "Voluntary Services", "Eligibility"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_003",
+      "title": "Medication Consent Crisis",
+      "description": "A 12-year-old in foster care is having severe behavioral episodes. The psychiatrist recommends starting an antipsychotic medication immediately. The foster parents agree, but you can't reach the birth parents who retain medical rights.",
+      "question": "How should you proceed?",
+      "options": {
+        "A": "Start medication with foster parent consent only",
+        "B": "Obtain emergency court order for psychotropic medication",
+        "C": "Wait until birth parents can be contacted",
+        "D": "Use agency medical consent authority"
+      },
+      "correct": "B",
+      "explanation": "Psychotropic medications require court approval when parents can't consent. Emergency orders can be obtained for urgent situations. See manual pages 104, 105 for detailed information.",
+      "studyPages": [104, 105],
+      "relatedConcepts": ["Medical Consent", "Psychotropic Medication", "Court Authority"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_004",
+      "title": "Kinship Placement Dilemma",
+      "description": "Children need placement after removal. The maternal grandmother volunteers but lives out of state. She has a clean background check but her adult son (who visits weekly) has an old drug conviction from 15 years ago.",
+      "question": "Can the children be placed with grandmother?",
+      "options": {
+        "A": "No, due to son's criminal history",
+        "B": "Yes, with ICPC approval and safety plan",
+        "C": "Only if son agrees to no contact",
+        "D": "Requires full home study first"
+      },
+      "correct": "B",
+      "explanation": "Interstate placement requires ICPC approval. Old conviction doesn't automatically disqualify if safety plan addresses any concerns. See manual pages 57, 58, 60, 90, 91 for detailed information.",
+      "studyPages": [57, 58, 60, 90, 91],
+      "relatedConcepts": ["Kinship Care", "ICPC", "Safety Planning"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_005",
+      "title": "Confidentiality Challenge",
+      "description": "A teacher calls asking about a student in your caseload. She's noticed behavioral changes and wants to know if something is happening at home. The family has not signed a release for the school.",
+      "question": "What information can you share?",
+      "options": {
+        "A": "Full case details to help the child",
+        "B": "Confirm involvement only",
+        "C": "Nothing without written release",
+        "D": "General safety information only"
+      },
+      "correct": "C",
+      "explanation": "Without a signed release, no information can be shared with the school, even to confirm involvement. See manual pages 96, 97 for detailed information.",
+      "studyPages": [96, 97],
+      "relatedConcepts": ["Confidentiality", "Information Sharing", "Release Requirements"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_006",
+      "title": "Aging Out Preparation",
+      "description": "A 17-year-old in care will turn 18 in 6 months. She wants to drop out of school to work full-time. She has no permanent connections and limited life skills.",
+      "question": "What is the primary intervention priority?",
+      "options": {
+        "A": "Support her employment decision",
+        "B": "Focus on education completion and transition planning",
+        "C": "Find immediate independent housing",
+        "D": "Transfer to adult services"
+      },
+      "correct": "B",
+      "explanation": "Education completion and comprehensive transition planning are priorities. Planning should have started at 16. See manual pages 61, 62, 63 for detailed information.",
+      "studyPages": [61, 62, 63],
+      "relatedConcepts": ["Transition Planning", "Aging Out", "Independent Living"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_007",
+      "title": "Cultural Considerations",
+      "description": "A Native American child needs placement. The tribe has been notified per ICWA requirements. A tribal placement is available in 2 weeks, but a non-Native foster home is available immediately.",
+      "question": "What is the appropriate placement decision?",
+      "options": {
+        "A": "Place immediately in non-Native home",
+        "B": "Wait for tribal placement if child is safe",
+        "C": "Let child choose placement",
+        "D": "Court must decide"
+      },
+      "correct": "B",
+      "explanation": "ICWA preferences should be followed when possible. Short wait for culturally appropriate placement is reasonable if child safety permits. See manual pages 108, 109 for detailed information.",
+      "studyPages": [108, 109],
+      "relatedConcepts": ["ICWA", "Cultural Placement", "Tribal Rights"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_008",
+      "title": "Investigation Timeline Pressure",
+      "description": "You receive a new investigation assignment on Friday afternoon. The report alleges physical abuse. Monday is a holiday. The family lives 2 hours away in a rural area.",
+      "question": "When must you make first contact?",
+      "options": {
+        "A": "Before end of business Friday",
+        "B": "By Tuesday (next business day)",
+        "C": "Within 24 hours regardless of holiday",
+        "D": "Within 72 hours of assignment"
+      },
+      "correct": "C",
+      "explanation": "Initial contact for abuse allegations must occur within 24 hours regardless of weekends or holidays. See manual pages 13, 14 for detailed information.",
+      "studyPages": [13, 14],
+      "relatedConcepts": ["Investigation Timelines", "Initial Contact", "Priority Response"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_009",
+      "title": "Service Refusal Documentation",
+      "description": "After substantiated neglect, parents are court-ordered to participate in parenting classes. They attend one session then refuse to continue, saying the classes are 'stupid and unhelpful.'",
+      "question": "What is the required response?",
+      "options": {
+        "A": "Close case for non-compliance",
+        "B": "Find alternative parenting program",
+        "C": "Document refusal and notify court",
+        "D": "Mandate participation with consequences"
+      },
+      "correct": "C",
+      "explanation": "Document specific refusal and notify court of non-compliance with orders. Court will determine consequences. See manual pages 27, 28, 55 for detailed information.",
+      "studyPages": [27, 28, 55],
+      "relatedConcepts": ["Service Refusal", "Court Orders", "Documentation"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_010",
+      "title": "Safety Plan Adequacy",
+      "description": "Mom's boyfriend has anger issues but no violence history. Mom agrees he'll leave when he's upset and she'll call 911 if needed. Children (ages 8 and 10) know to go to their room if he yells.",
+      "question": "Is this safety plan adequate?",
+      "options": {
+        "A": "Yes, it addresses the concerns",
+        "B": "No, children shouldn't be responsible for safety",
+        "C": "Only with daily monitoring",
+        "D": "Requires boyfriend to move out"
+      },
+      "correct": "B",
+      "explanation": "Safety plans cannot rely on children to protect themselves. Adult protective actions must be concrete and reliable. See manual pages 40, 41 for detailed information.",
+      "studyPages": [40, 41],
+      "relatedConcepts": ["Safety Planning", "Protective Capacity", "Risk Assessment"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_011",
+      "title": "Concurrent Planning Conflict",
+      "description": "Parents have made minimal progress on reunification plan after 12 months. The children (ages 2 and 4) are thriving in pre-adoptive foster home. Parents request more time and blame their attorney.",
+      "question": "What concurrent planning action is required?",
+      "options": {
+        "A": "Give parents 6 more months",
+        "B": "Begin termination proceedings while continuing services",
+        "C": "Move children to non-adoptive home",
+        "D": "Increase parent services"
+      },
+      "correct": "B",
+      "explanation": "After 12 months with minimal progress, must pursue permanency while continuing reasonable efforts. See manual pages 92, 93 for detailed information.",
+      "studyPages": [92, 93],
+      "relatedConcepts": ["Concurrent Planning", "Permanency Timelines", "Reasonable Efforts"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_012",
+      "title": "Mandated Reporter Liability",
+      "description": "A therapist in your agency suspects abuse but wants to wait until next session to 'gather more information' before reporting. The child disclosed abuse but then recanted.",
+      "question": "What must you tell the therapist?",
+      "options": {
+        "A": "Waiting is appropriate for clarity",
+        "B": "Report must be made immediately",
+        "C": "Recantation negates need to report",
+        "D": "Consult with supervisor first"
+      },
+      "correct": "B",
+      "explanation": "Mandated reporters must report immediately upon suspicion, regardless of recantation or desire for more information. See manual pages 8, 9, 23 for detailed information.",
+      "studyPages": [8, 9, 23],
+      "relatedConcepts": ["Mandated Reporting", "Legal Liability", "Immediate Action"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_013",
+      "title": "Placement Stability Crisis",
+      "description": "A 15-year-old has been in 4 placements in 6 months due to behavioral issues. Current foster parents give 7-day notice. The teen threatens to run if moved again.",
+      "question": "What is the best intervention approach?",
+      "options": {
+        "A": "Find another traditional foster home",
+        "B": "Residential treatment placement",
+        "C": "Wraparound services and placement support",
+        "D": "Let teen choose next placement"
+      },
+      "correct": "C",
+      "explanation": "Multiple placement failures indicate need for intensive wraparound services to stabilize current placement rather than another move. See manual pages 110, 111 for detailed information.",
+      "studyPages": [110, 111],
+      "relatedConcepts": ["Placement Stability", "Wraparound Services", "Youth Engagement"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_014",
+      "title": "Documentation Deadline",
+      "description": "You conducted a critical home visit on Tuesday where you observed concerning conditions. It's now Friday afternoon and you haven't written the visit note due to other emergencies.",
+      "question": "What is required regarding documentation?",
+      "options": {
+        "A": "Complete by end of business today",
+        "B": "Can wait until Monday",
+        "C": "Already missed 72-hour deadline",
+        "D": "Verbal report to supervisor sufficient"
+      },
+      "correct": "C",
+      "explanation": "Critical visits must be documented within 72 hours. The deadline has passed and late entry should note reason for delay. See manual pages 112, 113 for detailed information.",
+      "studyPages": [112, 113],
+      "relatedConcepts": ["Documentation Timeline", "Critical Incidents", "Record Requirements"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "s_015",
+      "title": "Supervision Override",
+      "description": "You believe a child is safe to remain home with services. Your supervisor disagrees and wants immediate removal. You have assessed the family for 3 weeks; supervisor has not met them.",
+      "question": "How should this be resolved?",
+      "options": {
+        "A": "Follow supervisor's directive",
+        "B": "Request formal case staffing",
+        "C": "Document disagreement and proceed with your plan",
+        "D": "Ask another supervisor"
+      },
+      "correct": "B",
+      "explanation": "Disagreements on safety require formal staffing with supervisory team to review all information and reach consensus. See manual pages 78, 79 for detailed information.",
+      "studyPages": [78, 79],
+      "relatedConcepts": ["Supervision", "Safety Decisions", "Case Staffing"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_016",
+      "title": "Resource Family Support",
+      "description": "Foster parents call at 10 PM saying their 7-year-old foster child is having night terrors and aggressive outbursts. They're exhausted and considering giving notice.",
+      "question": "What immediate support should be offered?",
+      "options": {
+        "A": "Tell them to call back during business hours",
+        "B": "Arrange respite care and crisis support",
+        "C": "Start looking for new placement",
+        "D": "Advise calling 911 if child is aggressive"
+      },
+      "correct": "B",
+      "explanation": "Immediate respite and crisis support can prevent placement disruption. Foster families need 24/7 support access. See manual pages 114, 115 for detailed information.",
+      "studyPages": [114, 115],
+      "relatedConcepts": ["Resource Family Support", "Crisis Intervention", "Placement Preservation"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_017",
+      "title": "Court Report Accuracy",
+      "description": "While preparing a court report, you realize your supervisor's summary contains factual errors about visit frequency and parent participation. Court is tomorrow.",
+      "question": "What must you do?",
+      "options": {
+        "A": "Submit as written - supervisor approved",
+        "B": "Correct errors and notify supervisor",
+        "C": "Verbally correct in court testimony",
+        "D": "Add addendum noting discrepancies"
+      },
+      "correct": "B",
+      "explanation": "Court reports must be accurate. Errors must be corrected before submission regardless of who made them. See manual pages 116, 117 for detailed information.",
+      "studyPages": [116, 117],
+      "relatedConcepts": ["Court Reports", "Professional Integrity", "Documentation Accuracy"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_018",
+      "title": "Educational Rights",
+      "description": "A 16-year-old in care wants to enroll in an alternative school program. Foster parents object, wanting traditional school. Birth parents (who retain ed rights) can't be reached.",
+      "question": "Who makes the educational decision?",
+      "options": {
+        "A": "Foster parents as daily caregivers",
+        "B": "Youth can decide at age 16",
+        "C": "Agency education liaison with youth input",
+        "D": "Must wait for birth parent consent"
+      },
+      "correct": "C",
+      "explanation": "When parents with education rights are unavailable, agency education liaison makes decisions with youth input, especially for teens. See manual pages 118, 119 for detailed information.",
+      "studyPages": [118, 119],
+      "relatedConcepts": ["Education Rights", "Youth Voice", "Surrogate Decision-Making"],
+      "difficulty": "hard"
+    },
+    {
+      "id": "s_019",
+      "title": "Relative Notification",
+      "description": "A child enters care on Friday evening via emergency removal. The family provides a list of 15 relatives who might help. When must these relatives be notified?",
+      "question": "What is the timeline for relative notification?",
+      "options": {
+        "A": "Within 30 days of removal",
+        "B": "Within 72 hours of removal",
+        "C": "At the first court hearing",
+        "D": "After background checks complete"
+      },
+      "correct": "A",
+      "explanation": "Federal law requires relative notification within 30 days of removal to explore placement options. See manual pages 120, 121 for detailed information.",
+      "studyPages": [120, 121],
+      "relatedConcepts": ["Relative Notification", "Family Finding", "Placement Options"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "s_020",
+      "title": "Service Array Limits",
+      "description": "A family needs intensive therapy, but the only qualified provider has a 3-month waitlist. Parent needs services now to meet court timelines. Budget won't allow out-of-network providers.",
+      "question": "What is the appropriate response?",
+      "options": {
+        "A": "Document unavailability and wait",
+        "B": "Refer to less qualified provider",
+        "C": "Request exception for out-of-network provider",
+        "D": "Extend court timelines automatically"
+      },
+      "correct": "C",
+      "explanation": "When required services are unavailable, must request exceptions to ensure reasonable efforts and meet court timelines. See manual pages 122, 123 for detailed information.",
+      "studyPages": [122, 123],
+      "relatedConcepts": ["Service Availability", "Reasonable Efforts", "Budget Exceptions"],
+      "difficulty": "hard"
+    }
+  ]
+}
