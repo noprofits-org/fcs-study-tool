@@ -1,0 +1,204 @@
+{
+  "talkingPoints": [
+    {
+      "id": "tp_001",
+      "statement": "FCS provides ongoing payments for housing and rent costs.",
+      "correct": false,
+      "explanation": "FCS specifically does NOT provide ongoing payments for housing, rent, or room and board costs. It provides support services to help obtain and maintain stable housing.",
+      "category": "What FCS Is Not",
+      "sourceSection": "FCS is not"
+    },
+    {
+      "id": "tp_002",
+      "statement": "FCS provides wages or wage enhancements for clients.",
+      "correct": false,
+      "explanation": "FCS does NOT provide wages or wage enhancements for clients. The supported employment benefit helps people obtain and keep jobs but does not cover or supplement wages.",
+      "category": "What FCS Is Not",
+      "sourceSection": "FCS is not"
+    },
+    {
+      "id": "tp_003",
+      "statement": "FCS is an entitlement program that all Medicaid recipients can access.",
+      "correct": false,
+      "explanation": "FCS is NOT an entitlement. It is a targeted Medicaid benefit for eligible clients with complex health needs who meet specific criteria.",
+      "category": "What FCS Is Not",
+      "sourceSection": "FCS is not"
+    },
+    {
+      "id": "tp_004",
+      "statement": "Supportive housing services include landlord relations and crisis management.",
+      "correct": true,
+      "explanation": "These are two of the key services listed under supportive housing services, along with housing assessments, identifying resources, and independent living skills development.",
+      "category": "Service Components",
+      "sourceSection": "Supportive housing services"
+    },
+    {
+      "id": "tp_005",
+      "statement": "To be eligible for FCS services, individuals must be Medicaid-eligible and complete a needs assessment.",
+      "correct": true,
+      "explanation": "Both Medicaid eligibility and a completed needs assessment are required for FCS services, in addition to meeting specific population criteria.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible"
+    },
+    {
+      "id": "tp_006",
+      "statement": "The minimum age for supported employment services is 18 years old.",
+      "correct": false,
+      "explanation": "Vulnerable youth age 16 and older with a behavioral health condition are eligible for supported employment services.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible for supported employment"
+    },
+    {
+      "id": "tp_007",
+      "statement": "Wellpoint serves as the single statewide third-party administrator (TPA) for FCS.",
+      "correct": true,
+      "explanation": "Wellpoint is contracted by HCA as the single statewide TPA managing both supportive housing and supported employment services under FCS.",
+      "category": "Program Administration",
+      "sourceSection": "How will providers be reimbursed"
+    },
+    {
+      "id": "tp_008",
+      "statement": "FCS providers are reimbursed on a fee-for-service basis.",
+      "correct": true,
+      "explanation": "Providers of FCS services contract with the TPA (Wellpoint) and are reimbursed on a fee-for-service basis.",
+      "category": "Program Administration",
+      "sourceSection": "How will providers be reimbursed"
+    },
+    {
+      "id": "tp_009",
+      "statement": "The supportive housing benefit will replace existing services currently available to eligible populations.",
+      "correct": false,
+      "explanation": "The supportive housing benefit will NOT supplant existing services currently available to eligible populations. It is designed to complement existing services.",
+      "category": "Service Components",
+      "sourceSection": "Supportive housing services"
+    },
+    {
+      "id": "tp_010",
+      "statement": "Individuals experiencing chronic homelessness as defined by HUD are eligible for supportive housing services.",
+      "correct": true,
+      "explanation": "Chronic homelessness as defined by the U.S. Department of Housing and Urban Development is one of the key eligibility criteria for supportive housing services.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible for supportive housing"
+    },
+    {
+      "id": "tp_011",
+      "statement": "Supported employment services include job coaching and skills-building for negotiating with employers.",
+      "correct": true,
+      "explanation": "Both job coaching and skills-building for negotiating with prospective employers are listed as components of supported employment services.",
+      "category": "Service Components",
+      "sourceSection": "Supported employment services"
+    },
+    {
+      "id": "tp_012",
+      "statement": "Only individuals enrolled in the ABD program are eligible for supported employment services.",
+      "correct": false,
+      "explanation": "Multiple populations are eligible including ABD enrollees, HEN enrollees, those with mental illness/SUD, LTSS recipients, and vulnerable youth 16+.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible for supported employment"
+    },
+    {
+      "id": "tp_013",
+      "statement": "FCS is part of Washington's five-year Medicaid transformation demonstration.",
+      "correct": true,
+      "explanation": "FCS is Medicaid Transformation Initiative 3, part of the five-year demonstration agreement between Washington State HCA and CMS.",
+      "category": "Program Overview",
+      "sourceSection": "Background"
+    },
+    {
+      "id": "tp_014",
+      "statement": "Housing assessments and identifying housing resources are part of supportive housing services.",
+      "correct": true,
+      "explanation": "Both housing assessments and identifying housing resources are specifically listed as components of supportive housing services.",
+      "category": "Service Components",
+      "sourceSection": "Supportive housing services"
+    },
+    {
+      "id": "tp_015",
+      "statement": "FCS creates two new targeted benefits: supportive housing and supported employment.",
+      "correct": true,
+      "explanation": "FCS creates exactly two new targeted benefits that help vulnerable beneficiaries obtain and maintain stable housing and employment.",
+      "category": "Program Overview",
+      "sourceSection": "What is FCS"
+    },
+    {
+      "id": "tp_016",
+      "statement": "Vocational/job-related discovery or assessment is included in supported employment services.",
+      "correct": true,
+      "explanation": "Vocational/job-related discovery or assessment is specifically listed as a component of supported employment services.",
+      "category": "Service Components",
+      "sourceSection": "Supported employment services"
+    },
+    {
+      "id": "tp_017",
+      "statement": "The FCS contact number for members with questions is 844-451-2828.",
+      "correct": true,
+      "explanation": "Wellpoint members can contact FCS with questions about the program at 844-451-2828.",
+      "category": "Program Administration",
+      "sourceSection": "What should associates do"
+    },
+    {
+      "id": "tp_018",
+      "statement": "Individuals must have a severe and persistent mental illness to be eligible for any FCS services.",
+      "correct": false,
+      "explanation": "While mental illness is one eligibility pathway, there are multiple eligibility criteria including chronic homelessness, institutional care dependence, and other complex needs.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible"
+    },
+    {
+      "id": "tp_019",
+      "statement": "Independent living skills development is a component of supportive housing services.",
+      "correct": true,
+      "explanation": "Independent living skills development is specifically listed as one of the services provided under supportive housing.",
+      "category": "Service Components",
+      "sourceSection": "Supportive housing services"
+    },
+    {
+      "id": "tp_020",
+      "statement": "FCS services are available to all Washington residents regardless of insurance status.",
+      "correct": false,
+      "explanation": "Individuals must be Medicaid-eligible to receive FCS services. This is a fundamental requirement along with completing a needs assessment.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible"
+    },
+    {
+      "id": "tp_021",
+      "statement": "Support obtaining a lease is included in supportive housing services.",
+      "correct": true,
+      "explanation": "Support obtaining a lease is one of the specific services listed under supportive housing services.",
+      "category": "Service Components",
+      "sourceSection": "Supportive housing services"
+    },
+    {
+      "id": "tp_022",
+      "statement": "FCS helps eligible clients with complex health needs obtain and maintain housing and employment stability.",
+      "correct": true,
+      "explanation": "This is the core definition of FCS - targeted Medicaid benefits for clients with complex health needs to achieve housing and employment stability.",
+      "category": "Program Overview",
+      "sourceSection": "What is FCS"
+    },
+    {
+      "id": "tp_023",
+      "statement": "Planning for employment is a component of supported employment services.",
+      "correct": true,
+      "explanation": "Planning for employment is specifically listed as one of the components of supported employment services.",
+      "category": "Service Components",
+      "sourceSection": "Supported employment services"
+    },
+    {
+      "id": "tp_024",
+      "statement": "Individuals enrolled in the Housing and Essential Needs (HEN) program are eligible for supported employment services.",
+      "correct": true,
+      "explanation": "HEN program enrollees are specifically listed as one of the populations eligible for supported employment services.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible for supported employment"
+    },
+    {
+      "id": "tp_025",
+      "statement": "FCS services must be the result of a referral from a needs assessment.",
+      "correct": true,
+      "explanation": "Both supportive housing and supported employment services require referral as the result of a needs assessment.",
+      "category": "Eligibility",
+      "sourceSection": "Who is eligible"
+    }
+  ]
+}

@@ -2,14 +2,18 @@
 let questions = [];
 let scenarios = [];
 let terms = [];
+let talkingPoints = [];
 let currentQuestionIndex = 0;
 let currentScenarioIndex = 0;
 let currentFlashcardIndex = 0;
+let currentTalkingPointIndex = 0;
 let questionAnswers = {};
 let scenarioAnswers = {};
+let talkingPointAnswers = {};
 let filteredQuestions = [];
 let filteredScenarios = [];
 let filteredTerms = [];
+let filteredTalkingPoints = [];
 
 // Load data on page load
 document.addEventListener('DOMContentLoaded', async () => {
@@ -23,24 +27,29 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load JSON data
 async function loadData() {
     try {
-        const [questionsData, scenariosData, termsData] = await Promise.all([
+        const [questionsData, scenariosData, termsData, talkingPointsData] = await Promise.all([
             fetch('questions.json').then(r => r.json()),
             fetch('scenarios.json').then(r => r.json()),
-            fetch('terms.json').then(r => r.json())
+            fetch('terms.json').then(r => r.json()),
+            fetch('talking-points.json').then(r => r.json())
         ]);
         
         questions = questionsData.questions;
         scenarios = scenariosData.scenarios;
         terms = termsData.terms;
+        talkingPoints = talkingPointsData.talkingPoints;
         
         filteredQuestions = [...questions];
         filteredScenarios = [...scenarios];
         filteredTerms = [...terms];
+        filteredTalkingPoints = [...talkingPoints];
         
         displayQuestion();
         displayScenario();
         displayTerms();
         updateFlashcards();
+        displayTalkingPoint();
+        initializeTalkingPointsFilters();
     } catch (error) {
         console.error('Error loading data:', error);
         alert('Error loading study materials. Please refresh the page.');
@@ -98,6 +107,14 @@ function initializeEventListeners() {
     // Reset buttons
     document.getElementById('resetQuestions').addEventListener('click', resetQuestions);
     document.getElementById('resetScenarios').addEventListener('click', resetScenarios);
+    
+    // Talking Points navigation
+    document.getElementById('prevTalkingPoint').addEventListener('click', () => navigateTalkingPoint(-1));
+    document.getElementById('nextTalkingPoint').addEventListener('click', () => navigateTalkingPoint(1));
+    document.getElementById('trueBtn').addEventListener('click', () => selectTalkingPointAnswer(true));
+    document.getElementById('falseBtn').addEventListener('click', () => selectTalkingPointAnswer(false));
+    document.getElementById('talkingPointsCategoryFilter').addEventListener('change', filterTalkingPoints);
+    document.getElementById('resetTalkingPoints').addEventListener('click', resetTalkingPoints);
 }
 
 // Initialize filters
@@ -484,11 +501,13 @@ function shuffleFlashcards() {
 function saveProgress() {
     localStorage.setItem('fcs_questionAnswers', JSON.stringify(questionAnswers));
     localStorage.setItem('fcs_scenarioAnswers', JSON.stringify(scenarioAnswers));
+    localStorage.setItem('fcs_talkingPointAnswers', JSON.stringify(talkingPointAnswers));
 }
 
 function loadProgress() {
     const savedQuestions = localStorage.getItem('fcs_questionAnswers');
     const savedScenarios = localStorage.getItem('fcs_scenarioAnswers');
+    const savedTalkingPoints = localStorage.getItem('fcs_talkingPointAnswers');
     
     if (savedQuestions) {
         questionAnswers = JSON.parse(savedQuestions);
@@ -496,9 +515,13 @@ function loadProgress() {
     if (savedScenarios) {
         scenarioAnswers = JSON.parse(savedScenarios);
     }
+    if (savedTalkingPoints) {
+        talkingPointAnswers = JSON.parse(savedTalkingPoints);
+    }
     
     updateQuestionStats();
     updateScenarioStats();
+    updateTalkingPointsStats();
 }
 
 function resetQuestions() {
@@ -548,5 +571,114 @@ function renderGamificationDashboard() {
             gamification.data.settings.animationsEnabled = e.target.checked;
             gamification.save();
         });
+    }
+}
+
+// Talking Points functionality
+function initializeTalkingPointsFilters() {
+    const categories = [...new Set(talkingPoints.map(tp => tp.category))].sort();
+    const categorySelect = document.getElementById('talkingPointsCategoryFilter');
+    categories.forEach(cat => {
+        const option = document.createElement('option');
+        option.value = cat;
+        option.textContent = cat;
+        categorySelect.appendChild(option);
+    });
+}
+
+function displayTalkingPoint() {
+    if (filteredTalkingPoints.length === 0) return;
+
+    const talkingPoint = filteredTalkingPoints[currentTalkingPointIndex];
+    document.getElementById('talkingPointsNumber').textContent = `Statement ${currentTalkingPointIndex + 1} of ${filteredTalkingPoints.length}`;
+    document.getElementById('talkingPointStatement').textContent = talkingPoint.statement;
+
+    // Enable/disable buttons based on whether answered
+    const answerId = talkingPoint.id;
+    const isAnswered = talkingPointAnswers[answerId] !== undefined;
+    
+    document.getElementById('trueBtn').disabled = isAnswered;
+    document.getElementById('falseBtn').disabled = isAnswered;
+    
+    // Show answer state if already answered
+    if (isAnswered) {
+        const userAnswer = talkingPointAnswers[answerId];
+        if (userAnswer === true) {
+            document.getElementById('trueBtn').classList.add('selected');
+            document.getElementById('trueBtn').classList.add(userAnswer === talkingPoint.correct ? 'correct' : 'incorrect');
+        } else {
+            document.getElementById('falseBtn').classList.add('selected');
+            document.getElementById('falseBtn').classList.add(userAnswer === talkingPoint.correct ? 'correct' : 'incorrect');
+        }
+        showTalkingPointExplanation(talkingPoint);
+    } else {
+        document.getElementById('trueBtn').classList.remove('selected', 'correct', 'incorrect');
+        document.getElementById('falseBtn').classList.remove('selected', 'correct', 'incorrect');
+        document.getElementById('talkingPointsExplanation').style.display = 'none';
+    }
+
+    updateTalkingPointsStats();
+}
+
+function selectTalkingPointAnswer(answer) {
+    const talkingPoint = filteredTalkingPoints[currentTalkingPointIndex];
+    talkingPointAnswers[talkingPoint.id] = answer;
+    saveProgress();
+    
+    // Track for gamification
+    const isCorrect = answer === talkingPoint.correct;
+    const answered = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] !== undefined).length;
+    const correct = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] === tp.correct).length;
+    
+    // Check if this is a test completion (treat talking points as practice test)
+    if (answered > 0 && answered % 10 === 0) {
+        gamification.onPracticeTestCompleted(correct, answered);
+    }
+    
+    displayTalkingPoint();
+}
+
+function showTalkingPointExplanation(talkingPoint) {
+    const container = document.getElementById('talkingPointsExplanation');
+    container.style.display = 'block';
+    document.getElementById('talkingPointsExplanationText').textContent = talkingPoint.explanation;
+    document.getElementById('talkingPointsSource').textContent = `Source: ${talkingPoint.sourceSection}`;
+}
+
+function navigateTalkingPoint(direction) {
+    const newIndex = currentTalkingPointIndex + direction;
+    if (newIndex >= 0 && newIndex < filteredTalkingPoints.length) {
+        currentTalkingPointIndex = newIndex;
+        displayTalkingPoint();
+    }
+}
+
+function filterTalkingPoints() {
+    const category = document.getElementById('talkingPointsCategoryFilter').value;
+    
+    filteredTalkingPoints = talkingPoints.filter(tp => {
+        return category === 'all' || tp.category === category;
+    });
+    
+    currentTalkingPointIndex = 0;
+    displayTalkingPoint();
+}
+
+function updateTalkingPointsStats() {
+    const answered = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] !== undefined).length;
+    const correct = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] === tp.correct).length;
+    const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+    
+    document.getElementById('talkingPointsProgress').textContent = `${answered}/${filteredTalkingPoints.length}`;
+    document.getElementById('talkingPointsCorrectCount').textContent = correct;
+    document.getElementById('talkingPointsScorePercentage').textContent = `${percentage}%`;
+}
+
+function resetTalkingPoints() {
+    if (confirm('Are you sure you want to reset all talking points progress?')) {
+        talkingPointAnswers = {};
+        saveProgress();
+        displayTalkingPoint();
+        updateTalkingPointsStats();
     }
 }

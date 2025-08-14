@@ -28,6 +28,7 @@
             <button class="mode-btn" data-mode="scenarios">Scenarios</button>
             <button class="mode-btn" data-mode="terms">Terms</button>
             <button class="mode-btn" data-mode="flashcards">Flashcards</button>
+            <button class="mode-btn" data-mode="talking-points">Talking Points</button>
             <button class="mode-btn" data-mode="progress">My Progress</button>
         </nav>
 
@@ -195,6 +196,56 @@
             <div class="navigation">
                 <button id="prevFlashcard" class="nav-btn">Previous</button>
                 <button id="nextFlashcard" class="nav-btn">Next</button>
+            </div>
+        </div>
+        
+        <!-- Talking Points Mode -->
+        <div id="talking-pointsMode" class="mode-content">
+            <div class="filters">
+                <label>
+                    Category:
+                    <select id="talkingPointsCategoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </label>
+                <button id="resetTalkingPoints" class="reset-btn">Reset Progress</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Progress:</span>
+                    <span id="talkingPointsProgress">0/0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Correct:</span>
+                    <span id="talkingPointsCorrectCount">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span id="talkingPointsScorePercentage">0%</span>
+                </div>
+            </div>
+
+            <div id="talkingPointsContainer" class="talking-points-container">
+                <div class="talking-points-header">
+                    <span id="talkingPointsNumber" class="question-number"></span>
+                </div>
+                <div class="statement-card">
+                    <p id="talkingPointStatement" class="statement-text"></p>
+                </div>
+                <div class="true-false-buttons">
+                    <button id="trueBtn" class="tf-btn true-btn">TRUE</button>
+                    <button id="falseBtn" class="tf-btn false-btn">FALSE</button>
+                </div>
+                <div id="talkingPointsExplanation" class="explanation-container" style="display: none;">
+                    <h3>Explanation:</h3>
+                    <p id="talkingPointsExplanationText"></p>
+                    <p id="talkingPointsSource" class="source-reference"></p>
+                </div>
+                <div class="navigation">
+                    <button id="prevTalkingPoint" class="nav-btn">Previous</button>
+                    <button id="nextTalkingPoint" class="nav-btn">Next</button>
+                </div>
             </div>
         </div>
         
