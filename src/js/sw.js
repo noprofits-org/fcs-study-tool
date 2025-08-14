@@ -2,11 +2,13 @@ const CACHE_NAME = 'fcs-study-v1';
 const urlsToCache = [
   './',
   'index.html',
-  'styles.css',
-  'script.js',
-  'questions.json',
-  'scenarios.json',
-  'terms.json',
+  'src/css/styles.css',
+  'src/js/script.js',
+  'src/js/gamification.js',
+  'src/data/questions.json',
+  'src/data/scenarios.json',
+  'src/data/terms.json',
+  'src/data/talking-points.json',
   'manifest.json'
 ];
 

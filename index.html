@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCS Manual Study Tool</title>
     <meta name="description" content="Study tool for Wellpoint FCS Provider Manual">
     <meta name="theme-color" content="#00897b">
-    
+
     <!-- PWA manifest -->
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="icon-192.png">
-    
+
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -198,7 +200,7 @@
                 <button id="nextFlashcard" class="nav-btn">Next</button>
             </div>
         </div>
-        
+
         <!-- Talking Points Mode -->
         <div id="talking-pointsMode" class="mode-content">
             <div class="filters">
@@ -248,7 +250,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Progress Mode (Gamification Dashboard) -->
         <div id="progressMode" class="mode-content">
             <div id="gamificationDashboard"></div>
@@ -260,9 +262,9 @@
         <p class="version">Version 1.0 | Data based on current FCS Manual</p>
     </footer>
 
-    <script src="gamification.js"></script>
-    <script src="script.js"></script>
-    
+    <script src="src/js/gamification.js"></script>
+    <script src="src/js/script.js"></script>
+
     <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
@@ -276,16 +278,16 @@
                     });
             });
         }
-        
+
         // Handle offline/online status
         window.addEventListener('online', () => {
             console.log('Back online');
         });
-        
+
         window.addEventListener('offline', () => {
             console.log('Gone offline');
         });
-        
+
         // PWA install prompt
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
@@ -294,4 +296,5 @@
         });
     </script>
 </body>
+
 </html>

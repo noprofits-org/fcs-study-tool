@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadData() {
     try {
         const [questionsData, scenariosData, termsData, talkingPointsData] = await Promise.all([
-            fetch('questions.json').then(r => r.json()),
-            fetch('scenarios.json').then(r => r.json()),
-            fetch('terms.json').then(r => r.json()),
-            fetch('talking-points.json').then(r => r.json())
+            fetch('src/data/questions.json').then(r => r.json()),
+            fetch('src/data/scenarios.json').then(r => r.json()),
+            fetch('src/data/terms.json').then(r => r.json()),
+            fetch('src/data/talking-points.json').then(r => r.json())
         ]);
-        
+
         questions = questionsData.questions;
         scenarios = scenariosData.scenarios;
         terms = termsData.terms;
         talkingPoints = talkingPointsData.talkingPoints;
-        
+
         filteredQuestions = [...questions];
         filteredScenarios = [...scenarios];
         filteredTerms = [...terms];
         filteredTalkingPoints = [...talkingPoints];
-        
+
         displayQuestion();
         displayScenario();
         displayTerms();
@@ -87,7 +87,7 @@ function initializeEventListeners() {
     document.getElementById('shuffleFlashcards').addEventListener('click', shuffleFlashcards);
 
     // Flashcard flip
-    document.getElementById('flashcard').addEventListener('click', function() {
+    document.getElementById('flashcard').addEventListener('click', function () {
         this.classList.toggle('flipped');
         // Track flashcard review for gamification
         if (!this.classList.contains('flipped')) {
@@ -107,7 +107,7 @@ function initializeEventListeners() {
     // Reset buttons
     document.getElementById('resetQuestions').addEventListener('click', resetQuestions);
     document.getElementById('resetScenarios').addEventListener('click', resetScenarios);
-    
+
     // Talking Points navigation
     document.getElementById('prevTalkingPoint').addEventListener('click', () => navigateTalkingPoint(-1));
     document.getElementById('nextTalkingPoint').addEventListener('click', () => navigateTalkingPoint(1));
@@ -152,7 +152,7 @@ function showMode(mode) {
         content.classList.remove('active');
     });
     document.getElementById(`${mode}Mode`).classList.add('active');
-    
+
     // Handle gamification dashboard
     if (mode === 'progress') {
         renderGamificationDashboard();
@@ -172,13 +172,13 @@ function displayQuestion() {
     // Display options
     const optionsContainer = document.getElementById('optionsContainer');
     optionsContainer.innerHTML = '';
-    
+
     Object.entries(question.options).forEach(([key, value]) => {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
         optionDiv.innerHTML = `<span class="option-key">${key}:</span> ${value}`;
         optionDiv.dataset.key = key;
-        
+
         // Check if already answered
         const answerId = question.id;
         if (questionAnswers[answerId]) {
@@ -194,7 +194,7 @@ function displayQuestion() {
         } else {
             optionDiv.addEventListener('click', () => selectAnswer(key, question));
         }
-        
+
         optionsContainer.appendChild(optionDiv);
     });
 
@@ -211,12 +211,12 @@ function displayQuestion() {
 function selectAnswer(key, question) {
     questionAnswers[question.id] = key;
     saveProgress();
-    
+
     // Track for gamification
     const isCorrect = key === question.correct;
     const answered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
     const correct = filteredQuestions.filter(q => questionAnswers[q.id] === q.correct).length;
-    
+
     // Check if this is a test completion
     if (answered === filteredQuestions.length && filteredQuestions.length >= 20) {
         gamification.onFullTestCompleted(correct, filteredQuestions.length);
@@ -224,13 +224,13 @@ function selectAnswer(key, question) {
         // Practice test every 10 questions
         gamification.onPracticeTestCompleted(correct, answered);
     }
-    
+
     // Update category score if filtering by category
     const category = document.getElementById('categoryFilter').value;
     if (category !== 'all' && answered > 0) {
         gamification.lastCategoryScore = Math.round((correct / answered) * 100);
     }
-    
+
     displayQuestion();
 }
 
@@ -238,7 +238,7 @@ function showExplanation(question) {
     const container = document.getElementById('explanationContainer');
     container.style.display = 'block';
     document.getElementById('explanationText').textContent = question.explanation;
-    
+
     const studyPagesDiv = document.getElementById('studyPages');
     if (question.studyPages && question.studyPages.length > 0) {
         studyPagesDiv.innerHTML = `<strong>Study Pages:</strong> ${question.studyPages.join(', ')}`;
@@ -258,16 +258,16 @@ function navigateQuestion(direction) {
 function filterQuestions() {
     const category = document.getElementById('categoryFilter').value;
     const difficulty = document.getElementById('difficultyFilter').value;
-    
+
     filteredQuestions = questions.filter(q => {
         const categoryMatch = category === 'all' || q.category === category;
         const difficultyMatch = difficulty === 'all' || q.difficulty.toLowerCase() === difficulty;
         return categoryMatch && difficultyMatch;
     });
-    
+
     currentQuestionIndex = 0;
     displayQuestion();
-    
+
     // Check category scores for gamification
     if (category !== 'all') {
         const categoryAnswered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
@@ -283,7 +283,7 @@ function updateQuestionStats() {
     const answered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
     const correct = filteredQuestions.filter(q => questionAnswers[q.id] === q.correct).length;
     const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-    
+
     document.getElementById('questionProgress').textContent = `${answered}/${filteredQuestions.length}`;
     document.getElementById('correctCount').textContent = correct;
     document.getElementById('scorePercentage').textContent = `${percentage}%`;
@@ -303,13 +303,13 @@ function displayScenario() {
     // Display options
     const optionsContainer = document.getElementById('scenarioOptionsContainer');
     optionsContainer.innerHTML = '';
-    
+
     Object.entries(scenario.options).forEach(([key, value]) => {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
         optionDiv.innerHTML = `<span class="option-key">${key}:</span> ${value}`;
         optionDiv.dataset.key = key;
-        
+
         // Check if already answered
         const answerId = scenario.id;
         if (scenarioAnswers[answerId]) {
@@ -325,7 +325,7 @@ function displayScenario() {
         } else {
             optionDiv.addEventListener('click', () => selectScenarioAnswer(key, scenario));
         }
-        
+
         optionsContainer.appendChild(optionDiv);
     });
 
@@ -342,10 +342,10 @@ function displayScenario() {
 function selectScenarioAnswer(key, scenario) {
     scenarioAnswers[scenario.id] = key;
     saveProgress();
-    
+
     // Track for gamification
     gamification.onScenarioCompleted();
-    
+
     displayScenario();
 }
 
@@ -353,14 +353,14 @@ function showScenarioExplanation(scenario) {
     const container = document.getElementById('scenarioExplanationContainer');
     container.style.display = 'block';
     document.getElementById('scenarioExplanationText').textContent = scenario.explanation;
-    
+
     const studyPagesDiv = document.getElementById('scenarioStudyPages');
     if (scenario.studyPages && scenario.studyPages.length > 0) {
         studyPagesDiv.innerHTML = `<strong>Study Pages:</strong> ${scenario.studyPages.join(', ')}`;
     } else {
         studyPagesDiv.innerHTML = '';
     }
-    
+
     const conceptsDiv = document.getElementById('relatedConcepts');
     if (scenario.relatedConcepts && scenario.relatedConcepts.length > 0) {
         conceptsDiv.innerHTML = `<strong>Related Concepts:</strong> ${scenario.relatedConcepts.join(', ')}`;
@@ -379,11 +379,11 @@ function navigateScenario(direction) {
 
 function filterScenarios() {
     const difficulty = document.getElementById('scenarioDifficultyFilter').value;
-    
+
     filteredScenarios = scenarios.filter(s => {
         return difficulty === 'all' || s.difficulty === difficulty;
     });
-    
+
     currentScenarioIndex = 0;
     displayScenario();
 }
@@ -392,7 +392,7 @@ function updateScenarioStats() {
     const answered = filteredScenarios.filter(s => scenarioAnswers[s.id]).length;
     const correct = filteredScenarios.filter(s => scenarioAnswers[s.id] === s.correct).length;
     const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-    
+
     document.getElementById('scenarioProgress').textContent = `${answered}/${filteredScenarios.length}`;
     document.getElementById('scenarioCorrectCount').textContent = correct;
     document.getElementById('scenarioScorePercentage').textContent = `${percentage}%`;
@@ -402,7 +402,7 @@ function updateScenarioStats() {
 function displayTerms() {
     const grid = document.getElementById('termsGrid');
     grid.innerHTML = '';
-    
+
     filteredTerms.forEach(term => {
         const termCard = document.createElement('div');
         termCard.className = 'term-card';
@@ -421,21 +421,21 @@ function displayTerms() {
 function filterTerms() {
     const category = document.getElementById('termCategoryFilter').value;
     const searchText = document.getElementById('termSearch').value.toLowerCase();
-    
+
     filteredTerms = terms.filter(term => {
         const categoryMatch = category === 'all' || term.category === category;
-        const searchMatch = !searchText || 
-            term.term.toLowerCase().includes(searchText) || 
+        const searchMatch = !searchText ||
+            term.term.toLowerCase().includes(searchText) ||
             term.definition.toLowerCase().includes(searchText) ||
             (term.keywords && term.keywords.some(k => k.toLowerCase().includes(searchText)));
         return categoryMatch && searchMatch;
     });
-    
+
     // Track category study for gamification
     if (category !== 'all') {
         gamification.onCategoryStudied(category);
     }
-    
+
     displayTerms();
 }
 
@@ -443,34 +443,34 @@ function filterTerms() {
 function updateFlashcards() {
     const category = document.getElementById('flashcardCategoryFilter').value;
     const mode = document.getElementById('flashcardMode').value;
-    
+
     filteredTerms = terms.filter(term => {
         const categoryMatch = category === 'all' || term.category === category;
         const modeMatch = mode === 'all' || (mode === 'test-relevant' && term.testRelevant);
         return categoryMatch && modeMatch;
     });
-    
+
     currentFlashcardIndex = 0;
     displayFlashcard();
 }
 
 function displayFlashcard() {
     if (filteredTerms.length === 0) return;
-    
+
     const term = filteredTerms[currentFlashcardIndex];
     document.getElementById('flashcardTerm').textContent = term.term;
     document.getElementById('flashcardDefinition').textContent = term.definition;
-    
+
     const keywordsDiv = document.getElementById('flashcardKeywords');
     if (term.keywords && term.keywords.length > 0) {
         keywordsDiv.innerHTML = `<strong>Keywords:</strong> ${term.keywords.join(', ')}`;
     } else {
         keywordsDiv.innerHTML = '';
     }
-    
-    document.getElementById('flashcardProgress').textContent = 
+
+    document.getElementById('flashcardProgress').textContent =
         `${currentFlashcardIndex + 1} / ${filteredTerms.length}`;
-    
+
     // Reset flip state
     document.getElementById('flashcard').classList.remove('flipped');
 }
@@ -480,7 +480,7 @@ function navigateFlashcard(direction) {
     if (newIndex >= 0 && newIndex < filteredTerms.length) {
         currentFlashcardIndex = newIndex;
         displayFlashcard();
-        
+
         // Track category for gamification
         if (filteredTerms[currentFlashcardIndex]) {
             gamification.onCategoryStudied(filteredTerms[currentFlashcardIndex].category);
@@ -508,7 +508,7 @@ function loadProgress() {
     const savedQuestions = localStorage.getItem('fcs_questionAnswers');
     const savedScenarios = localStorage.getItem('fcs_scenarioAnswers');
     const savedTalkingPoints = localStorage.getItem('fcs_talkingPointAnswers');
-    
+
     if (savedQuestions) {
         questionAnswers = JSON.parse(savedQuestions);
     }
@@ -518,7 +518,7 @@ function loadProgress() {
     if (savedTalkingPoints) {
         talkingPointAnswers = JSON.parse(savedTalkingPoints);
     }
-    
+
     updateQuestionStats();
     updateScenarioStats();
     updateTalkingPointsStats();
@@ -546,7 +546,7 @@ function resetScenarios() {
 function renderGamificationDashboard() {
     const dashboardContainer = document.getElementById('gamificationDashboard');
     dashboardContainer.innerHTML = gamification.renderDashboard();
-    
+
     // Add event listeners for gamification settings
     const toggleBtn = document.getElementById('toggleGamification');
     if (toggleBtn) {
@@ -556,7 +556,7 @@ function renderGamificationDashboard() {
             renderGamificationDashboard();
         });
     }
-    
+
     const soundToggle = document.getElementById('soundToggle');
     if (soundToggle) {
         soundToggle.addEventListener('change', (e) => {
@@ -564,7 +564,7 @@ function renderGamificationDashboard() {
             gamification.save();
         });
     }
-    
+
     const animationToggle = document.getElementById('animationToggle');
     if (animationToggle) {
         animationToggle.addEventListener('change', (e) => {
@@ -596,10 +596,10 @@ function displayTalkingPoint() {
     // Enable/disable buttons based on whether answered
     const answerId = talkingPoint.id;
     const isAnswered = talkingPointAnswers[answerId] !== undefined;
-    
+
     document.getElementById('trueBtn').disabled = isAnswered;
     document.getElementById('falseBtn').disabled = isAnswered;
-    
+
     // Show answer state if already answered
     if (isAnswered) {
         const userAnswer = talkingPointAnswers[answerId];
@@ -624,17 +624,17 @@ function selectTalkingPointAnswer(answer) {
     const talkingPoint = filteredTalkingPoints[currentTalkingPointIndex];
     talkingPointAnswers[talkingPoint.id] = answer;
     saveProgress();
-    
+
     // Track for gamification
     const isCorrect = answer === talkingPoint.correct;
     const answered = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] !== undefined).length;
     const correct = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] === tp.correct).length;
-    
+
     // Check if this is a test completion (treat talking points as practice test)
     if (answered > 0 && answered % 10 === 0) {
         gamification.onPracticeTestCompleted(correct, answered);
     }
-    
+
     displayTalkingPoint();
 }
 
@@ -655,11 +655,11 @@ function navigateTalkingPoint(direction) {
 
 function filterTalkingPoints() {
     const category = document.getElementById('talkingPointsCategoryFilter').value;
-    
+
     filteredTalkingPoints = talkingPoints.filter(tp => {
         return category === 'all' || tp.category === category;
     });
-    
+
     currentTalkingPointIndex = 0;
     displayTalkingPoint();
 }
@@ -668,7 +668,7 @@ function updateTalkingPointsStats() {
     const answered = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] !== undefined).length;
     const correct = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] === tp.correct).length;
     const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-    
+
     document.getElementById('talkingPointsProgress').textContent = `${answered}/${filteredTalkingPoints.length}`;
     document.getElementById('talkingPointsCorrectCount').textContent = correct;
     document.getElementById('talkingPointsScorePercentage').textContent = `${percentage}%`;
