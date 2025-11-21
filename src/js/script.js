@@ -15,6 +15,11 @@ let filteredScenarios = [];
 let filteredTerms = [];
 let filteredTalkingPoints = [];
 
+// Gamification tracking to prevent XP exploits
+let reviewedFlashcards = new Set();
+let questionMilestones = new Set();
+let talkingPointMilestones = new Set();
+
 // Load data on page load
 document.addEventListener('DOMContentLoaded', async () => {
     await loadData();
@@ -88,10 +93,20 @@ function initializeEventListeners() {
 
     // Flashcard flip
     document.getElementById('flashcard').addEventListener('click', function () {
+        const wasFlipped = this.classList.contains('flipped');
         this.classList.toggle('flipped');
+
         // Track flashcard review for gamification
-        if (!this.classList.contains('flipped')) {
-            gamification.onFlashcardReviewed();
+        // Award XP when flipping TO answer side (revealing the answer)
+        // Only award once per unique flashcard
+        if (!wasFlipped && this.classList.contains('flipped')) {
+            const currentTerm = filteredTerms[currentFlashcardIndex];
+            // Use term + category as unique identifier (stable across shuffles and filters)
+            const flashcardId = currentTerm ? `${currentTerm.term}|${currentTerm.category}` : currentFlashcardIndex;
+            if (!reviewedFlashcards.has(flashcardId)) {
+                reviewedFlashcards.add(flashcardId);
+                gamification.onFlashcardReviewed();
+            }
         }
     });
 
@@ -212,23 +227,31 @@ function selectAnswer(key, question) {
     questionAnswers[question.id] = key;
     saveProgress();
 
-    // Track for gamification
-    const isCorrect = key === question.correct;
-    const answered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
-    const correct = filteredQuestions.filter(q => questionAnswers[q.id] === q.correct).length;
+    // Track for gamification based on TOTAL unique questions answered (not filtered)
+    const totalAnswered = Object.keys(questionAnswers).length;
+    const totalCorrect = questions.filter(q => questionAnswers[q.id] === q.correct).length;
 
-    // Check if this is a test completion
-    if (answered === filteredQuestions.length && filteredQuestions.length >= 20) {
-        gamification.onFullTestCompleted(correct, filteredQuestions.length);
-    } else if (answered > 0 && answered % 10 === 0) {
-        // Practice test every 10 questions
-        gamification.onPracticeTestCompleted(correct, answered);
+    // Check for milestone rewards (every 10 questions) - only award once per milestone
+    const milestone = Math.floor(totalAnswered / 10) * 10;
+    if (milestone > 0 && totalAnswered % 10 === 0 && !questionMilestones.has(milestone)) {
+        questionMilestones.add(milestone);
+        gamification.onPracticeTestCompleted(totalCorrect, totalAnswered);
+    }
+
+    // Check for full test completion (all questions answered) - only award once
+    if (totalAnswered === questions.length && !questionMilestones.has('fullTest')) {
+        questionMilestones.add('fullTest');
+        gamification.onFullTestCompleted(totalCorrect, questions.length);
     }
 
     // Update category score if filtering by category
     const category = document.getElementById('categoryFilter').value;
-    if (category !== 'all' && answered > 0) {
-        gamification.lastCategoryScore = Math.round((correct / answered) * 100);
+    if (category !== 'all') {
+        const categoryAnswered = filteredQuestions.filter(q => questionAnswers[q.id]).length;
+        const categoryCorrect = filteredQuestions.filter(q => questionAnswers[q.id] === q.correct).length;
+        if (categoryAnswered > 0) {
+            gamification.lastCategoryScore = Math.round((categoryCorrect / categoryAnswered) * 100);
+        }
     }
 
     displayQuestion();
@@ -340,11 +363,16 @@ function displayScenario() {
 }
 
 function selectScenarioAnswer(key, scenario) {
+    // Only award XP if this is the first time answering this scenario
+    const isFirstAnswer = scenarioAnswers[scenario.id] === undefined;
+
     scenarioAnswers[scenario.id] = key;
     saveProgress();
 
-    // Track for gamification
-    gamification.onScenarioCompleted();
+    // Track for gamification - only on first answer
+    if (isFirstAnswer) {
+        gamification.onScenarioCompleted();
+    }
 
     displayScenario();
 }
@@ -511,12 +539,25 @@ function loadProgress() {
 
     if (savedQuestions) {
         questionAnswers = JSON.parse(savedQuestions);
+        // Rebuild milestone trackers based on loaded progress
+        const totalAnswered = Object.keys(questionAnswers).length;
+        for (let i = 10; i <= Math.floor(totalAnswered / 10) * 10; i += 10) {
+            questionMilestones.add(i);
+        }
+        if (totalAnswered === questions.length) {
+            questionMilestones.add('fullTest');
+        }
     }
     if (savedScenarios) {
         scenarioAnswers = JSON.parse(savedScenarios);
     }
     if (savedTalkingPoints) {
         talkingPointAnswers = JSON.parse(savedTalkingPoints);
+        // Rebuild milestone trackers based on loaded progress
+        const totalAnswered = Object.keys(talkingPointAnswers).length;
+        for (let i = 10; i <= Math.floor(totalAnswered / 10) * 10; i += 10) {
+            talkingPointMilestones.add(i);
+        }
     }
 
     updateQuestionStats();
@@ -527,6 +568,7 @@ function loadProgress() {
 function resetQuestions() {
     if (confirm('Are you sure you want to reset all question progress?')) {
         questionAnswers = {};
+        questionMilestones.clear();
         saveProgress();
         displayQuestion();
         updateQuestionStats();
@@ -625,14 +667,15 @@ function selectTalkingPointAnswer(answer) {
     talkingPointAnswers[talkingPoint.id] = answer;
     saveProgress();
 
-    // Track for gamification
-    const isCorrect = answer === talkingPoint.correct;
-    const answered = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] !== undefined).length;
-    const correct = filteredTalkingPoints.filter(tp => talkingPointAnswers[tp.id] === tp.correct).length;
+    // Track for gamification based on TOTAL unique talking points answered (not filtered)
+    const totalAnswered = Object.keys(talkingPointAnswers).length;
+    const totalCorrect = talkingPoints.filter(tp => talkingPointAnswers[tp.id] === tp.correct).length;
 
-    // Check if this is a test completion (treat talking points as practice test)
-    if (answered > 0 && answered % 10 === 0) {
-        gamification.onPracticeTestCompleted(correct, answered);
+    // Check for milestone rewards (every 10 talking points) - only award once per milestone
+    const milestone = Math.floor(totalAnswered / 10) * 10;
+    if (milestone > 0 && totalAnswered % 10 === 0 && !talkingPointMilestones.has(milestone)) {
+        talkingPointMilestones.add(milestone);
+        gamification.onPracticeTestCompleted(totalCorrect, totalAnswered);
     }
 
     displayTalkingPoint();
@@ -677,6 +720,7 @@ function updateTalkingPointsStats() {
 function resetTalkingPoints() {
     if (confirm('Are you sure you want to reset all talking points progress?')) {
         talkingPointAnswers = {};
+        talkingPointMilestones.clear();
         saveProgress();
         displayTalkingPoint();
         updateTalkingPointsStats();
