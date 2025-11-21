@@ -474,6 +474,27 @@
             e.preventDefault();
             deferredPrompt = e;
         });
+
+        // Show update prompt when new service worker is available
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                window.location.reload();
+            });
+
+            navigator.serviceWorker.ready.then(registration => {
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            // New content available, show update prompt
+                            if (confirm('A new version is available! Reload to update?')) {
+                                newWorker.postMessage({ action: 'skipWaiting' });
+                            }
+                        }
+                    });
+                });
+            });
+        }
     </script>
 </body>
 
