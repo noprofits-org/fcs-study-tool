@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "id": "pr_001",
+      "category": "Documentation Best Practices",
+      "text": "What does the acronym DARP stand for in the context of FCS documentation?",
+      "options": {
+        "A": "Data, Assessment, Review, Plan",
+        "B": "Description, Assessment, Response, Plan",
+        "C": "Documentation, Action, Response, Progress",
+        "D": "Description, Action, Review, Progress"
+      },
+      "correct": "B",
+      "explanation": "DARP stands for Description, Assessment, Response, Plan. This format is commonly used for documenting enrollee interactions and contains all elements required for effective documentation (page 72).",
+      "studyPages": [72],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_002",
+      "category": "Documentation Best Practices",
+      "text": "According to SMART goal format, what does the 'M' represent?",
+      "options": {
+        "A": "Manageable",
+        "B": "Measurable",
+        "C": "Meaningful",
+        "D": "Monitored"
+      },
+      "correct": "B",
+      "explanation": "In SMART goals, M stands for Measurable. SMART goals are Specific, Measurable, Achievable, Relevant, and Time-Bound (page 72).",
+      "studyPages": [72],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_003",
+      "category": "Documentation Best Practices",
+      "text": "Which of the following is NOT a required element in thorough Medicaid documentation?",
+      "options": {
+        "A": "Enrollee identification information on each page",
+        "B": "Date, start time, end time, and duration of services",
+        "C": "Color-coded filing system",
+        "D": "Dated signature identifying the author"
+      },
+      "correct": "C",
+      "explanation": "A color-coded filing system is not mentioned as a required element. Required elements include enrollee identification, dates/times, legibility, and author identification (page 71).",
+      "studyPages": [71],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_004",
+      "category": "Documentation Best Practices",
+      "text": "What should be included in the 'Description' section of a DARP progress note?",
+      "options": {
+        "A": "Subjective impressions and opinions",
+        "B": "Objective and factual observations including date, times, and location",
+        "C": "Future intervention plans",
+        "D": "Assessment of enrollee's mental state"
+      },
+      "correct": "B",
+      "explanation": "The Description section should contain objective and factual observations, including date, exact start and end times (not rounded), location, and name of enrollee (page 72).",
+      "studyPages": [72, 73],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_005",
+      "category": "TAP Eligibility",
+      "text": "What does TAP stand for in the FCS program?",
+      "options": {
+        "A": "Temporary Assistance Program",
+        "B": "Transition Assistance Program",
+        "C": "Treatment and Assessment Plan",
+        "D": "Tenant Assistance Protocol"
+      },
+      "correct": "B",
+      "explanation": "TAP stands for Transition Assistance Program, which provides time-limited funding for housing transitions (page 75).",
+      "studyPages": [75],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_006",
+      "category": "TAP Eligibility",
+      "text": "Which of the following is required for TAP enrollee eligibility?",
+      "options": {
+        "A": "Must be employed full-time",
+        "B": "Active FCS-eligible Medicaid and authorized for FCS supportive housing services",
+        "C": "Must have a co-signer for housing",
+        "D": "Must be over 21 years old"
+      },
+      "correct": "B",
+      "explanation": "TAP eligibility requires active FCS-eligible Medicaid, authorization by Wellpoint to receive FCS supportive housing services with active FCS-SH enrollment segments, experiencing a behavioral health treatment need, and making a housing transition (page 75).",
+      "studyPages": [75],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_007",
+      "category": "TAP Covered Expenses",
+      "text": "Which of the following moving expenses is NOT payable with TAP funding?",
+      "options": {
+        "A": "Moving vehicle rental",
+        "B": "Moving supplies",
+        "C": "Long-term storage fees",
+        "D": "Reasonable moving-related expenses"
+      },
+      "correct": "C",
+      "explanation": "While moving vehicle rental, moving supplies, and appropriate reasonable expenses are covered, long-term storage fees are not listed as covered TAP expenses (pages 76-77).",
+      "studyPages": [76, 77],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_008",
+      "category": "TAP Covered Expenses",
+      "text": "TAP funding can cover security deposits and first month's rent. What documentation must be included with a rental payment TAP request?",
+      "options": {
+        "A": "Credit report",
+        "B": "Rental ledger or official documentation reflecting the amount requested",
+        "C": "Background check results",
+        "D": "Landlord's tax returns"
+      },
+      "correct": "B",
+      "explanation": "A rental ledger, or other official documentation, reflecting the amount requested must be included with the TAP request for rental payments (page 77).",
+      "studyPages": [77],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_009",
+      "category": "TAP Administration",
+      "text": "How long does an FCS provider have to spend TAP funding after receipt?",
+      "options": {
+        "A": "30 days",
+        "B": "60 days",
+        "C": "90 days",
+        "D": "120 days"
+      },
+      "correct": "C",
+      "explanation": "TAP funding should be spent within 90 days of receipt of the funds. Exceptions can be requested on a case-by-case basis (page 78).",
+      "studyPages": [78],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_010",
+      "category": "TAP Administration",
+      "text": "What should a provider do with excess TAP funds leftover after spending?",
+      "options": {
+        "A": "Keep them for future enrollees",
+        "B": "Donate them to charity",
+        "C": "Use them towards other covered TAP items or return to Wellpoint",
+        "D": "Transfer them to the enrollee's bank account"
+      },
+      "correct": "C",
+      "explanation": "Excess funds can be used towards other items that are covered under TAP or returned to Wellpoint by completing the TAP Overpayment Notification Form (page 78).",
+      "studyPages": [78],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_011",
+      "category": "TAP Administration",
+      "text": "Within how many business days does Wellpoint respond to a TAP request?",
+      "options": {
+        "A": "2 business days",
+        "B": "5 business days",
+        "C": "10 business days",
+        "D": "15 business days"
+      },
+      "correct": "B",
+      "explanation": "Wellpoint responds to the FCS provider regarding the TAP request within five business days with an approval, denial, or rejection requesting more information (page 78).",
+      "studyPages": [78],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_012",
+      "category": "AHAH Program",
+      "text": "What does AHAH stand for?",
+      "options": {
+        "A": "Apple Health and Housing Assistance",
+        "B": "Apple Health and Homes Program",
+        "C": "Assisted Housing and Health Access",
+        "D": "Apple Health Alternative Housing"
+      },
+      "correct": "B",
+      "explanation": "AHAH stands for Apple Health and Homes Program, which connects FCS enrollees with the Department of Commerce housing assistance (page 80).",
+      "studyPages": [80],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_013",
+      "category": "AHAH Program",
+      "text": "What does TBRA stand for in the AHAH program?",
+      "options": {
+        "A": "Transitional Building Rental Assistance",
+        "B": "Tenant-Based Rental Assistance",
+        "C": "Temporary Basic Rent Allowance",
+        "D": "Treatment-Based Recovery Assistance"
+      },
+      "correct": "B",
+      "explanation": "TBRA stands for Tenant-Based Rental Assistance. The AHAH program includes both TBRA and PBRA (Project-Based Rental Assistance) (page 80).",
+      "studyPages": [80],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_014",
+      "category": "AHAH Eligibility",
+      "text": "What is the minimum age requirement for AHAH-RAP TBRA eligibility?",
+      "options": {
+        "A": "16 years or older",
+        "B": "17 years or older",
+        "C": "18 years or older",
+        "D": "21 years or older"
+      },
+      "correct": "C",
+      "explanation": "An individual must be 18 years or older to be eligible for AHAH-RAP TBRA, along with other requirements (page 80).",
+      "studyPages": [80],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_015",
+      "category": "AHAH Eligibility",
+      "text": "Which of the following is NOT a risk factor required for AHAH-RAP TBRA eligibility?",
+      "options": {
+        "A": "Chronic homelessness",
+        "B": "Frequent or lengthy institutional contacts",
+        "C": "Frequent adult residential care stays",
+        "D": "Frequent emergency room visits"
+      },
+      "correct": "D",
+      "explanation": "The three risk factors for AHAH eligibility are chronic homelessness, frequent or lengthy institutional contacts, and frequent adult residential care stays. Frequent ER visits is not listed (page 80).",
+      "studyPages": [80],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_016",
+      "category": "AHAH Administration",
+      "text": "What percentage of Fair Market Rent (FMR) does the AHAH-RAP TBRA voucher cover up to?",
+      "options": {
+        "A": "100% of FMR",
+        "B": "115% of FMR",
+        "C": "130% of FMR",
+        "D": "150% of FMR"
+      },
+      "correct": "C",
+      "explanation": "The AHAH-RAP TBRA voucher will cover up to 130% of Fair Market Rent. The awardee is responsible for 30% of their income towards monthly rent (page 81).",
+      "studyPages": [81],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_017",
+      "category": "AHAH Administration",
+      "text": "How long is the initial TBRA voucher valid before it expires?",
+      "options": {
+        "A": "3 months with 30-day extensions",
+        "B": "6 months with 90-day extensions",
+        "C": "9 months with no extensions",
+        "D": "12 months with 60-day extensions"
+      },
+      "correct": "B",
+      "explanation": "All vouchers are awarded for six months to be utilized, with the possibility of extension in 90-day increments (page 83).",
+      "studyPages": [83],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_018",
+      "category": "AHAH Administration",
+      "text": "For TBRA voucher awardee engagement, how many contact attempts must be made over what time period?",
+      "options": {
+        "A": "3 attempts over 15 business days",
+        "B": "4 attempts over 20 business days",
+        "C": "5 attempts over 25 business days",
+        "D": "6 attempts over 30 business days"
+      },
+      "correct": "B",
+      "explanation": "Providers and Wellpoint will make four attempts, over the course of 20 business days, with each attempt separated by a minimum of two business days. Two different contact methods must be used in total (page 83).",
+      "studyPages": [83],
+      "difficulty": "Hard"
+    },
+    {
+      "id": "pr_019",
+      "category": "Documentation Best Practices",
+      "text": "What does the 'A' in SMART goals stand for?",
+      "options": {
+        "A": "Applicable",
+        "B": "Achievable",
+        "C": "Accurate",
+        "D": "Assessed"
+      },
+      "correct": "B",
+      "explanation": "In SMART goals, A stands for Achievable. Goals should be Specific, Measurable, Achievable, Relevant, and Time-Bound (page 72).",
+      "studyPages": [72],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_020",
+      "category": "Documentation Best Practices",
+      "text": "What should be included to demonstrate that the enrollee is the primary author of their service/care plan?",
+      "options": {
+        "A": "Provider's professional recommendations",
+        "B": "Direct quotes from the enrollee and language they use and understand",
+        "C": "Standardized template language",
+        "D": "Medical terminology"
+      },
+      "correct": "B",
+      "explanation": "Evidence that the enrollee is the primary author includes direct quotes from the enrollee, cultural and linguistic considerations, and language that the enrollee uses and understands (page 72).",
+      "studyPages": [72],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_021",
+      "category": "TAP Covered Expenses",
+      "text": "Which of the following household items is payable with TAP funding under Household/Start-Up Goods?",
+      "options": {
+        "A": "Entertainment systems",
+        "B": "Kitchen items for food preparation and consumption",
+        "C": "Luxury furniture",
+        "D": "Decorative items"
+      },
+      "correct": "B",
+      "explanation": "TAP covers essential household items including appliances and utensils, kitchen items for food preparation and consumption, bedding, furnishings, cribs, and bathroom supplies (page 77).",
+      "studyPages": [77],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_022",
+      "category": "TAP Covered Expenses",
+      "text": "When requesting TAP funding for utility arrears, what documentation must be included?",
+      "options": {
+        "A": "Landlord reference letter",
+        "B": "Copy of utility statement or official documentation reflecting the amount requested",
+        "C": "Credit score report",
+        "D": "Previous payment history for 12 months"
+      },
+      "correct": "B",
+      "explanation": "A copy of the utility statement, or other official documentation, reflecting the amount requested must be included with the TAP request for utility payments (page 78).",
+      "studyPages": [78],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_023",
+      "category": "AHAH Administration",
+      "text": "Which assessments must be completed for an enrollee to be entered into the AHAH-RAP TBRA drawing?",
+      "options": {
+        "A": "Only the FCS Supportive Housing Assessment",
+        "B": "Only the FCS Supported Employment Assessment",
+        "C": "Both FCS Supportive Housing and Supported Employment Assessments",
+        "D": "Neither assessment, only income verification"
+      },
+      "correct": "C",
+      "explanation": "FCS-SH providers must submit the FCS Supportive Housing Assessment with the AHAH-RAP section completed, and FCS-SE providers must submit the FCS Supported Employment Assessment. Enrollees need to be enrolled in both FCS-SH and FCS-SE services (page 81).",
+      "studyPages": [81],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_024",
+      "category": "AHAH Administration",
+      "text": "Who acts as the Coordinating Entity between FCS providers and the Department of Commerce for AHAH?",
+      "options": {
+        "A": "The Department of Social and Health Services",
+        "B": "Local housing authorities",
+        "C": "Wellpoint",
+        "D": "Individual FCS providers"
+      },
+      "correct": "C",
+      "explanation": "As the Coordinating Entity, Wellpoint acts as an intermediary between an FCS provider and the Department of Commerce Office of AHAH Permanent Supportive Housing (page 80).",
+      "studyPages": [80],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_025",
+      "category": "Documentation Best Practices",
+      "text": "In the DARP format, what should the 'Response' section document?",
+      "options": {
+        "A": "Future service goals",
+        "B": "The enrollee's reaction to interventions, including verbal and nonverbal cues",
+        "C": "Provider's assessment of the situation",
+        "D": "Objective observations only"
+      },
+      "correct": "B",
+      "explanation": "The Response section documents the enrollee's reaction to interventions, including verbal feedback, changes in mood or behavior, and nonverbal cues (page 73).",
+      "studyPages": [73],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_026",
+      "category": "Service Planning",
+      "text": "What type of document is a person-centered care plan described as?",
+      "options": {
+        "A": "A static document created at intake",
+        "B": "An enrollee-driven living document that changes based on enrollee needs",
+        "C": "A provider-created template",
+        "D": "A standardized form required by Medicaid"
+      },
+      "correct": "B",
+      "explanation": "Person-centered care plans are enrollee-driven living documents that should be changed based on enrollee needs, choices, strengths, and goals (page 72).",
+      "studyPages": [72],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_027",
+      "category": "TAP Contact Information",
+      "text": "What is the primary email address for TAP-related inquiries?",
+      "options": {
+        "A": "FCSTPA@wellpoint.com",
+        "B": "TransitionAssistanceFCS@Wellpoint.com",
+        "C": "AHAH@wellpoint.com",
+        "D": "FCS@wellpoint.com"
+      },
+      "correct": "B",
+      "explanation": "The TAP contact email is TransitionAssistanceFCS@Wellpoint.com (page 79).",
+      "studyPages": [79],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_028",
+      "category": "AHAH Administration",
+      "text": "How many regions are used for the AHAH-RAP TBRA drawing process?",
+      "options": {
+        "A": "5 regions",
+        "B": "8 regions",
+        "C": "10 regions",
+        "D": "12 regions"
+      },
+      "correct": "C",
+      "explanation": "Wellpoint conducts a drawing for each of 10 regions in collaboration with state partners using a randomized regional drawing process (page 81).",
+      "studyPages": [81],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "pr_029",
+      "category": "TAP Covered Expenses",
+      "text": "Which of the following identification-related expenses is covered by TAP?",
+      "options": {
+        "A": "Passport fees",
+        "B": "Birth certificates and Social Security cards",
+        "C": "Driver's license reinstatement fees",
+        "D": "Professional headshots"
+      },
+      "correct": "B",
+      "explanation": "TAP covers identification documents/cards including birth certificates and Social Security cards (page 76).",
+      "studyPages": [76],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "pr_030",
+      "category": "Documentation Best Practices",
+      "text": "What should exact start and end times in documentation reflect?",
+      "options": {
+        "A": "Rounded to the nearest 15 minutes for billing purposes",
+        "B": "Exact times, not rounded",
+        "C": "Approximated to the nearest hour",
+        "D": "General time ranges like morning or afternoon"
+      },
+      "correct": "B",
+      "explanation": "Documentation should include exact start and end times (not rounded) for services provided (page 72).",
+      "studyPages": [72],
+      "difficulty": "Medium"
+    }
+  ],
+  "terms": [
+    {
+      "term": "DARP Documentation Format",
+      "definition": "A commonly used format for documenting enrollee interactions that contains Description (objective observations), Assessment (evaluation of progress and barriers), Response (enrollee's reaction to interventions), and Plan (next steps and future interventions).",
+      "category": "Documentation",
+      "testRelevant": true,
+      "keywords": ["DARP", "progress notes", "documentation", "Description", "Assessment", "Response", "Plan"]
+    },
+    {
+      "term": "SMART Goals",
+      "definition": "A goal-setting framework where all goals are Specific, Measurable, Achievable, Relevant, and Time-Bound. Required format for treatment plan goals in FCS.",
+      "category": "Service Planning",
+      "testRelevant": true,
+      "keywords": ["SMART", "goals", "treatment plan", "objectives", "Specific", "Measurable", "Achievable", "Relevant", "Time-Bound"]
+    },
+    {
+      "term": "Person-Centered Care Plan",
+      "definition": "An enrollee-driven living document that changes based on enrollee needs, choices, strengths, and goals. Should include evidence that the enrollee is the primary author, such as direct quotes and language the enrollee uses and understands.",
+      "category": "Service Planning",
+      "testRelevant": true,
+      "keywords": ["person-centered", "care plan", "service plan", "enrollee-driven", "living document"]
+    },
+    {
+      "term": "TAP (Transition Assistance Program)",
+      "definition": "A supplementary FCS program providing time-limited funding for housing transitions, covering move-in costs, deposits, rental assistance, and other transition-related expenses for eligible FCS participants.",
+      "category": "Program Resources",
+      "testRelevant": true,
+      "keywords": ["TAP", "Transition Assistance", "housing transitions", "move-in costs", "deposits"]
+    },
+    {
+      "term": "AHAH (Apple Health and Homes Program)",
+      "definition": "A program that connects FCS enrollees with the Department of Commerce housing assistance, including Tenant-Based and Project-Based Rental Assistance (TBRA and PBRA) and capital projects for permanent supportive housing.",
+      "category": "Program Resources",
+      "testRelevant": true,
+      "keywords": ["AHAH", "Apple Health and Homes", "housing assistance", "rental assistance"]
+    },
+    {
+      "term": "TBRA (Tenant-Based Rental Assistance)",
+      "definition": "A type of rental assistance through AHAH-RAP where the voucher covers up to 130% of Fair Market Rent, with the awardee responsible for 30% of their income towards monthly rent. Vouchers are valid for 6 months with possible 90-day extensions.",
+      "category": "Program Resources",
+      "testRelevant": true,
+      "keywords": ["TBRA", "Tenant-Based", "rental assistance", "voucher", "Fair Market Rent"]
+    },
+    {
+      "term": "PBRA (Project-Based Rental Assistance)",
+      "definition": "A type of rental assistance where the subsidy is tied to a specific housing unit or project rather than to the individual tenant. Part of the AHAH program's housing assistance options.",
+      "category": "Program Resources",
+      "testRelevant": false,
+      "keywords": ["PBRA", "Project-Based", "rental assistance", "housing unit"]
+    },
+    {
+      "term": "Fair Market Rent (FMR)",
+      "definition": "The standard rent amount used to determine AHAH-RAP TBRA voucher coverage. The voucher covers up to 130% of FMR, with the enrollee paying 30% of their income toward rent.",
+      "category": "Program Resources",
+      "testRelevant": true,
+      "keywords": ["Fair Market Rent", "FMR", "rent standard", "voucher coverage"]
+    },
+    {
+      "term": "AHAH-RAP",
+      "definition": "Apple Health and Homes Rental Assistance Program. The specific component of AHAH that provides rental assistance through a drawing process for eligible FCS enrollees.",
+      "category": "Program Resources",
+      "testRelevant": true,
+      "keywords": ["AHAH-RAP", "Rental Assistance Program", "drawing", "voucher"]
+    },
+    {
+      "term": "Coordinating Entity",
+      "definition": "The role Wellpoint plays in AHAH, acting as an intermediary between FCS providers and the Department of Commerce Office of AHAH Permanent Supportive Housing (PSH).",
+      "category": "Program Resources",
+      "testRelevant": false,
+      "keywords": ["Coordinating Entity", "Wellpoint", "intermediary", "AHAH"]
+    },
+    {
+      "term": "TAP Spending Timeline",
+      "definition": "TAP funding should be spent within 90 days of receipt. Exceptions can be requested on a case-by-case basis. Excess funds can be used for other covered TAP items or returned to Wellpoint.",
+      "category": "Program Administration",
+      "testRelevant": true,
+      "keywords": ["TAP", "90 days", "spending timeline", "funding period"]
+    },
+    {
+      "term": "Voucher Expiration Period",
+      "definition": "AHAH-RAP TBRA vouchers are awarded for six months with the possibility of extension in 90-day increments. The expiration date begins when the awardee and/or provider is notified of the award.",
+      "category": "Program Administration",
+      "testRelevant": true,
+      "keywords": ["voucher", "expiration", "six months", "90-day extensions"]
+    },
+    {
+      "term": "Due Diligence Process",
+      "definition": "For TBRA voucher awardee engagement, providers must make four contact attempts over 20 business days, with each attempt separated by at least two business days, using two different contact methods in total.",
+      "category": "Program Administration",
+      "testRelevant": true,
+      "keywords": ["due diligence", "contact attempts", "20 business days", "engagement"]
+    },
+    {
+      "term": "Medical Necessity",
+      "definition": "A requirement for FCS service/care plans that must include clear documentation of why services and interventions are medically necessary for the enrollee.",
+      "category": "Service Planning",
+      "testRelevant": true,
+      "keywords": ["medical necessity", "justification", "intervention", "care plan"]
+    },
+    {
+      "term": "TAP Response Timeline",
+      "definition": "Wellpoint responds to TAP requests within five business days with an approval, denial, or rejection requesting more information.",
+      "category": "Program Administration",
+      "testRelevant": true,
+      "keywords": ["TAP", "response time", "five business days", "approval"]
+    },
+    {
+      "term": "AHAH Regional Drawing",
+      "definition": "The process by which AHAH-RAP TBRA vouchers are awarded. Wellpoint conducts randomized drawings for each of 10 regions in collaboration with state partners.",
+      "category": "Program Administration",
+      "testRelevant": true,
+      "keywords": ["regional drawing", "10 regions", "randomized", "voucher award"]
+    },
+    {
+      "term": "Enrollee Strengths and Barriers",
+      "definition": "Required elements of a treatment plan that identify both the positive attributes and skills the enrollee possesses and the obstacles they face in achieving their goals.",
+      "category": "Service Planning",
+      "testRelevant": true,
+      "keywords": ["strengths", "barriers", "treatment plan", "assessment"]
+    },
+    {
+      "term": "Department of Commerce Office of AHAH-PSH",
+      "definition": "The state agency that serves as the payer of rental assistance in the AHAH program. Wellpoint acts as the Coordinating Entity between FCS providers and this office.",
+      "category": "Program Resources",
+      "testRelevant": false,
+      "keywords": ["Department of Commerce", "AHAH-PSH", "Permanent Supportive Housing", "rental assistance payer"]
+    },
+    {
+      "term": "TAP Household Start-Up Goods",
+      "definition": "Essential items covered by TAP funding including appliances, utensils, kitchen items, bedding, furnishings, cribs, and bathroom supplies needed for housing transition.",
+      "category": "Program Resources",
+      "testRelevant": true,
+      "keywords": ["household goods", "start-up", "furnishings", "appliances", "bedding"]
+    },
+    {
+      "term": "Chronic Homelessness",
+      "definition": "One of three risk factors required for AHAH-RAP TBRA eligibility. An individual must be authorized by Wellpoint to receive FCS supportive housing services under this or another qualifying risk factor.",
+      "category": "Eligibility",
+      "testRelevant": true,
+      "keywords": ["chronic homelessness", "risk factor", "AHAH eligibility", "homeless"]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "pr_sc_001",
+      "title": "TAP Funding Request for Move-In Costs",
+      "difficulty": "Medium",
+      "description": "Maria is an FCS-SH enrollee who has been approved for an apartment. She needs help with move-in costs including security deposit ($800), first month's rent ($950), rental application fee ($50), and moving truck rental ($150). She also needs basic household items including bedding ($200), kitchen items ($150), and bathroom supplies ($75).",
+      "question": "What is the correct process for requesting TAP funding for Maria's housing transition?",
+      "options": {
+        "A": "Submit separate TAP requests for each expense category to ensure faster processing",
+        "B": "Submit one TAP request including all eligible expenses with rental ledger and wait for Wellpoint's response within 5 business days",
+        "C": "Have Maria pay the costs first, then request reimbursement through TAP",
+        "D": "Only request TAP funding for the security deposit and first month's rent, as other items aren't covered"
+      },
+      "correct": "B",
+      "explanation": "The provider should submit a complete TAP request using the online FCS TAP Request Form, including all eligible expenses. A rental ledger or official documentation must be included for rental payments. Wellpoint will respond within five business days. All the items mentioned (move-in costs, household goods) are covered TAP expenses. (Pages 76-78)",
+      "studyPages": [76, 77, 78],
+      "relatedConcepts": ["TAP eligibility", "TAP covered expenses", "TAP request process"]
+    },
+    {
+      "id": "pr_sc_002",
+      "title": "DARP Documentation for Anxiety Management",
+      "difficulty": "Hard",
+      "description": "You're documenting a supportive housing visit with James, who has been working on managing anxiety in his new apartment. During the 45-minute visit from 2:00 PM to 2:45 PM on January 15, 2025, James reported feeling anxious about neighbor interactions. You observed he was fidgeting and had tense body language. You discussed coping strategies including deep breathing and listening to music. James said the breathing exercises helped him feel 'more in control.' You plan to check in next week about these strategies.",
+      "question": "Which documentation approach best follows the DARP format?",
+      "options": {
+        "A": "Combine all information in one paragraph noting the visit occurred and anxiety was discussed",
+        "B": "Description: Visit details and observations; Assessment: Analysis of anxiety and progress; Response: James's reaction to interventions; Plan: Next steps for follow-up",
+        "C": "Focus only on the anxiety symptoms observed without documenting the interventions provided",
+        "D": "Document only the time and date, with a general note that James is 'doing fine'"
+      },
+      "correct": "B",
+      "explanation": "DARP format requires: Description (objective observations including exact date/times, location, enrollee name); Assessment (evaluation of progress, barriers, body language); Response/Action (interventions provided and enrollee's reaction); Plan (next steps and follow-up). Each section must be clearly documented with the provider's dated signature. (Pages 72-73)",
+      "studyPages": [72, 73],
+      "relatedConcepts": ["DARP format", "progress notes", "documentation best practices", "medical necessity"]
+    },
+    {
+      "id": "pr_sc_003",
+      "title": "AHAH-RAP TBRA Drawing Process",
+      "difficulty": "Hard",
+      "description": "Sarah is eligible for AHAH-RAP TBRA. She is 25 years old, has active FCS-eligible Medicaid, is experiencing chronic homelessness, and is authorized for both FCS supportive housing and supported employment services. Her FCS-SH provider submitted the Supportive Housing Assessment with the AHAH-RAP section completed. Her name was drawn in the regional drawing and she received a welcome letter.",
+      "question": "What are the next required steps in the AHAH-RAP process?",
+      "options": {
+        "A": "Sarah can immediately start looking for housing with the voucher",
+        "B": "The provider works with Sarah to complete the AHAH Awardee Profile, then a shopping letter is generated and sent so Sarah can secure housing",
+        "C": "Sarah must wait for the Department of Commerce to approve her voucher before any further steps",
+        "D": "The provider submits a new assessment to confirm Sarah's continued eligibility"
+      },
+      "correct": "B",
+      "explanation": "After the drawing and welcome letter, the process continues: provider and awardee complete the AHAH Awardee Profile, a shopping letter is generated based on this information, the voucher is reserved, and then the shopping letter is sent to Sarah and her provider to secure housing. Only after finding housing does the provider submit the voucher and landlord packet. (Page 81)",
+      "studyPages": [81],
+      "relatedConcepts": ["AHAH-RAP process", "TBRA voucher", "drawing process", "awardee responsibilities"]
+    },
+    {
+      "id": "pr_sc_004",
+      "title": "TAP Funding Timeline Management",
+      "difficulty": "Medium",
+      "description": "Your agency received TAP funding of $2,500 for an enrollee on October 1st. The enrollee used $2,000 for move-in costs by November 15th. It's now December 20th (80 days since receipt), and the enrollee needs an additional $300 for utility connection fees. There's $500 remaining from the original TAP funding.",
+      "question": "How should you handle this situation?",
+      "options": {
+        "A": "Return the $500 to Wellpoint immediately as the 90-day period is almost expired",
+        "B": "Use $300 from the remaining TAP funds for utility connection fees within the 90-day timeline, then handle any leftover funds appropriately",
+        "C": "Request new TAP funding for the utility fees and return all $500 to Wellpoint",
+        "D": "Save the $500 for future emergencies with this enrollee beyond the 90-day period"
+      },
+      "correct": "B",
+      "explanation": "TAP funding should be spent within 90 days of receipt. Since only 80 days have passed and utility connection fees are covered TAP expenses, the provider can use the remaining funds for this purpose. If funds are leftover after the need is met, they can be used for other covered TAP items or returned to Wellpoint using the TAP Overpayment Notification Form. (Pages 77-78)",
+      "studyPages": [77, 78],
+      "relatedConcepts": ["TAP spending timeline", "90-day requirement", "covered expenses", "excess funds"]
+    },
+    {
+      "id": "pr_sc_005",
+      "title": "SMART Goal Development",
+      "difficulty": "Medium",
+      "description": "You're working with an enrollee to develop goals for their person-centered care plan. The enrollee says, 'I want to get better at managing my apartment and paying rent.' You need to help them develop this into a SMART goal.",
+      "question": "Which version best represents a SMART goal?",
+      "options": {
+        "A": "Enrollee will improve apartment management skills",
+        "B": "Enrollee will pay rent on time every month for the next 6 months by using a budgeting app and setting payment reminders by March 1, 2025",
+        "C": "Enrollee wants to be better at managing money and housing",
+        "D": "Enrollee will work on improving rental payment consistency sometime in the future"
+      },
+      "correct": "B",
+      "explanation": "SMART goals must be Specific (pay rent on time), Measurable (every month for 6 months), Achievable (using tools like budgeting app), Relevant (directly addresses enrollee's stated need), and Time-Bound (by March 1, 2025). Option B meets all SMART criteria while using language the enrollee can understand. (Page 72)",
+      "studyPages": [72],
+      "relatedConcepts": ["SMART goals", "person-centered planning", "treatment plan elements", "enrollee-driven"]
+    },
+    {
+      "id": "pr_sc_006",
+      "title": "AHAH Voucher Expiration and Extension",
+      "difficulty": "Medium",
+      "description": "Robert received his AHAH-RAP TBRA voucher on February 10, 2025. He has been actively searching for housing with his provider's help but has faced challenges finding an available unit that meets his needs. It's now July 15, 2025.",
+      "question": "What is Robert's current voucher status and what options are available?",
+      "options": {
+        "A": "The voucher expired in May (after 3 months) and Robert must re-enter the drawing",
+        "B": "The voucher is valid until August 10th (6 months) with no extension options",
+        "C": "The original 6-month voucher expired, but Robert could have requested 90-day extensions if needed",
+        "D": "The voucher never expires as long as Robert is actively searching for housing"
+      },
+      "correct": "C",
+      "explanation": "AHAH-RAP TBRA vouchers are awarded for six months (February 10 - August 10 in this case) with the possibility of extension in 90-day increments. Since it's July 15th, the voucher is still within the original 6-month period. If Robert needs more time after August 10th, he can request a 90-day extension. (Page 83)",
+      "studyPages": [83],
+      "relatedConcepts": ["voucher expiration", "TBRA timeline", "90-day extensions", "housing search"]
+    },
+    {
+      "id": "pr_sc_007",
+      "title": "Awardee Engagement Due Diligence",
+      "difficulty": "Hard",
+      "description": "Lisa was drawn for an AHAH-RAP TBRA voucher on January 5th. Her provider sent a welcome email on January 5th (attempt 1), left a voicemail on January 9th (attempt 2), sent another email on January 12th (attempt 3), and made a final phone call on January 15th (attempt 4). It's now January 30th with no response from Lisa. She still has an active FCS-SH authorization.",
+      "question": "What should the provider do next according to AHAH engagement requirements?",
+      "options": {
+        "A": "Continue trying to contact Lisa indefinitely since she has an active authorization",
+        "B": "Submit the Due Diligence Tracking Form to Wellpoint showing the 4 attempts over 20+ business days using 2 contact methods, and Wellpoint will move to the next awardee",
+        "C": "Immediately request Wellpoint withdraw Lisa from AHAH-RAP",
+        "D": "Wait another 30 days and then start the contact attempts over again"
+      },
+      "correct": "B",
+      "explanation": "The provider made 4 contact attempts over the required 20 business days using two different contact methods (email and phone). Since Lisa still has active FCS-SH authorization and there's been no response, the provider should internally track attempts and submit via the online Due Diligence Tracking Form. Wellpoint will then process and notify the provider they're moving to the next awardee. (Page 83)",
+      "studyPages": [83],
+      "relatedConcepts": ["due diligence process", "contact attempts", "20 business days", "active authorization"]
+    },
+    {
+      "id": "pr_sc_008",
+      "title": "TAP Utility Documentation Requirements",
+      "difficulty": "Easy",
+      "description": "An enrollee needs help paying a past-due electric bill of $450 to prevent service disconnection. The provider wants to submit a TAP request to cover this utility arrear.",
+      "question": "What documentation must be included with the TAP request?",
+      "options": {
+        "A": "Only the enrollee's statement about the amount owed",
+        "B": "A copy of the utility statement or official documentation reflecting the $450 amount requested",
+        "C": "Proof of the enrollee's income to show they cannot pay",
+        "D": "A letter from the utility company threatening disconnection"
+      },
+      "correct": "B",
+      "explanation": "For utility arrears, a copy of the utility statement, or other official documentation, reflecting the amount requested must be included with the TAP request. This ensures accurate payment of the actual amount owed. (Page 78)",
+      "studyPages": [78],
+      "relatedConcepts": ["TAP covered expenses", "utility arrears", "documentation requirements", "official documentation"]
+    },
+    {
+      "id": "pr_sc_009",
+      "title": "Person-Centered Care Plan Elements",
+      "difficulty": "Medium",
+      "description": "You're reviewing a care plan that was created for an enrollee. The plan includes provider-recommended goals written in clinical terminology, a list of diagnoses, scheduled appointment times, and provider signatures. The enrollee's signature appears at the bottom.",
+      "question": "What critical elements are missing to make this truly person-centered?",
+      "options": {
+        "A": "Nothing is missing; all required elements are present",
+        "B": "Direct quotes from the enrollee, language they use and understand, their strengths and barriers, and evidence that the enrollee is the primary author",
+        "C": "Medical necessity documentation and billing codes",
+        "D": "Provider credentials and license numbers"
+      },
+      "correct": "B",
+      "explanation": "Person-centered care plans must include evidence that the enrollee is the primary author, such as direct quotes from the enrollee, cultural and linguistic considerations, and language the enrollee uses and understands. They should also include enrollee strengths and barriers, not just diagnoses. The plan should be enrollee-driven, not provider-recommended. (Page 72)",
+      "studyPages": [72],
+      "relatedConcepts": ["person-centered", "enrollee-driven", "care plan elements", "cultural considerations"]
+    },
+    {
+      "id": "pr_sc_010",
+      "title": "AHAH-RAP Eligibility Verification",
+      "difficulty": "Medium",
+      "description": "Carlos is 17 years old, has active FCS-eligible Medicaid, is experiencing chronic homelessness, and is authorized for FCS supportive housing services. He is also enrolled in and assessed for FCS supported employment services. His provider wants to submit him for the AHAH-RAP TBRA drawing.",
+      "question": "Is Carlos eligible for AHAH-RAP TBRA? Why or why not?",
+      "options": {
+        "A": "Yes, he meets all eligibility requirements including both FCS-SH and FCS-SE enrollment",
+        "B": "No, he is under 18 years old; TBRA eligibility requires being 18 or older",
+        "C": "Yes, but only if he turns 18 before the next drawing",
+        "D": "No, chronic homelessness alone is not sufficient for AHAH-RAP eligibility"
+      },
+      "correct": "B",
+      "explanation": "While Carlos meets most AHAH-RAP TBRA requirements (active FCS-eligible Medicaid, chronic homelessness risk factor, authorized for FCS-SH, enrolled in FCS-SE), he does not meet the age requirement. TBRA eligibility requires the individual to be 18 years or older. (Page 80)",
+      "studyPages": [80],
+      "relatedConcepts": ["AHAH-RAP eligibility", "age requirements", "TBRA", "risk factors"]
+    },
+    {
+      "id": "pr_sc_011",
+      "title": "TAP Covered vs. Non-Covered Expenses",
+      "difficulty": "Easy",
+      "description": "An enrollee is transitioning into a new apartment and requests TAP funding assistance. They have a list of needed items: birth certificate ($25), rental application fee ($45), moving truck rental ($120), couch and coffee table ($400), basic kitchen utensils and dishes ($100), and a 55-inch flat screen TV ($600).",
+      "question": "Which items are NOT covered by TAP funding?",
+      "options": {
+        "A": "Birth certificate and rental application fee",
+        "B": "Moving truck rental and kitchen items",
+        "C": "The TV; all other items are covered TAP expenses",
+        "D": "Kitchen utensils and furniture"
+      },
+      "correct": "C",
+      "explanation": "TAP covers identification documents (birth certificate), rental application fees, moving vehicle rental, and household start-up goods including furnishings and kitchen items for food preparation and consumption. Entertainment systems like TVs are not listed as covered TAP expenses. (Pages 76-77)",
+      "studyPages": [76, 77],
+      "relatedConcepts": ["TAP covered expenses", "household goods", "identification documents", "moving costs"]
+    },
+    {
+      "id": "pr_sc_012",
+      "title": "AHAH Voucher and Landlord Packet",
+      "difficulty": "Medium",
+      "description": "Jennifer has been awarded an AHAH-RAP TBRA voucher and found an apartment. Her provider needs to complete the voucher and landlord packet to submit to Wellpoint, who will then send it to the Department of Commerce for approval.",
+      "question": "Which documents are required in the combined Voucher and Landlord Packets?",
+      "options": {
+        "A": "Only the Intent to Rent Form and lease agreement",
+        "B": "Provider Conflict of Interest Form, Intent to Rent Form, Income Verification, Housing Health and Safety Inspection, Lead-Based Paint Disclosure, Owner-Agent Verification, and Landlord Certification of Habitability",
+        "C": "Just the provider's recommendation letter and Jennifer's housing history",
+        "D": "Only landlord-related documents; the voucher packet is submitted separately"
+      },
+      "correct": "B",
+      "explanation": "The Voucher Packet includes Provider Conflict of Interest Form, Intent to Rent Form, Income Verification Worksheet, Verification of Short-Term Subsidy, Rent Allowance Request Form, AHAH-RAP Housing Health and Safety Inspection Form, and Lead-Based Paint Form & Pamphlet Disclosure. The Landlord Packet includes Landlord Intro Letter, Landlord Guide, Owner-Agent Verification Form, and Landlord Certification of Habitability. All are required. (Page 82)",
+      "studyPages": [82],
+      "relatedConcepts": ["voucher packet", "landlord packet", "AHAH documentation", "housing approval"]
+    }
+  ],
+  "talkingPoints": [
+    {
+      "id": "pr_tp_001",
+      "category": "Documentation",
+      "statement": "In the DARP documentation format, exact start and end times should be rounded to the nearest 15 minutes for convenience.",
+      "correct": false,
+      "explanation": "FALSE. Documentation must include exact start and end times that are NOT rounded. This is a requirement for accurate Medicaid documentation (page 72).",
+      "sourceSection": "Section 6.1: Best Practices for Medicaid Documentation"
+    },
+    {
+      "id": "pr_tp_002",
+      "category": "Documentation",
+      "statement": "Person-centered care plans are static documents created at intake and should remain unchanged throughout service delivery.",
+      "correct": false,
+      "explanation": "FALSE. Person-centered care plans are enrollee-driven LIVING documents that should be changed based on enrollee needs, choices, strengths, and goals (page 72).",
+      "sourceSection": "Section 6.1: Best Practices for Medicaid Documentation"
+    },
+    {
+      "id": "pr_tp_003",
+      "category": "Service Planning",
+      "statement": "SMART goals must be Specific, Measurable, Achievable, Relevant, and Time-Bound.",
+      "correct": true,
+      "explanation": "TRUE. All goals in treatment plans should be done in the SMART format, meaning they are Specific, Measurable, Achievable, Relevant, and Time-Bound (page 72).",
+      "sourceSection": "Section 6.1: Best Practices for Medicaid Documentation"
+    },
+    {
+      "id": "pr_tp_004",
+      "category": "TAP",
+      "statement": "TAP funding must be spent within 90 days of receipt, with exceptions available on a case-by-case basis.",
+      "correct": true,
+      "explanation": "TRUE. TAP funding should be spent within 90 days of receipt of the funds. Exceptions to this can be requested on a case-by-case basis (page 78).",
+      "sourceSection": "Section 7.6: Spending TAP Funding"
+    },
+    {
+      "id": "pr_tp_005",
+      "category": "TAP",
+      "statement": "Wellpoint responds to TAP requests within 10 business days.",
+      "correct": false,
+      "explanation": "FALSE. Wellpoint responds to TAP requests within FIVE business days with an approval, denial, or rejection requesting more information (page 78).",
+      "sourceSection": "Section 7.5: Requesting TAP Funding"
+    },
+    {
+      "id": "pr_tp_006",
+      "category": "TAP",
+      "statement": "TAP can cover security deposits, first month's rent, and last month's rent.",
+      "correct": false,
+      "explanation": "FALSE. TAP covers security deposits and first month's rent, but last month's rent is specifically noted as NOT HRSN Eligible on page 77.",
+      "sourceSection": "Section 7.3: Expenses Payable with TAP Funding"
+    },
+    {
+      "id": "pr_tp_007",
+      "category": "AHAH",
+      "statement": "To be eligible for AHAH-RAP TBRA, an individual must be 18 years or older.",
+      "correct": true,
+      "explanation": "TRUE. One of the eligibility criteria for AHAH-RAP TBRA is being 18 years or older (page 80).",
+      "sourceSection": "Section 8.1.1: TBRA Eligibility"
+    },
+    {
+      "id": "pr_tp_008",
+      "category": "AHAH",
+      "statement": "The AHAH-RAP TBRA voucher covers up to 100% of Fair Market Rent.",
+      "correct": false,
+      "explanation": "FALSE. The AHAH-RAP TBRA voucher covers up to 130% of Fair Market Rent, with the awardee responsible for 30% of their income towards monthly rent (page 81).",
+      "sourceSection": "Section 8.2: Rental Assistance Subsidy"
+    },
+    {
+      "id": "pr_tp_009",
+      "category": "AHAH",
+      "statement": "AHAH-RAP TBRA vouchers are valid for 6 months with possible 90-day extensions.",
+      "correct": true,
+      "explanation": "TRUE. All vouchers are awarded for six months to be utilized, with the possibility of extension in 90-day increments (page 83).",
+      "sourceSection": "Section 8.6: TBRA Voucher Expiration"
+    },
+    {
+      "id": "pr_tp_010",
+      "category": "AHAH",
+      "statement": "Wellpoint conducts the AHAH-RAP TBRA drawing for 10 regions across Washington State.",
+      "correct": true,
+      "explanation": "TRUE. Wellpoint conducts a drawing for each region (10 regions) in collaboration with state partners (page 81).",
+      "sourceSection": "Section 8.3: TBRA Drawing"
+    },
+    {
+      "id": "pr_tp_011",
+      "category": "Documentation",
+      "statement": "Evidence that the enrollee is the primary author of their service plan can include direct quotes from the enrollee and language they use and understand.",
+      "correct": true,
+      "explanation": "TRUE. Person-centered care plans should include evidence that the enrollee is the primary author, such as direct quotes from the enrollee, cultural and linguistic considerations, and language that the enrollee uses and understands (page 72).",
+      "sourceSection": "Section 6.1: Best Practices for Medicaid Documentation"
+    },
+    {
+      "id": "pr_tp_012",
+      "category": "AHAH",
+      "statement": "For AHAH-RAP TBRA eligibility, individuals must be authorized for both FCS supportive housing AND supported employment services.",
+      "correct": true,
+      "explanation": "TRUE. TBRA eligibility requires authorization by Wellpoint to receive both FCS supportive housing services (under qualifying risk factors) AND FCS supported employment services (page 80).",
+      "sourceSection": "Section 8.1.1: TBRA Eligibility"
+    },
+    {
+      "id": "pr_tp_013",
+      "category": "AHAH",
+      "statement": "The three risk factors for AHAH eligibility are chronic homelessness, frequent or lengthy institutional contacts, and frequent emergency room visits.",
+      "correct": false,
+      "explanation": "FALSE. The three risk factors are chronic homelessness, frequent or lengthy institutional contacts, and frequent ADULT RESIDENTIAL CARE stays - not emergency room visits (page 80).",
+      "sourceSection": "Section 8.1: Eligibility"
+    },
+    {
+      "id": "pr_tp_014",
+      "category": "TAP",
+      "statement": "Excess TAP funds can be used for other covered TAP items or must be returned to Wellpoint.",
+      "correct": true,
+      "explanation": "TRUE. Any excess funds leftover after spending can be used towards other items that are covered under TAP or returned to Wellpoint by completing the TAP Overpayment Notification Form (page 78).",
+      "sourceSection": "Section 7.6: Spending TAP Funding"
+    },
+    {
+      "id": "pr_tp_015",
+      "category": "AHAH",
+      "statement": "Providers must make 4 contact attempts over 20 business days for TBRA voucher awardee engagement, using at least two different contact methods.",
+      "correct": true,
+      "explanation": "TRUE. Providers and Wellpoint will make four attempts over 20 business days, with each attempt separated by a minimum of two business days. Two different contact methods must be used in total (page 83).",
+      "sourceSection": "Section 8.5: TBRA Voucher Awardee Engagement"
+    },
+    {
+      "id": "pr_tp_016",
+      "category": "Documentation",
+      "statement": "The DARP format includes Description, Assessment, Response, and Plan sections.",
+      "correct": true,
+      "explanation": "TRUE. DARP stands for Description, Assessment, Response, Plan and is commonly used for documenting enrollee interactions (page 72).",
+      "sourceSection": "Section 6.1: Best Practices for Medicaid Documentation"
+    },
+    {
+      "id": "pr_tp_017",
+      "category": "TAP",
+      "statement": "TAP funding can cover birth certificates, Social Security cards, and other identification documents.",
+      "correct": true,
+      "explanation": "TRUE. TAP covers identification documents/cards including birth certificates and Social Security cards (page 76).",
+      "sourceSection": "Section 7.3: Expenses Payable with TAP Funding"
+    },
+    {
+      "id": "pr_tp_018",
+      "category": "AHAH",
+      "statement": "Wellpoint acts as the Coordinating Entity between FCS providers and the Department of Commerce for AHAH.",
+      "correct": true,
+      "explanation": "TRUE. As the Coordinating Entity, Wellpoint acts as an intermediary between an FCS provider and the Department of Commerce Office of AHAH Permanent Supportive Housing (page 80).",
+      "sourceSection": "Section 8: Apple Health and Homes Program"
+    },
+    {
+      "id": "pr_tp_019",
+      "category": "Service Planning",
+      "statement": "Treatment plans must include dated signatures of both the enrollee and service provider.",
+      "correct": true,
+      "explanation": "TRUE. Required elements of a treatment plan include dated signatures of enrollee and service provider (page 72).",
+      "sourceSection": "Section 6.1: Best Practices for Medicaid Documentation"
+    },
+    {
+      "id": "pr_tp_020",
+      "category": "TAP",
+      "statement": "A rental ledger or official documentation must be included with TAP requests for rental payments.",
+      "correct": true,
+      "explanation": "TRUE. A rental ledger, or other official documentation, reflecting the amount requested must be included with the TAP request for rental-related expenses (page 77).",
+      "sourceSection": "Section 7.3: Expenses Payable with TAP Funding"
+    }
+  ]
+}

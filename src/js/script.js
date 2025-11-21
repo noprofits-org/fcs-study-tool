@@ -15,10 +15,28 @@ let filteredScenarios = [];
 let filteredTerms = [];
 let filteredTalkingPoints = [];
 
+// Resources module data (Section 6: Program Approach and Resources)
+let resourceQuestions = [];
+let resourceTerms = [];
+let resourceScenarios = [];
+let resourceTalkingPoints = [];
+let currentResourceQuestionIndex = 0;
+let currentResourceScenarioIndex = 0;
+let currentResourceTalkingPointIndex = 0;
+let resourceQuestionAnswers = {};
+let resourceScenarioAnswers = {};
+let resourceTalkingPointAnswers = {};
+let filteredResourceQuestions = [];
+let filteredResourceTerms = [];
+let filteredResourceScenarios = [];
+let filteredResourceTalkingPoints = [];
+
 // Gamification tracking to prevent XP exploits
 let reviewedFlashcards = new Set();
 let questionMilestones = new Set();
 let talkingPointMilestones = new Set();
+let resourceQuestionMilestones = new Set();
+let resourceTalkingPointMilestones = new Set();
 
 // Load data on page load
 document.addEventListener('DOMContentLoaded', async () => {
@@ -32,11 +50,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load JSON data
 async function loadData() {
     try {
-        const [questionsData, scenariosData, termsData, talkingPointsData] = await Promise.all([
+        const [questionsData, scenariosData, termsData, talkingPointsData, resourcesData] = await Promise.all([
             fetch('src/data/questions.json').then(r => r.json()),
             fetch('src/data/scenarios.json').then(r => r.json()),
             fetch('src/data/terms.json').then(r => r.json()),
-            fetch('src/data/talking-points.json').then(r => r.json())
+            fetch('src/data/talking-points.json').then(r => r.json()),
+            fetch('src/data/resources.json').then(r => r.json())
         ]);
 
         questions = questionsData.questions;
@@ -44,10 +63,22 @@ async function loadData() {
         terms = termsData.terms;
         talkingPoints = talkingPointsData.talkingPoints;
 
+        // Load resources module data
+        resourceQuestions = resourcesData.questions;
+        resourceTerms = resourcesData.terms;
+        resourceScenarios = resourcesData.scenarios;
+        resourceTalkingPoints = resourcesData.talkingPoints;
+
         filteredQuestions = [...questions];
         filteredScenarios = [...scenarios];
         filteredTerms = [...terms];
         filteredTalkingPoints = [...talkingPoints];
+
+        // Initialize filtered resources
+        filteredResourceQuestions = [...resourceQuestions];
+        filteredResourceTerms = [...resourceTerms];
+        filteredResourceScenarios = [...resourceScenarios];
+        filteredResourceTalkingPoints = [...resourceTalkingPoints];
 
         displayQuestion();
         displayScenario();
@@ -55,6 +86,9 @@ async function loadData() {
         updateFlashcards();
         displayTalkingPoint();
         initializeTalkingPointsFilters();
+
+        // Initialize resources module
+        initializeResourcesModule();
     } catch (error) {
         console.error('Error loading data:', error);
         alert('Error loading study materials. Please refresh the page.');
@@ -530,6 +564,10 @@ function saveProgress() {
     localStorage.setItem('fcs_questionAnswers', JSON.stringify(questionAnswers));
     localStorage.setItem('fcs_scenarioAnswers', JSON.stringify(scenarioAnswers));
     localStorage.setItem('fcs_talkingPointAnswers', JSON.stringify(talkingPointAnswers));
+    // Resources module progress
+    localStorage.setItem('fcs_resourceQuestionAnswers', JSON.stringify(resourceQuestionAnswers));
+    localStorage.setItem('fcs_resourceScenarioAnswers', JSON.stringify(resourceScenarioAnswers));
+    localStorage.setItem('fcs_resourceTalkingPointAnswers', JSON.stringify(resourceTalkingPointAnswers));
 }
 
 function loadProgress() {
@@ -557,6 +595,29 @@ function loadProgress() {
         const totalAnswered = Object.keys(talkingPointAnswers).length;
         for (let i = 10; i <= Math.floor(totalAnswered / 10) * 10; i += 10) {
             talkingPointMilestones.add(i);
+        }
+    }
+
+    // Load resources module progress
+    const savedResourceQuestions = localStorage.getItem('fcs_resourceQuestionAnswers');
+    const savedResourceScenarios = localStorage.getItem('fcs_resourceScenarioAnswers');
+    const savedResourceTalkingPoints = localStorage.getItem('fcs_resourceTalkingPointAnswers');
+
+    if (savedResourceQuestions) {
+        resourceQuestionAnswers = JSON.parse(savedResourceQuestions);
+        const totalAnswered = Object.keys(resourceQuestionAnswers).length;
+        for (let i = 10; i <= Math.floor(totalAnswered / 10) * 10; i += 10) {
+            resourceQuestionMilestones.add(i);
+        }
+    }
+    if (savedResourceScenarios) {
+        resourceScenarioAnswers = JSON.parse(savedResourceScenarios);
+    }
+    if (savedResourceTalkingPoints) {
+        resourceTalkingPointAnswers = JSON.parse(savedResourceTalkingPoints);
+        const totalAnswered = Object.keys(resourceTalkingPointAnswers).length;
+        for (let i = 10; i <= Math.floor(totalAnswered / 10) * 10; i += 10) {
+            resourceTalkingPointMilestones.add(i);
         }
     }
 
@@ -724,5 +785,455 @@ function resetTalkingPoints() {
         saveProgress();
         displayTalkingPoint();
         updateTalkingPointsStats();
+    }
+}
+
+// ========================================
+// RESOURCES MODULE (Section 6: Program Approach & Resources)
+// ========================================
+
+function initializeResourcesModule() {
+    // Initialize filters
+    initializeResourceFilters();
+
+    // Add event listeners for resource tabs
+    document.querySelectorAll('.resource-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const tabId = tab.dataset.tab;
+            switchResourceTab(tabId);
+            document.querySelectorAll('.resource-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+
+    // Resource Questions navigation
+    document.getElementById('prevResourceQuestion').addEventListener('click', () => navigateResourceQuestion(-1));
+    document.getElementById('nextResourceQuestion').addEventListener('click', () => navigateResourceQuestion(1));
+    document.getElementById('resetResourceQuestions').addEventListener('click', resetResourceQuestions);
+    document.getElementById('resourceCategoryFilter').addEventListener('change', filterResourceQuestions);
+
+    // Resource Terms
+    document.getElementById('resourceTermCategoryFilter').addEventListener('change', filterResourceTerms);
+    document.getElementById('resourceTermSearch').addEventListener('input', filterResourceTerms);
+
+    // Resource Scenarios
+    document.getElementById('prevResourceScenario').addEventListener('click', () => navigateResourceScenario(-1));
+    document.getElementById('nextResourceScenario').addEventListener('click', () => navigateResourceScenario(1));
+    document.getElementById('resetResourceScenarios').addEventListener('click', resetResourceScenarios);
+    document.getElementById('resourceScenarioDifficultyFilter').addEventListener('change', filterResourceScenarios);
+
+    // Resource Talking Points
+    document.getElementById('prevResourceTalkingPoint').addEventListener('click', () => navigateResourceTalkingPoint(-1));
+    document.getElementById('nextResourceTalkingPoint').addEventListener('click', () => navigateResourceTalkingPoint(1));
+    document.getElementById('resetResourceTalkingPoints').addEventListener('click', resetResourceTalkingPoints);
+    document.getElementById('resourceTrueBtn').addEventListener('click', () => selectResourceTalkingPointAnswer(true));
+    document.getElementById('resourceFalseBtn').addEventListener('click', () => selectResourceTalkingPointAnswer(false));
+    document.getElementById('resourceTalkingPointsCategoryFilter').addEventListener('change', filterResourceTalkingPoints);
+
+    // Display initial content
+    displayResourceQuestion();
+    displayResourceTerms();
+    displayResourceScenario();
+    displayResourceTalkingPoint();
+}
+
+function initializeResourceFilters() {
+    // Question categories
+    const questionCategories = [...new Set(resourceQuestions.map(q => q.category))].sort();
+    const categorySelect = document.getElementById('resourceCategoryFilter');
+    questionCategories.forEach(cat => {
+        const option = document.createElement('option');
+        option.value = cat;
+        option.textContent = cat;
+        categorySelect.appendChild(option);
+    });
+
+    // Term categories
+    const termCategories = [...new Set(resourceTerms.map(t => t.category))].sort();
+    const termCategorySelect = document.getElementById('resourceTermCategoryFilter');
+    termCategories.forEach(cat => {
+        const option = document.createElement('option');
+        option.value = cat;
+        option.textContent = cat;
+        termCategorySelect.appendChild(option);
+    });
+
+    // Talking points categories
+    const tpCategories = [...new Set(resourceTalkingPoints.map(tp => tp.category))].sort();
+    const tpCategorySelect = document.getElementById('resourceTalkingPointsCategoryFilter');
+    tpCategories.forEach(cat => {
+        const option = document.createElement('option');
+        option.value = cat;
+        option.textContent = cat;
+        tpCategorySelect.appendChild(option);
+    });
+}
+
+function switchResourceTab(tabId) {
+    document.querySelectorAll('.resource-tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    document.getElementById(tabId).classList.add('active');
+}
+
+// Resource Questions
+function displayResourceQuestion() {
+    if (filteredResourceQuestions.length === 0) return;
+
+    const question = filteredResourceQuestions[currentResourceQuestionIndex];
+    document.getElementById('resourceQuestionNumber').textContent = `Question ${currentResourceQuestionIndex + 1} of ${filteredResourceQuestions.length}`;
+    document.getElementById('resourceQuestionDifficulty').textContent = question.difficulty;
+    document.getElementById('resourceQuestionDifficulty').className = `difficulty-badge ${question.difficulty.toLowerCase()}`;
+    document.getElementById('resourceQuestionText').textContent = question.text;
+
+    const optionsContainer = document.getElementById('resourceOptionsContainer');
+    optionsContainer.innerHTML = '';
+
+    Object.entries(question.options).forEach(([key, value]) => {
+        const optionDiv = document.createElement('div');
+        optionDiv.className = 'option';
+        optionDiv.innerHTML = `<span class="option-key">${key}:</span> ${value}`;
+        optionDiv.dataset.key = key;
+
+        if (resourceQuestionAnswers[question.id]) {
+            if (key === question.correct) {
+                optionDiv.classList.add('correct');
+            }
+            if (key === resourceQuestionAnswers[question.id] && key !== question.correct) {
+                optionDiv.classList.add('incorrect');
+            }
+            if (key === resourceQuestionAnswers[question.id]) {
+                optionDiv.classList.add('selected');
+            }
+        } else {
+            optionDiv.addEventListener('click', () => selectResourceAnswer(key, question));
+        }
+
+        optionsContainer.appendChild(optionDiv);
+    });
+
+    if (resourceQuestionAnswers[question.id]) {
+        showResourceExplanation(question);
+    } else {
+        document.getElementById('resourceExplanationContainer').style.display = 'none';
+    }
+
+    updateResourceQuestionStats();
+}
+
+function selectResourceAnswer(key, question) {
+    resourceQuestionAnswers[question.id] = key;
+    saveProgress();
+
+    // Track for gamification
+    const totalAnswered = Object.keys(resourceQuestionAnswers).length;
+    const totalCorrect = resourceQuestions.filter(q => resourceQuestionAnswers[q.id] === q.correct).length;
+
+    const milestone = Math.floor(totalAnswered / 10) * 10;
+    if (milestone > 0 && totalAnswered % 10 === 0 && !resourceQuestionMilestones.has(milestone)) {
+        resourceQuestionMilestones.add(milestone);
+        gamification.onPracticeTestCompleted(totalCorrect, totalAnswered);
+    }
+
+    displayResourceQuestion();
+}
+
+function showResourceExplanation(question) {
+    const container = document.getElementById('resourceExplanationContainer');
+    container.style.display = 'block';
+    document.getElementById('resourceExplanationText').textContent = question.explanation;
+
+    const studyPagesDiv = document.getElementById('resourceStudyPages');
+    if (question.studyPages && question.studyPages.length > 0) {
+        studyPagesDiv.innerHTML = `<strong>Study Pages:</strong> ${question.studyPages.join(', ')}`;
+    } else {
+        studyPagesDiv.innerHTML = '';
+    }
+}
+
+function navigateResourceQuestion(direction) {
+    const newIndex = currentResourceQuestionIndex + direction;
+    if (newIndex >= 0 && newIndex < filteredResourceQuestions.length) {
+        currentResourceQuestionIndex = newIndex;
+        displayResourceQuestion();
+    }
+}
+
+function filterResourceQuestions() {
+    const category = document.getElementById('resourceCategoryFilter').value;
+
+    filteredResourceQuestions = resourceQuestions.filter(q => {
+        return category === 'all' || q.category === category;
+    });
+
+    currentResourceQuestionIndex = 0;
+    displayResourceQuestion();
+}
+
+function updateResourceQuestionStats() {
+    const answered = filteredResourceQuestions.filter(q => resourceQuestionAnswers[q.id]).length;
+    const correct = filteredResourceQuestions.filter(q => resourceQuestionAnswers[q.id] === q.correct).length;
+    const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+    document.getElementById('resourceQuestionProgress').textContent = `${answered}/${filteredResourceQuestions.length}`;
+    document.getElementById('resourceCorrectCount').textContent = correct;
+    document.getElementById('resourceScorePercentage').textContent = `${percentage}%`;
+}
+
+function resetResourceQuestions() {
+    if (confirm('Are you sure you want to reset all resource questions progress?')) {
+        resourceQuestionAnswers = {};
+        resourceQuestionMilestones.clear();
+        saveProgress();
+        displayResourceQuestion();
+        updateResourceQuestionStats();
+    }
+}
+
+// Resource Terms
+function displayResourceTerms() {
+    const grid = document.getElementById('resourceTermsGrid');
+    grid.innerHTML = '';
+
+    filteredResourceTerms.forEach(term => {
+        const termCard = document.createElement('div');
+        termCard.className = 'term-card';
+        termCard.innerHTML = `
+            <h3>${term.term}</h3>
+            <p>${term.definition}</p>
+            <div class="term-meta">
+                <span class="term-category">${term.category}</span>
+                ${term.testRelevant ? '<span class="test-relevant">Test Relevant</span>' : ''}
+            </div>
+        `;
+        grid.appendChild(termCard);
+    });
+}
+
+function filterResourceTerms() {
+    const category = document.getElementById('resourceTermCategoryFilter').value;
+    const searchText = document.getElementById('resourceTermSearch').value.toLowerCase();
+
+    filteredResourceTerms = resourceTerms.filter(term => {
+        const categoryMatch = category === 'all' || term.category === category;
+        const searchMatch = !searchText ||
+            term.term.toLowerCase().includes(searchText) ||
+            term.definition.toLowerCase().includes(searchText) ||
+            (term.keywords && term.keywords.some(k => k.toLowerCase().includes(searchText)));
+        return categoryMatch && searchMatch;
+    });
+
+    displayResourceTerms();
+}
+
+// Resource Scenarios
+function displayResourceScenario() {
+    if (filteredResourceScenarios.length === 0) return;
+
+    const scenario = filteredResourceScenarios[currentResourceScenarioIndex];
+    document.getElementById('resourceScenarioTitle').textContent = scenario.title;
+    document.getElementById('resourceScenarioDifficulty').textContent = scenario.difficulty;
+    document.getElementById('resourceScenarioDifficulty').className = `difficulty-badge ${scenario.difficulty.toLowerCase()}`;
+    document.getElementById('resourceScenarioDescription').textContent = scenario.description;
+    document.getElementById('resourceScenarioQuestion').textContent = scenario.question;
+
+    const optionsContainer = document.getElementById('resourceScenarioOptionsContainer');
+    optionsContainer.innerHTML = '';
+
+    Object.entries(scenario.options).forEach(([key, value]) => {
+        const optionDiv = document.createElement('div');
+        optionDiv.className = 'option';
+        optionDiv.innerHTML = `<span class="option-key">${key}:</span> ${value}`;
+        optionDiv.dataset.key = key;
+
+        if (resourceScenarioAnswers[scenario.id]) {
+            if (key === scenario.correct) {
+                optionDiv.classList.add('correct');
+            }
+            if (key === resourceScenarioAnswers[scenario.id] && key !== scenario.correct) {
+                optionDiv.classList.add('incorrect');
+            }
+            if (key === resourceScenarioAnswers[scenario.id]) {
+                optionDiv.classList.add('selected');
+            }
+        } else {
+            optionDiv.addEventListener('click', () => selectResourceScenarioAnswer(key, scenario));
+        }
+
+        optionsContainer.appendChild(optionDiv);
+    });
+
+    if (resourceScenarioAnswers[scenario.id]) {
+        showResourceScenarioExplanation(scenario);
+    } else {
+        document.getElementById('resourceScenarioExplanationContainer').style.display = 'none';
+    }
+
+    updateResourceScenarioStats();
+}
+
+function selectResourceScenarioAnswer(key, scenario) {
+    const isFirstAnswer = resourceScenarioAnswers[scenario.id] === undefined;
+
+    resourceScenarioAnswers[scenario.id] = key;
+    saveProgress();
+
+    if (isFirstAnswer) {
+        gamification.onScenarioCompleted();
+    }
+
+    displayResourceScenario();
+}
+
+function showResourceScenarioExplanation(scenario) {
+    const container = document.getElementById('resourceScenarioExplanationContainer');
+    container.style.display = 'block';
+    document.getElementById('resourceScenarioExplanationText').textContent = scenario.explanation;
+
+    const studyPagesDiv = document.getElementById('resourceScenarioStudyPages');
+    if (scenario.studyPages && scenario.studyPages.length > 0) {
+        studyPagesDiv.innerHTML = `<strong>Study Pages:</strong> ${scenario.studyPages.join(', ')}`;
+    } else {
+        studyPagesDiv.innerHTML = '';
+    }
+
+    const conceptsDiv = document.getElementById('resourceRelatedConcepts');
+    if (scenario.relatedConcepts && scenario.relatedConcepts.length > 0) {
+        conceptsDiv.innerHTML = `<strong>Related Concepts:</strong> ${scenario.relatedConcepts.join(', ')}`;
+    } else {
+        conceptsDiv.innerHTML = '';
+    }
+}
+
+function navigateResourceScenario(direction) {
+    const newIndex = currentResourceScenarioIndex + direction;
+    if (newIndex >= 0 && newIndex < filteredResourceScenarios.length) {
+        currentResourceScenarioIndex = newIndex;
+        displayResourceScenario();
+    }
+}
+
+function filterResourceScenarios() {
+    const difficulty = document.getElementById('resourceScenarioDifficultyFilter').value;
+
+    filteredResourceScenarios = resourceScenarios.filter(s => {
+        return difficulty === 'all' || s.difficulty === difficulty;
+    });
+
+    currentResourceScenarioIndex = 0;
+    displayResourceScenario();
+}
+
+function updateResourceScenarioStats() {
+    const answered = filteredResourceScenarios.filter(s => resourceScenarioAnswers[s.id]).length;
+    const correct = filteredResourceScenarios.filter(s => resourceScenarioAnswers[s.id] === s.correct).length;
+    const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+    document.getElementById('resourceScenarioProgress').textContent = `${answered}/${filteredResourceScenarios.length}`;
+    document.getElementById('resourceScenarioCorrectCount').textContent = correct;
+    document.getElementById('resourceScenarioScorePercentage').textContent = `${percentage}%`;
+}
+
+function resetResourceScenarios() {
+    if (confirm('Are you sure you want to reset all resource scenarios progress?')) {
+        resourceScenarioAnswers = {};
+        saveProgress();
+        displayResourceScenario();
+        updateResourceScenarioStats();
+    }
+}
+
+// Resource Talking Points
+function displayResourceTalkingPoint() {
+    if (filteredResourceTalkingPoints.length === 0) return;
+
+    const tp = filteredResourceTalkingPoints[currentResourceTalkingPointIndex];
+    document.getElementById('resourceTalkingPointsNumber').textContent = `Statement ${currentResourceTalkingPointIndex + 1} of ${filteredResourceTalkingPoints.length}`;
+    document.getElementById('resourceTalkingPointStatement').textContent = tp.statement;
+
+    const isAnswered = resourceTalkingPointAnswers[tp.id] !== undefined;
+
+    document.getElementById('resourceTrueBtn').disabled = isAnswered;
+    document.getElementById('resourceFalseBtn').disabled = isAnswered;
+
+    if (isAnswered) {
+        const userAnswer = resourceTalkingPointAnswers[tp.id];
+        if (userAnswer === true) {
+            document.getElementById('resourceTrueBtn').classList.add('selected');
+            document.getElementById('resourceTrueBtn').classList.add(userAnswer === tp.correct ? 'correct' : 'incorrect');
+        } else {
+            document.getElementById('resourceFalseBtn').classList.add('selected');
+            document.getElementById('resourceFalseBtn').classList.add(userAnswer === tp.correct ? 'correct' : 'incorrect');
+        }
+        showResourceTalkingPointExplanation(tp);
+    } else {
+        document.getElementById('resourceTrueBtn').classList.remove('selected', 'correct', 'incorrect');
+        document.getElementById('resourceFalseBtn').classList.remove('selected', 'correct', 'incorrect');
+        document.getElementById('resourceTalkingPointsExplanation').style.display = 'none';
+    }
+
+    updateResourceTalkingPointsStats();
+}
+
+function selectResourceTalkingPointAnswer(answer) {
+    const tp = filteredResourceTalkingPoints[currentResourceTalkingPointIndex];
+    resourceTalkingPointAnswers[tp.id] = answer;
+    saveProgress();
+
+    const totalAnswered = Object.keys(resourceTalkingPointAnswers).length;
+    const totalCorrect = resourceTalkingPoints.filter(tp => resourceTalkingPointAnswers[tp.id] === tp.correct).length;
+
+    const milestone = Math.floor(totalAnswered / 10) * 10;
+    if (milestone > 0 && totalAnswered % 10 === 0 && !resourceTalkingPointMilestones.has(milestone)) {
+        resourceTalkingPointMilestones.add(milestone);
+        gamification.onPracticeTestCompleted(totalCorrect, totalAnswered);
+    }
+
+    displayResourceTalkingPoint();
+}
+
+function showResourceTalkingPointExplanation(tp) {
+    const container = document.getElementById('resourceTalkingPointsExplanation');
+    container.style.display = 'block';
+    document.getElementById('resourceTalkingPointsExplanationText').textContent = tp.explanation;
+    document.getElementById('resourceTalkingPointsSource').textContent = `Source: ${tp.sourceSection}`;
+}
+
+function navigateResourceTalkingPoint(direction) {
+    const newIndex = currentResourceTalkingPointIndex + direction;
+    if (newIndex >= 0 && newIndex < filteredResourceTalkingPoints.length) {
+        currentResourceTalkingPointIndex = newIndex;
+        displayResourceTalkingPoint();
+    }
+}
+
+function filterResourceTalkingPoints() {
+    const category = document.getElementById('resourceTalkingPointsCategoryFilter').value;
+
+    filteredResourceTalkingPoints = resourceTalkingPoints.filter(tp => {
+        return category === 'all' || tp.category === category;
+    });
+
+    currentResourceTalkingPointIndex = 0;
+    displayResourceTalkingPoint();
+}
+
+function updateResourceTalkingPointsStats() {
+    const answered = filteredResourceTalkingPoints.filter(tp => resourceTalkingPointAnswers[tp.id] !== undefined).length;
+    const correct = filteredResourceTalkingPoints.filter(tp => resourceTalkingPointAnswers[tp.id] === tp.correct).length;
+    const percentage = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+    document.getElementById('resourceTalkingPointsProgress').textContent = `${answered}/${filteredResourceTalkingPoints.length}`;
+    document.getElementById('resourceTalkingPointsCorrectCount').textContent = correct;
+    document.getElementById('resourceTalkingPointsScorePercentage').textContent = `${percentage}%`;
+}
+
+function resetResourceTalkingPoints() {
+    if (confirm('Are you sure you want to reset all resource talking points progress?')) {
+        resourceTalkingPointAnswers = {};
+        resourceTalkingPointMilestones.clear();
+        saveProgress();
+        displayResourceTalkingPoint();
+        updateResourceTalkingPointsStats();
     }
 }
