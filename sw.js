@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fcs-study-v1';
+const CACHE_NAME = 'fcs-study-v2';
 const urlsToCache = [
   './',
   'index.html',
@@ -9,6 +9,7 @@ const urlsToCache = [
   'src/data/scenarios.json',
   'src/data/terms.json',
   'src/data/talking-points.json',
+  'src/data/resources.json',
   'manifest.json'
 ];
 
