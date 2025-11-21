@@ -1256,3 +1256,103 @@ footer p {
         font-size: 1.1rem;
     }
 }
+/* ========================================
+   RESOURCES MODULE STYLES (Section 6)
+   ======================================== */
+
+.resources-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-light), var(--accent-color));
+    border-radius: 10px;
+    color: white;
+}
+
+.resources-intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resources-intro p {
+    opacity: 0.95;
+    font-size: 1rem;
+}
+
+/* Resource Tabs */
+.resources-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--surface);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.resource-tab {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-secondary);
+}
+
+.resource-tab:hover {
+    border-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.resource-tab.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Resource Tab Content */
+.resource-tab-content {
+    display: none;
+}
+
+.resource-tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Resources Mobile Styles */
+@media (max-width: 768px) {
+    .resources-intro h2 {
+        font-size: 1.4rem;
+    }
+    
+    .resources-intro p {
+        font-size: 0.9rem;
+    }
+    
+    .resources-tabs {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .resource-tab {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}

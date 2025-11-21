@@ -31,6 +31,7 @@
             <button class="mode-btn" data-mode="terms">Terms</button>
             <button class="mode-btn" data-mode="flashcards">Flashcards</button>
             <button class="mode-btn" data-mode="talking-points">Talking Points</button>
+            <button class="mode-btn" data-mode="resources">Resources</button>
             <button class="mode-btn" data-mode="progress">My Progress</button>
         </nav>
 
@@ -247,6 +248,185 @@
                 <div class="navigation">
                     <button id="prevTalkingPoint" class="nav-btn">Previous</button>
                     <button id="nextTalkingPoint" class="nav-btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Program Resources Mode -->
+        <div id="resourcesMode" class="mode-content">
+            <div class="resources-intro">
+                <h2>Program Approach & Resources</h2>
+                <p>Study documentation best practices, TAP (Transition Assistance Program), and AHAH (Apple Health and Homes) - based on Section 6 of the FCS Manual.</p>
+            </div>
+
+            <div class="resources-tabs">
+                <button class="resource-tab active" data-tab="resource-questions">Questions</button>
+                <button class="resource-tab" data-tab="resource-terms">Key Terms</button>
+                <button class="resource-tab" data-tab="resource-scenarios">Scenarios</button>
+                <button class="resource-tab" data-tab="resource-talking-points">True/False</button>
+            </div>
+
+            <!-- Resource Questions Sub-tab -->
+            <div id="resource-questions" class="resource-tab-content active">
+                <div class="filters">
+                    <label>
+                        Topic:
+                        <select id="resourceCategoryFilter">
+                            <option value="all">All Topics</option>
+                        </select>
+                    </label>
+                    <button id="resetResourceQuestions" class="reset-btn">Reset Progress</button>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span id="resourceQuestionProgress">0/0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Correct:</span>
+                        <span id="resourceCorrectCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Score:</span>
+                        <span id="resourceScorePercentage">0%</span>
+                    </div>
+                </div>
+
+                <div id="resourceQuestionContainer" class="question-container">
+                    <div class="question-header">
+                        <span id="resourceQuestionNumber" class="question-number"></span>
+                        <span id="resourceQuestionDifficulty" class="difficulty-badge"></span>
+                    </div>
+                    <p id="resourceQuestionText" class="question-text"></p>
+                    <div id="resourceOptionsContainer" class="options-container"></div>
+                    <div id="resourceExplanationContainer" class="explanation-container" style="display: none;">
+                        <h3>Explanation:</h3>
+                        <p id="resourceExplanationText"></p>
+                        <div id="resourceStudyPages" class="study-pages"></div>
+                    </div>
+                    <div class="navigation">
+                        <button id="prevResourceQuestion" class="nav-btn">Previous</button>
+                        <button id="nextResourceQuestion" class="nav-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resource Terms Sub-tab -->
+            <div id="resource-terms" class="resource-tab-content">
+                <div class="filters">
+                    <label>
+                        Category:
+                        <select id="resourceTermCategoryFilter">
+                            <option value="all">All Categories</option>
+                        </select>
+                    </label>
+                    <input type="text" id="resourceTermSearch" placeholder="Search terms..." class="search-input">
+                </div>
+
+                <div id="resourceTermsContainer" class="terms-container">
+                    <div class="terms-grid" id="resourceTermsGrid"></div>
+                </div>
+            </div>
+
+            <!-- Resource Scenarios Sub-tab -->
+            <div id="resource-scenarios" class="resource-tab-content">
+                <div class="filters">
+                    <label>
+                        Difficulty:
+                        <select id="resourceScenarioDifficultyFilter">
+                            <option value="all">All Difficulties</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </label>
+                    <button id="resetResourceScenarios" class="reset-btn">Reset Progress</button>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span id="resourceScenarioProgress">0/0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Correct:</span>
+                        <span id="resourceScenarioCorrectCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Score:</span>
+                        <span id="resourceScenarioScorePercentage">0%</span>
+                    </div>
+                </div>
+
+                <div id="resourceScenarioContainer" class="scenario-container">
+                    <div class="scenario-header">
+                        <h2 id="resourceScenarioTitle"></h2>
+                        <span id="resourceScenarioDifficulty" class="difficulty-badge"></span>
+                    </div>
+                    <p id="resourceScenarioDescription" class="scenario-description"></p>
+                    <p id="resourceScenarioQuestion" class="scenario-question"></p>
+                    <div id="resourceScenarioOptionsContainer" class="options-container"></div>
+                    <div id="resourceScenarioExplanationContainer" class="explanation-container" style="display: none;">
+                        <h3>Explanation:</h3>
+                        <p id="resourceScenarioExplanationText"></p>
+                        <div id="resourceScenarioStudyPages" class="study-pages"></div>
+                        <div id="resourceRelatedConcepts" class="related-concepts"></div>
+                    </div>
+                    <div class="navigation">
+                        <button id="prevResourceScenario" class="nav-btn">Previous</button>
+                        <button id="nextResourceScenario" class="nav-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resource Talking Points Sub-tab -->
+            <div id="resource-talking-points" class="resource-tab-content">
+                <div class="filters">
+                    <label>
+                        Topic:
+                        <select id="resourceTalkingPointsCategoryFilter">
+                            <option value="all">All Topics</option>
+                        </select>
+                    </label>
+                    <button id="resetResourceTalkingPoints" class="reset-btn">Reset Progress</button>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <span id="resourceTalkingPointsProgress">0/0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Correct:</span>
+                        <span id="resourceTalkingPointsCorrectCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Score:</span>
+                        <span id="resourceTalkingPointsScorePercentage">0%</span>
+                    </div>
+                </div>
+
+                <div id="resourceTalkingPointsContainer" class="talking-points-container">
+                    <div class="talking-points-header">
+                        <span id="resourceTalkingPointsNumber" class="question-number"></span>
+                    </div>
+                    <div class="statement-card">
+                        <p id="resourceTalkingPointStatement" class="statement-text"></p>
+                    </div>
+                    <div class="true-false-buttons">
+                        <button id="resourceTrueBtn" class="tf-btn true-btn">TRUE</button>
+                        <button id="resourceFalseBtn" class="tf-btn false-btn">FALSE</button>
+                    </div>
+                    <div id="resourceTalkingPointsExplanation" class="explanation-container" style="display: none;">
+                        <h3>Explanation:</h3>
+                        <p id="resourceTalkingPointsExplanationText"></p>
+                        <p id="resourceTalkingPointsSource" class="source-reference"></p>
+                    </div>
+                    <div class="navigation">
+                        <button id="prevResourceTalkingPoint" class="nav-btn">Previous</button>
+                        <button id="nextResourceTalkingPoint" class="nav-btn">Next</button>
+                    </div>
                 </div>
             </div>
         </div>
