@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fcs-study-v2';
+const CACHE_NAME = 'fcs-study-v3';
 const urlsToCache = [
   './',
   'index.html',
